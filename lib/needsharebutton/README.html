@@ -167,98 +167,8 @@
 </noscript>
 
 </head>
-
+<script type="text/javascript" src="/js/src/clicklove.js"></script>
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-CN">
-
- <canvas width="800" height="500"  >您的浏览器不支持此标签！</canvas>
-
-                    <script  src="js/underscore.min.js">
-
-                    <script>
-
-                            var canvas = document.querySelector("canvas");
-
-                            var lily = canvas.getContext("2d");
-
-                            var ballsArr = [];
-
-                            //ball类
-
-                            function Ball(x,y){
-
-                                      this.x = x;
-
-                                      this.y =y;
-
-                                       this.r=_.random(5,10);
-
-                                       this.c=——。sample(['skeblue',red','green','purple','pink']);
-
-                                       this.dx=_.random(-4,4);
-
-                                        this.dy=_.random(-4,4);
-
-                                        ballsArr.push(this);
-
-                        }
-
-                        Ball.prototype.updata = function( {
-
-                                this.x+=this.dx;
-
-                                this.y +=this.dy;
-
-                                this.r-=0.4;
-
-                                if(this.r<=0;){
-
-                                        _.without(ballsArr,this);
-
-                            }
-
-                       };
-
-                        Ball.prototype.render = function(
-
-                                    if(this.r<=0);{
-
-                                        return;
-
-                            }
-
-                            lily.benginPath();
-
-                            lily.arc(this.x,this.y,this.r,0*Math.PI,2*Math.PI);
-
-                            lily.fillStyle = this.c;
-
-                            lily.closePath();
-
-                };
-
-                canvas.onmousemove = function(){
-
-                        new  Ball(event.offsetX,event.offsetY);
-
-                        new  Ball(event.offsetY.event.offsetY);
-
-            };
-
-             setInterval(function(){
-
-                        lily.clearRect(0,0,canvas.width,canvas.height);
-
-                           _.each(ballsArr,function(value){
-
-                                   value.updata();
-
-                                   value.render();
-
-                });
-
-        ),10);
-
-</script>
   
   
     
@@ -1425,5 +1335,5 @@
 
   
 
-</script ><script src="/live2dw/lib/L2Dwidget.min.js?0c58a1486de42ac6cc1c59c7d98ae887"></script><script>L2Dwidget.init({"log":false,"pluginJsPath":"lib/","pluginModelPath":"assets/","pluginRootPath":"live2dw/","tagMode":false});</script></body>
+<script src="/live2dw/lib/L2Dwidget.min.js?0c58a1486de42ac6cc1c59c7d98ae887"></script><script>L2Dwidget.init({"log":false,"pluginJsPath":"lib/","pluginModelPath":"assets/","pluginRootPath":"live2dw/","tagMode":false});</script></body>
 </html>
