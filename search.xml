@@ -2,7 +2,7 @@
 <search>
   <entry>
     <title><![CDATA[A+B problem]]></title>
-    <url>%2F2019%2F03%2F09%2FA-B-problem%2F</url>
+    <url>%2F2019%2F03%2F10%2FA-B-problem%2F</url>
     <content type="text"><![CDATA[纪念博客的诞生QwQ123456789#include&lt;bits/stdc++.h&gt;using namespace std;int main()&#123; int a,b; cin &gt;&gt; a &gt;&gt; b; cout &lt;&lt; a+b; return 0;&#125;]]></content>
       <tags>
         <tag>C++</tag>
