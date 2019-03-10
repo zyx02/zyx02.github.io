@@ -1,6 +1,70 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[题解 CF32A 【Reconnaissance】]]></title>
+    <url>%2F2019%2F03%2F10%2F%E9%A2%98%E8%A7%A3-CF32A-%E3%80%90Reconnaissance%E3%80%91%2F</url>
+    <content type="text"><![CDATA[一看到了求方案数，马上想到了枚举 $dfs$ 深搜思路：$dfs(t)$ ($t$为选了几个人) 1 如果已经选取了两个数，$ans$++并$return$ 2 枚举$1\sim n$ 如果第$a_{i}$个人没被选过且与前一个人身高差的绝对值不超过$d$，则标记为已选并$dfs(t+1)$ Code12345678910111213141516171819202122232425262728293031323334#include&lt;bits/stdc++.h&gt;using namespace std;int n,d,a[1010],ans,s[1010];//s用来存前一个人的身高bool p[1010];//p用来标记已选过的人void dfs(int t)&#123; if(t&gt;2) &#123; ans++; return; &#125; for(int i=1; i&lt;=n; i++) &#123; s[0]=a[i];//s[0]需要设成a[i]，这样第一个人才能选 if(abs(a[i]-s[t-1])&lt;=d&amp;&amp;!p[i]) &#123; p[i]=1; s[t]=a[i];//记录前一个人的身高 dfs(t+1); p[i]=0;//回溯 &#125; &#125;&#125;int main()&#123; scanf("%d%d",&amp;n,&amp;d); for(int i=1; i&lt;=n; i++) &#123; scanf("%d",&amp;a[i]); &#125; dfs(1); printf("%d",ans); return 0;&#125;]]></content>
+      <tags>
+        <tag>题解</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[题解 CF25B 【Phone numbers】]]></title>
+    <url>%2F2019%2F03%2F10%2F%E9%A2%98%E8%A7%A3-CF25B-%E3%80%90Phone-numbers%E3%80%91%2F</url>
+    <content type="text"><![CDATA[一道字符串模拟题首先我们知道 偶数+偶数=偶数 偶数+奇数=奇数 然后我们就可以对$N$进行分类讨论： 当$N\le3$时，直接输出字符串即可 当$N=2k$ $(k\ge2)$时，可以把$N$拆分成若干个长度为2的字符串，在两个字符串之间添上-号 当$N=2k+1$ $(k\ge2)$时，可以把$N$拆分成一个长度为3的字符串和若干个长度为2的字符串，在两个字符串之间添上-号 Code12345678910111213141516171819202122232425262728293031323334353637383940414243444546474849#include&lt;bits/stdc++.h&gt;using namespace std;string s;int sum;int n;int main()&#123; scanf("%d",&amp;n); cin&gt;&gt;s; if(n&lt;=3) //如果n&lt;=3，直接输出 &#123; cout&lt;&lt;s; return 0; &#125; if(n%2==0) //n为偶数则拆分成若干个长度为2的字符串 &#123; for(int i=0; i&lt;n; i++) &#123; sum++; printf("%c",s[i]); if(i==n-1) return 0; if(sum==2) &#123; printf("-"); sum=0; &#125; &#125; &#125; else //n为奇数则拆分成一个长度为3的字符串和若干个长度为2的字符串 &#123; for(int i=0; i&lt;3; i++) &#123; printf("%c",s[i]); &#125; printf("-"); for(int i=3; i&lt;n; i++) &#123; sum++; printf("%c",s[i]); if(i==n-1) return 0; if(sum==2) &#123; printf("-"); sum=0; &#125; &#125; &#125; return 0;&#125;]]></content>
+      <tags>
+        <tag>题解</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[题解 AT3523 【OddString】]]></title>
+    <url>%2F2019%2F03%2F10%2F%E9%A2%98%E8%A7%A3-AT3523-%E3%80%90OddString%E3%80%91%2F</url>
+    <content type="text"><![CDATA[如题，输出奇数位上的字母即可AC 注意字符串下标是从0开始的！ Code12345678910111213#include&lt;bits/stdc++.h&gt;using namespace std;char s[100010];int main()&#123; gets(s); for(int i=0;i&lt;strlen(s);i+=2)//输出奇数位 &#123; printf("%c",s[i]); &#125; printf("\n");//记得换行 return 0;&#125;]]></content>
+      <tags>
+        <tag>题解</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[题解 AT2201 【鏡文 / Mirror String】]]></title>
+    <url>%2F2019%2F03%2F10%2F%E9%A2%98%E8%A7%A3-AT2201-%E3%80%90%E9%8F%A1%E6%96%87-Mirror-String%E3%80%91%2F</url>
+    <content type="text"><![CDATA[一道简单的字符串模拟，刷难度真给力 本蒟蒻的思路比较麻烦，但个人认为比较好理解 1 先将字符串倒序存放 2 按照规则改变字母 3 比较 Code：1234567891011121314151617181920212223242526272829303132333435363738394041#include&lt;bits/stdc++.h&gt;using namespace std;char s1[100010],s2[100010];int len;int main()&#123; cin&gt;&gt;s1; for(int i=strlen(s1)-1; i&gt;=0; i--) &#123; s2[len++]=s1[i];//倒序存放 &#125; for(int i=0; i&lt;strlen(s2); i++) &#123; switch(s2[i])//按照规则改变字母 &#123; case 'b': &#123; s2[i]='d'; break; &#125; case 'd': &#123; s2[i]='b'; break; &#125; case 'p': &#123; s2[i]='q'; break; &#125; case 'q': &#123; s2[i]='p'; break; &#125; &#125; &#125; if(strcmp(s1,s2)==0) cout&lt;&lt;"Yes"&lt;&lt;endl;//比较，注意如果两个字符串一样，strcmp返回0 else cout&lt;&lt;"No"&lt;&lt;endl;//记得换行 return 0;&#125;]]></content>
+      <tags>
+        <tag>题解</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[题解CF45I【TCMCF+++】]]></title>
+    <url>%2F2019%2F03%2F10%2F%E9%A2%98%E8%A7%A3CF45I%E3%80%90TCMCF-%E3%80%91%2F</url>
+    <content type="text"><![CDATA[题目大意：给你$N$个整数，让你从中选$r$个数($0&lt;r \leq N$)，使得它们的乘积最大。输出任意一组解 思路：（大佬勿喷） 1 我们知道几个正整数的乘积总是正数，所以遇到正整数直接输出就好啦 2 遇到负数就不同了，我们知道“奇负偶正”，于是就有两种情况： 1 如果有偶数个负数，因为“偶正”，所以全部输出 2 如果有奇数个负数，我们只能输出个数-1个负数，并且这些负数的绝对值最大 3 接下来还需要三个特判 特判1：如果$N=1$并且这个数小于等于0，输出这个数 特判2：如果$N$（$N&gt;1$）个整数全是0，输出0 特判3：如果$N$（$N&gt;1$）个整数中全是非正数（只有0和负数），如果只有1个负数并且0的个数不为0，输出0（因为0比负数大） 4 然后。。。你就AC了 code123456789101112131415161718192021222324252627282930313233343536373839#include&lt;bits/stdc++.h&gt;using namespace std;int n,a[110],sum1=0,sum2=0;//sum1统计0的个数，sum2统计负数的个数int main()&#123; scanf("%d",&amp;n); for(int i=1; i&lt;=n; i++) &#123; scanf("%d",&amp;a[i]); if(a[i]&lt;0) sum2++;//a[i]是负数，sum2++ else if(a[i]==0) sum1++;//a[i]是0，sum1++ else printf("%d ",a[i]);//a[i]是正数，输出！ &#125; sort(a+1,a+n+1);//因为要取绝对值最大的负数，所以先排序 if(sum2%2==0)//偶数个负数全部输出 &#123; for(int i=1; i&lt;=sum2; i++) &#123; printf("%d ",a[i]); &#125; &#125; else//奇数个负数输出个数-1个 &#123; for(int i=1;i&lt;=sum2-1;i++) &#123; printf("%d ",a[i]); &#125; &#125; if(n==1&amp;&amp;a[1]&lt;=0) &#123; cout&lt;&lt;a[1]; return 0; &#125; if(sum1==n) cout&lt;&lt;0;//全是0 if(sum1+sum2==n&amp;&amp;sum2==1) cout&lt;&lt;0;//全是负数和0且负数只有一个 return 0;&#125;]]></content>
+      <tags>
+        <tag>题解</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[题解CF545D【Queue】]]></title>
+    <url>%2F2019%2F03%2F10%2F%E9%A2%98%E8%A7%A3CF545D%E3%80%90Queue%E3%80%91%2F</url>
+    <content type="text"><![CDATA[这道题基本思路就是贪心（标签里的队列是什么鬼不会是因为标题叫队列吧）主要还是证明贪心的正确性(大佬勿喷) 设总等待时间为 $time$ , $n$个人等待时间分别为$t_{1}$,$t_{2}$,$t_{3}$···$t_{n}$,要使总等待人数最少,则$time$ 要取最小值: $time$ = $t_{1}$+($t_{1}$+$t_{2}$)+($t_{1}$+$t_{2}$+$t_{3}$)+···+($t_{1}$+$t_{2}$+$t_{3}$+···$t_{n}$) $time$ = $n \cdot t_{1}$+ $(n-1)\cdot t_{2}$+ ··· + $t_{n}$ 当$t_{1} \le $ $t_{2} \le$ ······ $t_{n}$ 时，$time$为最小值(简单的证明过程) —————————————————————————————————————————— 所以只要先每个人的等待时间排序一遍，设定一个总时间变量$time$,只要$time$小 于这个人的等待时间答案就+1，同时$time$也要加上这个人的等待时间 代码 12345678910111213141516171819#include&lt;bits/stdc++.h&gt;using namespace std;int n,t[100010],sum,ti;int main()&#123; scanf("%d",&amp;n); for(int i=1;i&lt;=n;i++) scanf("%d",&amp;t[i]); sort(t+1,t+n+1);//排序（从小到大) for(int i=1;i&lt;=n;i++) &#123; if(t[i]&gt;=ti)//如果time&lt;这个人等待时间 &#123; sum++;//答案+1 ti+=t[i];//time加上这个人的等待时间 &#125; &#125; printf("%d",sum); return 0;&#125;]]></content>
+      <tags>
+        <tag>题解</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[题解P1049【装箱问题】]]></title>
+    <url>%2F2019%2F03%2F10%2F%E9%A2%98%E8%A7%A3P1049%E3%80%90%E8%A3%85%E7%AE%B1%E9%97%AE%E9%A2%98%E3%80%91%2F</url>
+    <content type="text"><![CDATA[看到好多大佬都用动规，这题数据范围太水了(n&lt;=30)于是本蒟蒻先来发篇dfs深搜思路： 把n个物品两种可能（取与不取）都搜一遍，得到的最小体积就是答案 具体解释看代码1234567891011121314151617181920212223242526272829#include&lt;bits/stdc++.h&gt;using namespace std;int v,n,w[40],minx=INT_MAX;//minx存放最小体积，初始赋最大值void dfs(int volume,int pointer)//volume代表当前体积//pointer指示第pointer个物品&#123; if(volume&lt;0) return;//首先需要判断如果体积&lt;0就退出 if(pointer&gt;n)//如果n个物品都搜过了 &#123; if(volume&lt;minx)//判断当前体积是否小于最小体积 minx=volume;//是的话更新最小体积 return; &#125; if(volume==0)//小小的剪枝，如果当前体积已经为0了，那么不可能有更优解 &#123; minx=0; return; &#125; dfs(volume-w[pointer],pointer+1);//取该件物品 dfs(volume,pointer+1);//不取该件物品&#125;int main()&#123; scanf("%d%d",&amp;v,&amp;n); for(int i=1; i&lt;=n; i++) scanf("%d",&amp;w[i]); dfs(v,1); printf("%d",minx);//minx存放的即为答案 return 0;&#125; 但是如果数据范围加大了话。。。其实本题就是把0-1背包中物品的价值与体积画了个等号，于是本题就变成了一道0-1 背包模板题 代码如下：12345678910111213141516#include&lt;bits/stdc++.h&gt;using namespace std;int w[31],f[20010];int main()&#123; int v,n; scanf("%d%d",&amp;v,&amp;n); for(int i=1;i&lt;=n;i++) scanf("%d",&amp;w[i]); for(int i=1;i&lt;=n;i++) for(int j=v;j&gt;=w[i];j--) if(f[j]&lt;f[j-w[i]]+w[i]) f[j]=f[j-w[i]]+w[i];//状态转移方程 printf("%d",v-f[v]);//最后用体积减去最优解 return 0;&#125;]]></content>
+      <tags>
+        <tag>题解</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[题解P1451【求细胞数量】]]></title>
+    <url>%2F2019%2F03%2F10%2F%E9%A2%98%E8%A7%A3P1451%E3%80%90%E6%B1%82%E7%BB%86%E8%83%9E%E6%95%B0%E9%87%8F%E3%80%91%2F</url>
+    <content type="text"><![CDATA[一道可以用dfs做的题目（大佬勿喷）总体思路如下： 1 用一个bool数组存放每个位置是否为细胞数字 2 输入，如果这个数大于0，把这个位置标记为1 3 枚举每一个位置，如果是细胞数字就开始搜，同时答案加1 4 输出 深搜部分： 1 把这个位置标记为0 2 枚举四个方向，如果是细胞数字就从这个位置继续搜 （就是把所有连通的细胞数字都标记为0，周围再也没有细胞数字了就代表一个细胞） 代码如下：123456789101112131415161718192021222324252627282930313233343536373839#include&lt;bits/stdc++.h&gt;using namespace std;int n,m,sum;char s;bool p[110][110];int a[4]=&#123;1,-1,0,0&#125;;//四个方向int b[4]=&#123;0,0,-1,1&#125;;void dfs(int x,int y) &#123; p[x][y]=0;//把这个位置标记为0 for(int i=0;i&lt;4;i++) &#123; int xx=x+a[i]; int yy=y+b[i]; if(p[xx][yy])//如果这个位置是细胞数字，从这个位置开始搜 dfs(xx,yy); &#125;&#125;int main()&#123; scanf("%d%d",&amp;n,&amp;m); for(int i=1;i&lt;=n;i++) for(int j=1;j&lt;=m;j++) &#123; cin&gt;&gt;s; if(s&gt;'0') p[i][j]=1;//是细胞数字标记为1 &#125; for(int i=1;i&lt;=n;i++) for(int j=1;j&lt;=m;j++) &#123; if(p[i][j])//如果是细胞数字开始搜 &#123; sum++; dfs(i,j); &#125; &#125; printf("%d",sum); return 0;&#125;]]></content>
+      <tags>
+        <tag>题解</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[NOIP2018游记]]></title>
     <url>%2F2019%2F03%2F10%2FNOIP2018%E6%B8%B8%E8%AE%B0%2F</url>
     <content type="text"><![CDATA[我才不会告诉你这篇文章是用来测验$LaTeX$的 $Day $ $0$告别期中考，来到福州，与机房的各位大佬去试了一下机，回来的时候互奶着哪位大佬要 $AK$了， 哪位大佬要省一了，晚上不务正业地玩着狼人杀，似乎忘记了此行的目的。 $Day$ $1$早上很早地就起来看一本通了，在宾馆颓了一早上，到了要比赛时才匆匆忙忙地背了一下$DP$ 方程 进入考场，先用了5$min$看了一遍所有题目，发现不简单 先看了一下$T1$，一道十分简单的字符串模拟，花了5$min$就敲完了，怕有坑不知道看了几遍题面。。。 看了一下$T2$，题目叙述比较长，于是先去看了看$T3$，想了一会儿觉得是贪心，于是打了个贪心调了挺久的，把两个小样例过了再去看大样例，发现答案比正确答案少了很多，于是想了很多方法，最终还是没想出来。 又回过头去看$T2$,理解完题面意思后发现是一道模拟，下意识写了个$O(N^{2})$的暴力，发现大数据会卡，脑抽没发现$O(n)$的算法，又去调了一会$T3$ 最后30$min$去看了一眼$T4$，发现是二叉树，但是没学过，直接输出0想骗些分 比赛结束，预计得分:$100+80+30+10=220$ 赛后去你谷测了一下民间数据，发现得分比预期的高，$100+80+30+20=230$ 用老师的数据也测了一下，$210$也还好 最后CCF的官方成绩出来了，发现才$100+80+10+4=194$分，原来$T3$的正解是$DP$，发现如果在原来的贪心上再改动一点应该可以过更多的数据的 最后$FJ$的分数线出来了——$195$，$194$的我当场崩溃$QwQ$ 第一次参加$NOIP$就带着差一分省一的遗憾结束了，不过反正我才初一还有很多机会对吧]]></content>
