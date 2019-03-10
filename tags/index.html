@@ -428,10 +428,6 @@
           
 
   
-    <div class="comments" id="comments">
-    </div>
-
-  
 
 
 
@@ -774,32 +770,6 @@
 
 
 
-
-  
-  
-  
-  
-  <script src="//cdn1.lncld.net/static/js/3.11.1/av-min.js"></script>
-  <script src="//unpkg.com/valine/dist/Valine.min.js"></script>
-  <script>
-    var GUEST = ['nick','mail','link'];
-    var guest = 'nick,mail';
-    guest = guest.split(',').filter(function (item) {
-      return GUEST.indexOf(item) > -1;
-    });
-    new Valine({
-      el: '#comments' ,
-      verify: false,
-      notify: false,
-      appId: 'zNa9qCTlS25qYCldMjw8UjWt-gzGzoHsz',
-      appKey: '0I6Us3hEimUuORHluVHFPeaL# your leancloud application appkey',
-      placeholder: 'Just go go',
-      avatar: 'wavater',
-      meta:guest,
-      pageSize: '10' || 10,
-      visitor: false
-    });
-  </script>
 
 
 
