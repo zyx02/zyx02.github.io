@@ -9,7 +9,7 @@ function initWidget(waifuPath, apiPath) {
 	sessionStorage.removeItem("waifu-text");
 	$("body").append(`<div id="waifu">
 			<div id="waifu-tips"></div>
-			<canvas id="live2d" width="300" height="300"></canvas>
+			<canvas id="live2d" width="200" height="200"></canvas>
 			<div id="waifu-tool">
 				<span class="fa fa-lg fa-comment"></span>
 				<span class="fa fa-lg fa-paper-plane"></span>
