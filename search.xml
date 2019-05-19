@@ -1,14 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title><![CDATA[A+B problem]]></title>
-    <url>%2F2019%2F05%2F19%2FA-B-problem%2F</url>
-    <content type="text"><![CDATA[纪念博客的诞生QwQ123456789#include&lt;bits/stdc++.h&gt;using namespace std;int main()&#123; int a,b; cin &gt;&gt; a &gt;&gt; b; cout &lt;&lt; a+b; return 0;&#125;]]></content>
-      <tags>
-        <tag>C++</tag>
-      </tags>
-  </entry>
-  <entry>
     <title><![CDATA[题解 CF17A 【Noldbach problem】]]></title>
     <url>%2F2019%2F04%2F18%2F%E9%A2%98%E8%A7%A3-CF17A-%E3%80%90Noldbach-problem%E3%80%91%2F</url>
     <content type="text"><![CDATA[题目要求的是一个素数与它相邻的素数之和$+1$为素数（注意这个素数要$\le n$） 思路： 预处理$2$~$n$的素数 暴力枚举 Code1234567891011121314151617181920212223242526272829303132#include&lt;bits/stdc++.h&gt;using namespace std;int p[1010],len,n,sum,k;bool prime(int num)//素数判断&#123; if(num&lt;2) return 0; if(num==2 or num==3) return 1; if(num%6!=5 and num%6!=1) return 0; for(int i=5;i*i&lt;=num;i+=6) &#123; if(num%i==0 or num%(i+2)==0) return 0; &#125; return 1;&#125;int main()&#123; ios::sync_with_stdio(false); cin&gt;&gt;n&gt;&gt;k; for(int i=2;i&lt;=n;i++)//预处理 &#123; if(prime(i)) p[++len]=i; &#125; for(int i=2;i&lt;=len;i++)//枚举 &#123; if(prime(p[i-1]+p[i]+1) and p[i-1]+p[i]+1&lt;=n) sum++; &#125; cout&lt;&lt;(sum&gt;=k?"YES":"NO");//相当于if(sum&gt;=k) cout&lt;&lt;"YES";else cout&lt;&lt;"NO"; return 0;&#125; 用时：$1024ms$ 我们可以在原来的程序做一些小小的优化 对枚举部分，我们加入一个边界条件 $p[i-1]+p[i] \le n$（$p[i]$为素数） Code1234567891011121314151617181920212223242526272829303132#include&lt;bits/stdc++.h&gt;using namespace std;int p[1010],len,n,sum,k;bool prime(int num)&#123; if(num&lt;2) return 0; if(num==2 or num==3) return 1; if(num%6!=5 and num%6!=1) return 0; for(int i=5;i*i&lt;=num;i+=6) &#123; if(num%i==0 or num%(i+2)==0) return 0; &#125; return 1;&#125;int main()&#123; ios::sync_with_stdio(false); cin&gt;&gt;n&gt;&gt;k; for(int i=2;i&lt;=n;i++) &#123; if(prime(i)) p[++len]=i; &#125; for(int i=2;i&lt;=len and p[i-1]+p[i]+1&lt;=n;i++)//边界条件 &#123; if(prime(p[i-1]+p[i]+1)) sum++; &#125; cout&lt;&lt;(sum&gt;=k?"YES":"NO"); return 0;&#125; 用时：$994ms$ （$emmm$才快了$30ms$）]]></content>
@@ -109,8 +101,8 @@
     <content type="text"><![CDATA[1.什么是set 和 set的好处$set$的翻译为集合，是一个内部自动有序且不含重复元素(即满足集合的互异性)的$STL$容器，其内部采用“红黑树”实现。 什么是集合？点这 $set$的好处在于自动完成去重和按升序排序 2.举个栗子比如这题 1.普通作法看到数据范围这么水肯定想到用桶排 Code12345678910111213141516171819#include&lt;bits/stdc++.h&gt;using namespace std;int main()&#123; int b[1001],n,i,j,m=0,x; memset(b,0,sizeof(b)); cin&gt;&gt;n; for(i=1;i&lt;=n;i++) &#123; cin&gt;&gt;x; if(b[x]==0) m++; b[x]++; &#125; cout&lt;&lt;m&lt;&lt;endl; for(i=0;i&lt;=1000;i++) if(b[i]&gt;0) cout&lt;&lt;i&lt;&lt;" "; cout&lt;&lt;endl; return 0;&#125; 2.set如果你会了$set$，这道题就可以这么打 Code1234567891011121314151617181920#include&lt;bits/stdc++.h&gt;using namespace std;int n;set&lt;int&gt; st;int main()&#123; scanf("%d",&amp;n); for(int i=1;i&lt;=n;i++) &#123; int x; scanf("%d",&amp;x); st.insert(x); &#125; printf("%d\n",st.size()); for(set&lt;int&gt;::iterator it= st.begin(); it!=st.end(); it++) &#123; printf("%d ",*it); &#125; return 0;&#125; 如果数据范围大了话，明显不能用桶排解决，这时候$set$的好处就可以体现出来。 领会了$set$的好处之后，接下来让我们了解 3.set的定义使用$set$之前，必须添加$set$头文件，即1#include&lt;set&gt; 也可以打好我们的$bits/stdc++.h$ 同时必须要有 1using namespace std; 定义一个$set$的方法： 1set&lt;typename&gt; name; 其中$typename$为任何基本类型或者容器，$name$为这个集合的名字 同时$set$也支持定义数组，如: 1set&lt;typename&gt; name[MAXN] 即定义了$MAXN$个$set$容器 4.set的访问一大坑点是$set$只能通过迭代器访问 1.定义一个迭代器1set&lt;typename&gt;::iterator it; 即定义一个名为$it$的迭代器 2.通过迭代器访问注意事项： 1 $set$不支持类似*$(it+i)$的访问 2 $set$也不支持$it&lt;name.end()$这种访问 我们需要使用*$it$来访问$set$中的元素 5.set的常用函数1.insert()1.作用$insert()$用来插入一个数到$set$中，并自动排序+去重 2.时间复杂度$O(log_{2}n)$ 3.用法例如，以下一段代码输出$1$ $2$ $3 $ 123456for(int i=3;i&gt;=1;i--) a.insert(i);a.insert(1);for(set&lt;int&gt;::iterator it=a.begin();it!=a.end();it++)&#123; cout&lt;&lt;*it&lt;&lt;" ";&#125; 2.begin()和end()1.作用分别用来获取$set$容器的首地址和尾地址 用法跟其他$STL$容器一样这里不再赘述 3.size()1.作用用于获取$set$容器中元素的个数 2.时间复杂度$O(1)$ 3.用法例如，以下一段代码输出$3$ 123for(int i=3;i&gt;=1;i--) a.insert(i);a.insert(1);cout&lt;&lt;a.size(); 4.clear()1.作用用于清空$set$容器中的所有元素 2.时间复杂度$O(n)$ ($n$为$set$中的元素个数) 3.用法例如，以下一段代码输出$1$ 1234for(int i=3;i&gt;=1;i--) a.insert(i);a.clear();a.insert(1);cout&lt;&lt;a.size(); 5.erase()1.作用可以用来删除单个元素也可以用来删除一段区间的元素 1.删除单个元素 1.时间复杂度$O(1)$ (使用迭代器) $O(log_{2}n)$ (使用欲删除元素的值) 2.用法1.$erase(it)$ $it$为欲删除的元素的迭代器 例如，以下一段代码输出$2$ $3$ 123456for(int i=3;i&gt;=1;i--) a.insert(i);a.erase(a.begin());for(set&lt;int&gt;::iterator it=a.begin();it!=a.end();it++)&#123; cout&lt;&lt;*it&lt;&lt;" ";&#125; 2.$erase(value)$ $value$为欲删除元素的值 例如以下一段代码输出$1$ $3$ 123456for(int i=3;i&gt;=1;i--) a.insert(i);a.erase(2);for(set&lt;int&gt;::iterator it=a.begin();it!=a.end();it++)&#123; cout&lt;&lt;*it&lt;&lt;" ";&#125; 2.删除一个区间的元素 1.时间复杂度$O(right-left)$ $(左闭右开区间[left,right))$ 2.用法$erase(left,right)$用来删除左闭右开区间[$left$,$right$)之间的元素 例如，以下一段代码输出$1$ 1234567for(int i=5;i&gt;=1;i--) a.insert(i);set&lt;int&gt;::iterator it=a.find(2);a.erase(it,a.end());for(set&lt;int&gt;::iterator it=a.begin();it!=a.end();it++)&#123; cout&lt;&lt;*it&lt;&lt;" ";&#125; 6.find()1.作用返回元素在$set$中的迭代器 2.时间复杂度$O(log_{2}n)$ ($n$为$set$中的元素个数) 3.用法例如，以下一段代码输出$2$ 12for(int i=5;i&gt;=1;i--) a.insert(i);cout&lt;&lt;*a.find(2); 6.推荐例题 1 洛谷P1059 明明的随机数 之后还会继续放上]]></content>
       <tags>
         <tag>C++</tag>
-        <tag>学习笔记</tag>
         <tag>set</tag>
+        <tag>学习笔记</tag>
       </tags>
   </entry>
   <entry>
@@ -302,6 +294,14 @@
       <tags>
         <tag>NOIP</tag>
         <tag>游记</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[A+B problem]]></title>
+    <url>%2F2019%2F03%2F09%2FA-B-problem%2F</url>
+    <content type="text"><![CDATA[纪念博客的诞生QwQ123456789#include&lt;bits/stdc++.h&gt;using namespace std;int main()&#123; int a,b; cin &gt;&gt; a &gt;&gt; b; cout &lt;&lt; a+b; return 0;&#125;]]></content>
+      <tags>
+        <tag>C++</tag>
       </tags>
   </entry>
 </search>
