@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://zyx02.github.io/"/>
-  <updated>2019-05-19T09:04:59.821Z</updated>
+  <updated>2019-05-19T09:18:45.792Z</updated>
   <id>http://zyx02.github.io/</id>
   
   <author>
@@ -21,7 +21,7 @@
     <link href="http://zyx02.github.io/2019/05/19/%E9%A2%98%E8%A7%A3-CF1152A-%E3%80%90Neko-Finds-Grapes%E3%80%91/"/>
     <id>http://zyx02.github.io/2019/05/19/题解-CF1152A-【Neko-Finds-Grapes】/</id>
     <published>2019-05-19T09:03:30.000Z</published>
-    <updated>2019-05-19T09:04:59.821Z</updated>
+    <updated>2019-05-19T09:18:45.792Z</updated>
     
     <content type="html"><![CDATA[<p>题目大意：</p><p>给出两组数，求两组中的两数之和为奇数的组数（不可重复选取）</p><p>思路：</p><p>我们知道奇数+偶数=奇数</p><p>所以先统计两组中奇数出现的个数和偶数出现的个数</p><p>将第一组数中奇数出现的个数与第二组中偶数进行配对，即取$min(lenji1,lenou2)$ </p><p>再将将第一组数中偶数出现的个数与第二组中奇数进行配对，即取$min(lenou1,lenji2)$</p><p>两个结果相加即可</p><p>Code</p><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;bits/stdc++.h&gt;</span></span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> <span class="built_in">std</span>;</span><br><span class="line"><span class="keyword">int</span> lenji1,lenji2,lenou1,lenou2;<span class="comment">//分别表示第一组数中奇数个数、第二组数中奇数个数、第一组数中偶数个数、第二组中偶数个数</span></span><br><span class="line"><span class="keyword">int</span> n,m;</span><br><span class="line"><span class="keyword">int</span> a,b;</span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">ios::sync_with_stdio(<span class="literal">false</span>);</span><br><span class="line"><span class="built_in">cin</span>&gt;&gt;n&gt;&gt;m;</span><br><span class="line"><span class="keyword">for</span>(<span class="keyword">int</span> i=<span class="number">1</span>;i&lt;=n;i++)<span class="comment">//统计</span></span><br><span class="line">&#123;</span><br><span class="line"><span class="built_in">cin</span>&gt;&gt;a;</span><br><span class="line">a%<span class="number">2</span>==<span class="number">1</span>?lenji1++:lenou1++;</span><br><span class="line">&#125;</span><br><span class="line"><span class="keyword">for</span>(<span class="keyword">int</span> i=<span class="number">1</span>;i&lt;=m;i++)</span><br><span class="line">&#123;</span><br><span class="line"><span class="built_in">cin</span>&gt;&gt;b;</span><br><span class="line">b%<span class="number">2</span>==<span class="number">1</span>?lenji2++:lenou2++;</span><br><span class="line">&#125;</span><br><span class="line"><span class="built_in">cout</span>&lt;&lt;min(lenji1,lenou2)+min(lenji2,lenou1);<span class="comment">//取min相加</span></span><br><span class="line"><span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>]]></content>
     
@@ -40,7 +40,11 @@
     </summary>
     
     
+      <category term="C++" scheme="http://zyx02.github.io/tags/C/"/>
+    
       <category term="洛谷" scheme="http://zyx02.github.io/tags/%E6%B4%9B%E8%B0%B7/"/>
+    
+      <category term="题解" scheme="http://zyx02.github.io/tags/%E9%A2%98%E8%A7%A3/"/>
     
       <category term="CodeForces" scheme="http://zyx02.github.io/tags/CodeForces/"/>
     
@@ -77,9 +81,9 @@
     
       <category term="C++" scheme="http://zyx02.github.io/tags/C/"/>
     
-      <category term="题解" scheme="http://zyx02.github.io/tags/%E9%A2%98%E8%A7%A3/"/>
-    
       <category term="洛谷" scheme="http://zyx02.github.io/tags/%E6%B4%9B%E8%B0%B7/"/>
+    
+      <category term="题解" scheme="http://zyx02.github.io/tags/%E9%A2%98%E8%A7%A3/"/>
     
       <category term="CodeForces" scheme="http://zyx02.github.io/tags/CodeForces/"/>
     
@@ -121,9 +125,9 @@
     
       <category term="字符串" scheme="http://zyx02.github.io/tags/%E5%AD%97%E7%AC%A6%E4%B8%B2/"/>
     
-      <category term="题解" scheme="http://zyx02.github.io/tags/%E9%A2%98%E8%A7%A3/"/>
-    
       <category term="洛谷" scheme="http://zyx02.github.io/tags/%E6%B4%9B%E8%B0%B7/"/>
+    
+      <category term="题解" scheme="http://zyx02.github.io/tags/%E9%A2%98%E8%A7%A3/"/>
     
       <category term="模拟" scheme="http://zyx02.github.io/tags/%E6%A8%A1%E6%8B%9F/"/>
     
@@ -181,9 +185,9 @@
     
       <category term="C++" scheme="http://zyx02.github.io/tags/C/"/>
     
-      <category term="题解" scheme="http://zyx02.github.io/tags/%E9%A2%98%E8%A7%A3/"/>
-    
       <category term="洛谷" scheme="http://zyx02.github.io/tags/%E6%B4%9B%E8%B0%B7/"/>
+    
+      <category term="题解" scheme="http://zyx02.github.io/tags/%E9%A2%98%E8%A7%A3/"/>
     
       <category term="CodeForces" scheme="http://zyx02.github.io/tags/CodeForces/"/>
     
@@ -215,9 +219,9 @@
     
       <category term="C++" scheme="http://zyx02.github.io/tags/C/"/>
     
-      <category term="题解" scheme="http://zyx02.github.io/tags/%E9%A2%98%E8%A7%A3/"/>
-    
       <category term="洛谷" scheme="http://zyx02.github.io/tags/%E6%B4%9B%E8%B0%B7/"/>
+    
+      <category term="题解" scheme="http://zyx02.github.io/tags/%E9%A2%98%E8%A7%A3/"/>
     
       <category term="CodeForces" scheme="http://zyx02.github.io/tags/CodeForces/"/>
     
@@ -254,9 +258,9 @@
     
       <category term="字符串" scheme="http://zyx02.github.io/tags/%E5%AD%97%E7%AC%A6%E4%B8%B2/"/>
     
-      <category term="题解" scheme="http://zyx02.github.io/tags/%E9%A2%98%E8%A7%A3/"/>
-    
       <category term="洛谷" scheme="http://zyx02.github.io/tags/%E6%B4%9B%E8%B0%B7/"/>
+    
+      <category term="题解" scheme="http://zyx02.github.io/tags/%E9%A2%98%E8%A7%A3/"/>
     
       <category term="模拟" scheme="http://zyx02.github.io/tags/%E6%A8%A1%E6%8B%9F/"/>
     
@@ -289,9 +293,9 @@
     
       <category term="C++" scheme="http://zyx02.github.io/tags/C/"/>
     
-      <category term="题解" scheme="http://zyx02.github.io/tags/%E9%A2%98%E8%A7%A3/"/>
-    
       <category term="洛谷" scheme="http://zyx02.github.io/tags/%E6%B4%9B%E8%B0%B7/"/>
+    
+      <category term="题解" scheme="http://zyx02.github.io/tags/%E9%A2%98%E8%A7%A3/"/>
     
       <category term="动态规划（dp）" scheme="http://zyx02.github.io/tags/%E5%8A%A8%E6%80%81%E8%A7%84%E5%88%92%EF%BC%88dp%EF%BC%89/"/>
     
@@ -322,9 +326,9 @@
     
       <category term="C++" scheme="http://zyx02.github.io/tags/C/"/>
     
-      <category term="题解" scheme="http://zyx02.github.io/tags/%E9%A2%98%E8%A7%A3/"/>
-    
       <category term="洛谷" scheme="http://zyx02.github.io/tags/%E6%B4%9B%E8%B0%B7/"/>
+    
+      <category term="题解" scheme="http://zyx02.github.io/tags/%E9%A2%98%E8%A7%A3/"/>
     
       <category term="CodeForces" scheme="http://zyx02.github.io/tags/CodeForces/"/>
     
@@ -440,9 +444,9 @@
     
       <category term="C++" scheme="http://zyx02.github.io/tags/C/"/>
     
-      <category term="题解" scheme="http://zyx02.github.io/tags/%E9%A2%98%E8%A7%A3/"/>
-    
       <category term="洛谷" scheme="http://zyx02.github.io/tags/%E6%B4%9B%E8%B0%B7/"/>
+    
+      <category term="题解" scheme="http://zyx02.github.io/tags/%E9%A2%98%E8%A7%A3/"/>
     
       <category term="CodeForces" scheme="http://zyx02.github.io/tags/CodeForces/"/>
     
@@ -500,9 +504,9 @@
     
       <category term="C++" scheme="http://zyx02.github.io/tags/C/"/>
     
-      <category term="题解" scheme="http://zyx02.github.io/tags/%E9%A2%98%E8%A7%A3/"/>
-    
       <category term="洛谷" scheme="http://zyx02.github.io/tags/%E6%B4%9B%E8%B0%B7/"/>
+    
+      <category term="题解" scheme="http://zyx02.github.io/tags/%E9%A2%98%E8%A7%A3/"/>
     
       <category term="模拟" scheme="http://zyx02.github.io/tags/%E6%A8%A1%E6%8B%9F/"/>
     
@@ -531,9 +535,9 @@
     
       <category term="字符串" scheme="http://zyx02.github.io/tags/%E5%AD%97%E7%AC%A6%E4%B8%B2/"/>
     
-      <category term="题解" scheme="http://zyx02.github.io/tags/%E9%A2%98%E8%A7%A3/"/>
-    
       <category term="洛谷" scheme="http://zyx02.github.io/tags/%E6%B4%9B%E8%B0%B7/"/>
+    
+      <category term="题解" scheme="http://zyx02.github.io/tags/%E9%A2%98%E8%A7%A3/"/>
     
       <category term="模拟" scheme="http://zyx02.github.io/tags/%E6%A8%A1%E6%8B%9F/"/>
     
@@ -619,9 +623,9 @@
     
       <category term="C++" scheme="http://zyx02.github.io/tags/C/"/>
     
-      <category term="题解" scheme="http://zyx02.github.io/tags/%E9%A2%98%E8%A7%A3/"/>
-    
       <category term="洛谷" scheme="http://zyx02.github.io/tags/%E6%B4%9B%E8%B0%B7/"/>
+    
+      <category term="题解" scheme="http://zyx02.github.io/tags/%E9%A2%98%E8%A7%A3/"/>
     
       <category term="CodeForces" scheme="http://zyx02.github.io/tags/CodeForces/"/>
     
@@ -655,9 +659,9 @@
     
       <category term="字符串" scheme="http://zyx02.github.io/tags/%E5%AD%97%E7%AC%A6%E4%B8%B2/"/>
     
-      <category term="题解" scheme="http://zyx02.github.io/tags/%E9%A2%98%E8%A7%A3/"/>
-    
       <category term="洛谷" scheme="http://zyx02.github.io/tags/%E6%B4%9B%E8%B0%B7/"/>
+    
+      <category term="题解" scheme="http://zyx02.github.io/tags/%E9%A2%98%E8%A7%A3/"/>
     
       <category term="模拟" scheme="http://zyx02.github.io/tags/%E6%A8%A1%E6%8B%9F/"/>
     
