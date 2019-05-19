@@ -1,16 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title><![CDATA[hello]]></title>
-    <url>%2F2019%2F05%2F19%2Fhello%2F</url>
-    <content type="text"><![CDATA[hi]]></content>
-  </entry>
-  <entry>
-    <title><![CDATA[Hello World]]></title>
-    <url>%2F2019%2F05%2F19%2Fhello-world%2F</url>
-    <content type="text"><![CDATA[Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. Quick StartCreate a new post1$ hexo new "My New Post" More info: Writing Run server1$ hexo server More info: Server Generate static files1$ hexo generate More info: Generating Deploy to remote sites1$ hexo deploy More info: Deployment]]></content>
-  </entry>
-  <entry>
     <title><![CDATA[A+B problem]]></title>
     <url>%2F2019%2F05%2F19%2FA-B-problem%2F</url>
     <content type="text"><![CDATA[纪念博客的诞生QwQ123456789#include&lt;bits/stdc++.h&gt;using namespace std;int main()&#123; int a,b; cin &gt;&gt; a &gt;&gt; b; cout &lt;&lt; a+b; return 0;&#125;]]></content>
@@ -24,8 +14,8 @@
     <content type="text"><![CDATA[题目要求的是一个素数与它相邻的素数之和$+1$为素数（注意这个素数要$\le n$） 思路： 预处理$2$~$n$的素数 暴力枚举 Code1234567891011121314151617181920212223242526272829303132#include&lt;bits/stdc++.h&gt;using namespace std;int p[1010],len,n,sum,k;bool prime(int num)//素数判断&#123; if(num&lt;2) return 0; if(num==2 or num==3) return 1; if(num%6!=5 and num%6!=1) return 0; for(int i=5;i*i&lt;=num;i+=6) &#123; if(num%i==0 or num%(i+2)==0) return 0; &#125; return 1;&#125;int main()&#123; ios::sync_with_stdio(false); cin&gt;&gt;n&gt;&gt;k; for(int i=2;i&lt;=n;i++)//预处理 &#123; if(prime(i)) p[++len]=i; &#125; for(int i=2;i&lt;=len;i++)//枚举 &#123; if(prime(p[i-1]+p[i]+1) and p[i-1]+p[i]+1&lt;=n) sum++; &#125; cout&lt;&lt;(sum&gt;=k?"YES":"NO");//相当于if(sum&gt;=k) cout&lt;&lt;"YES";else cout&lt;&lt;"NO"; return 0;&#125; 用时：$1024ms$ 我们可以在原来的程序做一些小小的优化 对枚举部分，我们加入一个边界条件 $p[i-1]+p[i] \le n$（$p[i]$为素数） Code1234567891011121314151617181920212223242526272829303132#include&lt;bits/stdc++.h&gt;using namespace std;int p[1010],len,n,sum,k;bool prime(int num)&#123; if(num&lt;2) return 0; if(num==2 or num==3) return 1; if(num%6!=5 and num%6!=1) return 0; for(int i=5;i*i&lt;=num;i+=6) &#123; if(num%i==0 or num%(i+2)==0) return 0; &#125; return 1;&#125;int main()&#123; ios::sync_with_stdio(false); cin&gt;&gt;n&gt;&gt;k; for(int i=2;i&lt;=n;i++) &#123; if(prime(i)) p[++len]=i; &#125; for(int i=2;i&lt;=len and p[i-1]+p[i]+1&lt;=n;i++)//边界条件 &#123; if(prime(p[i-1]+p[i]+1)) sum++; &#125; cout&lt;&lt;(sum&gt;=k?"YES":"NO"); return 0;&#125; 用时：$994ms$ （$emmm$才快了$30ms$）]]></content>
       <tags>
         <tag>C++</tag>
-        <tag>题解</tag>
         <tag>洛谷</tag>
+        <tag>题解</tag>
         <tag>CodeForces</tag>
         <tag>数论,数学</tag>
         <tag>素数</tag>
@@ -38,8 +28,8 @@
       <tags>
         <tag>C++</tag>
         <tag>字符串</tag>
-        <tag>题解</tag>
         <tag>洛谷</tag>
+        <tag>题解</tag>
         <tag>模拟</tag>
         <tag>CodeForces</tag>
       </tags>
@@ -58,8 +48,8 @@
     <content type="text"><![CDATA[题目大意： 你需要买$n$升水，现在有两种规格的水瓶：1升水的和2升水的，现给出1升水和2升水水瓶的单价，求最少需要花费多少钱。有$q$个询问。 思路：贪心 要使总花费最小，我们需要尽量多选取性价比高的规格。 Code123456789101112131415161718192021#include&lt;bits/stdc++.h&gt;using namespace std;int q;long long n,a,b;//注意要开long longint main()&#123; cin&gt;&gt;q; for(int i=1;i&lt;=q;i++) &#123; cin&gt;&gt;n&gt;&gt;a&gt;&gt;b; if(a*2&lt;=b)//买1升的性价比高于买2升的性价比 &#123; cout&lt;&lt;n*a&lt;&lt;endl; &#125; else &#123; cout&lt;&lt;n/2*b+(n-n/2*2)*a&lt;&lt;endl;//题目要求的是刚好购买n升，所以不足2升的要买1升的补齐 &#125; &#125; return 0;&#125;]]></content>
       <tags>
         <tag>C++</tag>
-        <tag>题解</tag>
         <tag>洛谷</tag>
+        <tag>题解</tag>
         <tag>CodeForces</tag>
         <tag>贪心</tag>
       </tags>
@@ -70,8 +60,8 @@
     <content type="text"><![CDATA[这题的基本思想就是贪心吧 题目就是让你两两分组，使得每组能力值的差值最小 设$a{1},a{2},···,a_{n}$表示每个学生的能力值 且满足：$a{1} \le a{2} \le ··· \le a_{n}$ 则对于任意一个能力值$a{i}$，它的最优匹配为$a{i+1}$（$i$为奇数） 考虑到$a{1}$，我们不取$a{i-1}$（你想想$a_{1-1}$是什么） 假设存在一个能力值$a{k}$ ($k&gt; i+1$)，使得$a{k}-a{i}&lt; a{i+1}-a_{i}$ 即: $a{k}&lt;a{i+1}$ ∵ $a{i+1}&lt;a{k}$ ∴ 不存在这样的$k$ Code1234567891011121314151617#include&lt;bits/stdc++.h&gt;using namespace std;int n;int a[110],ans; int main()&#123; ios::sync_with_stdio(false); cin&gt;&gt;n; for(int i=1;i&lt;=n;i++) cin&gt;&gt;a[i]; sort(a+1,a+n+1);//要先排序 for(int i=1;i&lt;=n;i+=2) //i要为奇数 &#123; ans+=a[i+1]-a[i];//答案加上两个能力值的差 &#125; cout&lt;&lt;ans; return 0;&#125;]]></content>
       <tags>
         <tag>C++</tag>
-        <tag>题解</tag>
         <tag>洛谷</tag>
+        <tag>题解</tag>
         <tag>CodeForces</tag>
         <tag>贪心</tag>
       </tags>
@@ -83,8 +73,8 @@
       <tags>
         <tag>C++</tag>
         <tag>字符串</tag>
-        <tag>题解</tag>
         <tag>洛谷</tag>
+        <tag>题解</tag>
         <tag>模拟</tag>
         <tag>CodeForces</tag>
       </tags>
@@ -95,8 +85,8 @@
     <content type="text"><![CDATA[一道01背包模板题吧。。。其实就是再增加了一个体积参数 状态转移方程： $F{j,k}=max(F{j-v{i},k-g{i}}+t{i},F{j,k})$ Code 123456789101112131415161718#include&lt;bits/stdc++.h&gt;using namespace std;int V,G,n;//V和G为最大体积和重量int t[510],v[510],g[510];int f[510][510];int main()&#123; ios::sync_with_stdio(false); cin&gt;&gt;V&gt;&gt;G; cin&gt;&gt;n; for(int i=1;i&lt;=n;i++) cin&gt;&gt;t[i]&gt;&gt;v[i]&gt;&gt;g[i]; for(int i=1;i&lt;=n;i++) for(int j=V;j&gt;=v[i];j--) for(int k=G;k&gt;=g[i];k--) f[j][k]=max(f[j-v[i]][k-g[i]]+t[i],f[j][k]);//状态转移方程 cout&lt;&lt;f[V][G];//f[V][G]即为答案 return 0;&#125;]]></content>
       <tags>
         <tag>C++</tag>
-        <tag>题解</tag>
         <tag>洛谷</tag>
+        <tag>题解</tag>
         <tag>动态规划（dp）</tag>
         <tag>背包</tag>
       </tags>
@@ -107,8 +97,8 @@
     <content type="text"><![CDATA[一看数据范围， $1 \le n \le 100 $，此时不枚举更待何时？（雾） 注意获胜是指小$A$的票数大于小$B$的票数，而不是大于等于。（原谅作者语文不好$qwq$） Code12345678910111213141516171819202122232425262728#include&lt;bits/stdc++.h&gt;using namespace std;int n;int a[110];int sum1,sum2;bool comp(int a,int b)//自定义排序函数，从大到小排&#123; return a&gt;b;&#125;int main()&#123; ios::sync_with_stdio(false); cin&gt;&gt;n; for(int i=1;i&lt;=n;i++) cin&gt;&gt;a[i],sum1+=a[i];//预处理小B的票数 sort(a+1,a+n+1,comp);//因为k&gt;=max&#123;ai&#125;，所以考虑先排序 for(int k=a[1];;k++) &#123; sum2=0;//一定要初始化！ for(int i=1;i&lt;=n;i++) sum2+=k-a[i];//每个人投给小A的票数就是每个人可以投的票数减去每个人投给小B的票数 if(sum2&gt;sum1)//是&gt;不是&gt;= &#123; cout&lt;&lt;k; return 0; &#125; &#125; return 0;&#125; 观察一下代码，我们发现可以在求小$A$的票数部分做一些小小的优化 观察可以发现，$sum2$=$\sum{i=1}^{n}(k-a{i})$ 原式 $=$ $k\times n-\sum{i=1}^{n}a{i}$ $=$ $k\times n-sum1$ 于是在求小$A$的票数部分可以优化到$O(1)$复杂度 Code1234567891011121314151617181920212223242526#include&lt;bits/stdc++.h&gt;using namespace std;int n;int a[110];int sum1,sum2;bool comp(int a,int b)&#123; return a&gt;b;&#125;int main()&#123; ios::sync_with_stdio(false); cin&gt;&gt;n; for(int i=1;i&lt;=n;i++) cin&gt;&gt;a[i],sum1+=a[i]; sort(a+1,a+n+1,comp); for(int k=a[1];;k++) &#123; sum2=k*n-sum1;//求小A的票数，当然你也可以不用再设一个变量直接比较 if(sum2&gt;sum1) &#123; cout&lt;&lt;k; return 0; &#125; &#125; return 0;&#125; 接下来我们再观察一下这个程序，我们发现，这个程序其实就要求最小的$k$，使得$k$满足$k\times n-sum1&gt;sum1$ 这不就是一个不等式吗 移项： $k\times n&gt;2\times sum1$ 系数化一: $k&gt;2\times sum1 /n$ 于是在求答案的部分就可以优化到$O(1)$复杂度 12345678910111213141516171819#include&lt;bits/stdc++.h&gt;using namespace std;int n;int a[110];int sum1;bool comp(int a,int b)&#123; return a&gt;b;&#125;int main()&#123; ios::sync_with_stdio(false); cin&gt;&gt;n; for(int i=1;i&lt;=n;i++) cin&gt;&gt;a[i],sum1+=a[i]; sort(a+1,a+n+1,comp); if(2*sum1/n+1&lt;a[1]) cout&lt;&lt;a[1];//因为k要&gt;=max a[i]，所以如果2*sum/n+1&lt;a[1]要输出a[1] else cout&lt;&lt;2*sum1/n+1; return 0;&#125;]]></content>
       <tags>
         <tag>C++</tag>
-        <tag>题解</tag>
         <tag>洛谷</tag>
+        <tag>题解</tag>
         <tag>CodeForces</tag>
         <tag>枚举</tag>
       </tags>
@@ -148,8 +138,8 @@
     <content type="text"><![CDATA[本萌新来介绍一种$dfs$思路： 1 如果件数已经$=$3，那么判断，如果符合条件，则更新答案 2 如果件数$&lt;$3，那么枚举$1$~$n$,如果该件衣服没被取过，则标记为已取并$dfs$下一件 Code123456789101112131415161718192021222324252627282930313233343536373839404142434445464748#include&lt;bits/stdc++.h&gt;using namespace std; int n,m,money[110],minx=INT_MAX;bool p[110][110],f,use[110];int s[5];bool comp()//判断是否符合条件&#123; if(p[s[1]][s[2]] and p[s[1]][s[3]] and p[s[2]][s[3]]) return 1; return 0;&#125;void dfs(int t,int sum)&#123; if(t&gt;3)//件数&gt;3判断 &#123; if(comp()) &#123; f=1;//标记为有方案 minx=min(minx,sum); &#125; return; &#125; for(int i=1;i&lt;=n;i++) &#123; if(!use[i])//该件衣服没被取过 &#123; s[t]=i;//保存答案编号用于之后判断 use[i]=1;//标记为已取 dfs(t+1,sum+money[i]); use[i]=0;//回溯 &#125; &#125;&#125;int main()&#123; cin&gt;&gt;n&gt;&gt;m; for(int i=1;i&lt;=n;i++) cin&gt;&gt;money[i]; for(int i=1;i&lt;=m;i++) &#123; int x,y; cin&gt;&gt;x&gt;&gt;y; p[x][y]=1;//建有向图 p[y][x]=1; &#125; dfs(1,0); if(f) cout&lt;&lt;minx; else cout&lt;&lt;"-1"; return 0;&#125;]]></content>
       <tags>
         <tag>C++</tag>
-        <tag>题解</tag>
         <tag>洛谷</tag>
+        <tag>题解</tag>
         <tag>CodeForces</tag>
         <tag>深度优先搜索（dfs）</tag>
       </tags>
@@ -170,8 +160,8 @@
     <content type="text"><![CDATA[三年OI一场空，不开long long 见祖宗 一道模拟题，具体解释在代码里： Code1234567891011121314151617181920212223242526272829303132333435363738394041424344454647484950515253545556#include&lt;bits/stdc++.h&gt;using namespace std;int t,n,l,r,x,k;long long dang,zhuan;//一定要开long long !!!long long ans;int main()&#123;// freopen("1.out","w",stdout); scanf("%d%d%d%d%d%d",&amp;t,&amp;n,&amp;l,&amp;r,&amp;x,&amp;k); zhuan=l;//zhuan存放转速 dang=1;//dang存放档位 int flag=0; for(int i=1;i&lt;=t;i++) &#123; int xx,yy; scanf("%d%d",&amp;xx,&amp;yy); if(xx==0)//升档 &#123; if(dang==n) //如果dang已经到达了n，那么是非法序列 &#123; cout&lt;&lt;"-1"; return 0; &#125; dang++; zhuan=l;//转速调整为l &#125; if(xx==1)//降档 &#123; if(dang==1) //如果dang是1，那么是非法序列 &#123; cout&lt;&lt;"-1"; return 0; &#125; dang--; zhuan=r;//转速调整为r &#125; if(yy==1)//踩油门 &#123; zhuan+=x;//转速加上x if(zhuan&gt;r) zhuan=r;//对r取min &#125; ans+=zhuan*dang //一定要在发动机有没有爆炸前加 if(zhuan==r) &#123; flag++; if(flag==k)//爆炸 &#123; cout&lt;&lt;ans; return 0; &#125; &#125; else flag=0; &#125; printf("%lld",ans); return 0;&#125;]]></content>
       <tags>
         <tag>C++</tag>
-        <tag>题解</tag>
         <tag>洛谷</tag>
+        <tag>题解</tag>
         <tag>模拟</tag>
       </tags>
   </entry>
@@ -182,8 +172,8 @@
       <tags>
         <tag>C++</tag>
         <tag>字符串</tag>
-        <tag>题解</tag>
         <tag>洛谷</tag>
+        <tag>题解</tag>
         <tag>模拟</tag>
         <tag>CodeForces</tag>
       </tags>
@@ -212,8 +202,8 @@
     <content type="text"><![CDATA[一看到了求方案数，马上想到了枚举 $dfs$ 深搜思路：$dfs(t)$ ($t$为选了几个人) 1 如果已经选取了两个数，$ans$++并$return$ 2 枚举$1\sim n$ 如果第$a_{i}$个人没被选过且与前一个人身高差的绝对值不超过$d$，则标记为已选并$dfs(t+1)$ Code12345678910111213141516171819202122232425262728293031323334#include&lt;bits/stdc++.h&gt;using namespace std;int n,d,a[1010],ans,s[1010];//s用来存前一个人的身高bool p[1010];//p用来标记已选过的人void dfs(int t)&#123; if(t&gt;2) &#123; ans++; return; &#125; for(int i=1; i&lt;=n; i++) &#123; s[0]=a[i];//s[0]需要设成a[i]，这样第一个人才能选 if(abs(a[i]-s[t-1])&lt;=d&amp;&amp;!p[i]) &#123; p[i]=1; s[t]=a[i];//记录前一个人的身高 dfs(t+1); p[i]=0;//回溯 &#125; &#125;&#125;int main()&#123; scanf("%d%d",&amp;n,&amp;d); for(int i=1; i&lt;=n; i++) &#123; scanf("%d",&amp;a[i]); &#125; dfs(1); printf("%d",ans); return 0;&#125;]]></content>
       <tags>
         <tag>C++</tag>
-        <tag>题解</tag>
         <tag>洛谷</tag>
+        <tag>题解</tag>
         <tag>CodeForces</tag>
         <tag>深度优先搜索（dfs）</tag>
       </tags>
@@ -225,8 +215,8 @@
       <tags>
         <tag>C++</tag>
         <tag>字符串</tag>
-        <tag>题解</tag>
         <tag>洛谷</tag>
+        <tag>题解</tag>
         <tag>模拟</tag>
         <tag>CodeForces</tag>
       </tags>
@@ -238,8 +228,8 @@
       <tags>
         <tag>C++</tag>
         <tag>字符串</tag>
-        <tag>题解</tag>
         <tag>洛谷</tag>
+        <tag>题解</tag>
         <tag>AtCoder</tag>
         <tag>模拟</tag>
       </tags>
@@ -251,8 +241,8 @@
       <tags>
         <tag>C++</tag>
         <tag>字符串</tag>
-        <tag>题解</tag>
         <tag>洛谷</tag>
+        <tag>题解</tag>
         <tag>AtCoder</tag>
         <tag>模拟</tag>
       </tags>
@@ -263,8 +253,8 @@
     <content type="text"><![CDATA[题目大意：给你$N$个整数，让你从中选$r$个数($0&lt;r \leq N$)，使得它们的乘积最大。输出任意一组解 思路：（大佬勿喷） 1 我们知道几个正整数的乘积总是正数，所以遇到正整数直接输出就好啦 2 遇到负数就不同了，我们知道“奇负偶正”，于是就有两种情况： 1 如果有偶数个负数，因为“偶正”，所以全部输出 2 如果有奇数个负数，我们只能输出个数-1个负数，并且这些负数的绝对值最大 3 接下来还需要三个特判 特判1：如果$N=1$并且这个数小于等于0，输出这个数 特判2：如果$N$（$N&gt;1$）个整数全是0，输出0 特判3：如果$N$（$N&gt;1$）个整数中全是非正数（只有0和负数），如果只有1个负数并且0的个数不为0，输出0（因为0比负数大） 4 然后。。。你就AC了 code123456789101112131415161718192021222324252627282930313233343536373839#include&lt;bits/stdc++.h&gt;using namespace std;int n,a[110],sum1=0,sum2=0;//sum1统计0的个数，sum2统计负数的个数int main()&#123; scanf("%d",&amp;n); for(int i=1; i&lt;=n; i++) &#123; scanf("%d",&amp;a[i]); if(a[i]&lt;0) sum2++;//a[i]是负数，sum2++ else if(a[i]==0) sum1++;//a[i]是0，sum1++ else printf("%d ",a[i]);//a[i]是正数，输出！ &#125; sort(a+1,a+n+1);//因为要取绝对值最大的负数，所以先排序 if(sum2%2==0)//偶数个负数全部输出 &#123; for(int i=1; i&lt;=sum2; i++) &#123; printf("%d ",a[i]); &#125; &#125; else//奇数个负数输出个数-1个 &#123; for(int i=1;i&lt;=sum2-1;i++) &#123; printf("%d ",a[i]); &#125; &#125; if(n==1&amp;&amp;a[1]&lt;=0) &#123; cout&lt;&lt;a[1]; return 0; &#125; if(sum1==n) cout&lt;&lt;0;//全是0 if(sum1+sum2==n&amp;&amp;sum2==1) cout&lt;&lt;0;//全是负数和0且负数只有一个 return 0;&#125;]]></content>
       <tags>
         <tag>C++</tag>
-        <tag>题解</tag>
         <tag>洛谷</tag>
+        <tag>题解</tag>
         <tag>模拟</tag>
         <tag>CodeForces</tag>
       </tags>
@@ -275,8 +265,8 @@
     <content type="text"><![CDATA[这道题基本思路就是贪心（标签里的队列是什么鬼不会是因为标题叫队列吧）主要还是证明贪心的正确性(大佬勿喷) 设总等待时间为 $time$ , $n$个人等待时间分别为$t{1}$,$t{2}$,$t{3}$···$t{n}$,要使总等待人数最少,则$time$ 要取最小值: $time$ = $t{1}$+($t{1}$+$t{2}$)+($t{1}$+$t{2}$+$t{3}$)+···+($t{1}$+$t{2}$+$t{3}$+···$t{n}$) $time$ = $n \cdot t{1}$+ $(n-1)\cdot t{2}$+ ··· + $t_{n}$ 当$t{1} \le $ $t{2} \le$ ······ $t_{n}$ 时，$time$为最小值(简单的证明过程) —————————————————————————————————————————— 所以只要先每个人的等待时间排序一遍，设定一个总时间变量$time$,只要$time$小 于这个人的等待时间答案就+1，同时$time$也要加上这个人的等待时间 代码 12345678910111213141516171819#include&lt;bits/stdc++.h&gt;using namespace std;int n,t[100010],sum,ti;int main()&#123; scanf("%d",&amp;n); for(int i=1;i&lt;=n;i++) scanf("%d",&amp;t[i]); sort(t+1,t+n+1);//排序（从小到大) for(int i=1;i&lt;=n;i++) &#123; if(t[i]&gt;=ti)//如果time&lt;这个人等待时间 &#123; sum++;//答案+1 ti+=t[i];//time加上这个人的等待时间 &#125; &#125; printf("%d",sum); return 0;&#125;]]></content>
       <tags>
         <tag>C++</tag>
-        <tag>题解</tag>
         <tag>洛谷</tag>
+        <tag>题解</tag>
         <tag>CodeForces</tag>
         <tag>贪心</tag>
       </tags>
@@ -287,8 +277,8 @@
     <content type="text"><![CDATA[看到好多大佬都用动规，这题数据范围太水了(n&lt;=30)于是本蒟蒻先来发篇dfs深搜思路： 把n个物品两种可能（取与不取）都搜一遍，得到的最小体积就是答案 具体解释看代码1234567891011121314151617181920212223242526272829#include&lt;bits/stdc++.h&gt;using namespace std;int v,n,w[40],minx=INT_MAX;//minx存放最小体积，初始赋最大值void dfs(int volume,int pointer)//volume代表当前体积//pointer指示第pointer个物品&#123; if(volume&lt;0) return;//首先需要判断如果体积&lt;0就退出 if(pointer&gt;n)//如果n个物品都搜过了 &#123; if(volume&lt;minx)//判断当前体积是否小于最小体积 minx=volume;//是的话更新最小体积 return; &#125; if(volume==0)//小小的剪枝，如果当前体积已经为0了，那么不可能有更优解 &#123; minx=0; return; &#125; dfs(volume-w[pointer],pointer+1);//取该件物品 dfs(volume,pointer+1);//不取该件物品&#125;int main()&#123; scanf("%d%d",&amp;v,&amp;n); for(int i=1; i&lt;=n; i++) scanf("%d",&amp;w[i]); dfs(v,1); printf("%d",minx);//minx存放的即为答案 return 0;&#125; 但是如果数据范围加大了话。。。其实本题就是把0-1背包中物品的价值与体积画了个等号，于是本题就变成了一道0-1 背包模板题 代码如下：12345678910111213141516#include&lt;bits/stdc++.h&gt;using namespace std;int w[31],f[20010];int main()&#123; int v,n; scanf("%d%d",&amp;v,&amp;n); for(int i=1;i&lt;=n;i++) scanf("%d",&amp;w[i]); for(int i=1;i&lt;=n;i++) for(int j=v;j&gt;=w[i];j--) if(f[j]&lt;f[j-w[i]]+w[i]) f[j]=f[j-w[i]]+w[i];//状态转移方程 printf("%d",v-f[v]);//最后用体积减去最优解 return 0;&#125;]]></content>
       <tags>
         <tag>C++</tag>
-        <tag>题解</tag>
         <tag>洛谷</tag>
+        <tag>题解</tag>
         <tag>深度优先搜索（dfs）</tag>
         <tag>动态规划（dp）</tag>
         <tag>背包</tag>
@@ -300,8 +290,8 @@
     <content type="text"><![CDATA[一道可以用dfs做的题目（大佬勿喷）总体思路如下： 1 用一个bool数组存放每个位置是否为细胞数字 2 输入，如果这个数大于0，把这个位置标记为1 3 枚举每一个位置，如果是细胞数字就开始搜，同时答案加1 4 输出 深搜部分： 1 把这个位置标记为0 2 枚举四个方向，如果是细胞数字就从这个位置继续搜 （就是把所有连通的细胞数字都标记为0，周围再也没有细胞数字了就代表一个细胞） 代码如下：123456789101112131415161718192021222324252627282930313233343536373839#include&lt;bits/stdc++.h&gt;using namespace std;int n,m,sum;char s;bool p[110][110];int a[4]=&#123;1,-1,0,0&#125;;//四个方向int b[4]=&#123;0,0,-1,1&#125;;void dfs(int x,int y) &#123; p[x][y]=0;//把这个位置标记为0 for(int i=0;i&lt;4;i++) &#123; int xx=x+a[i]; int yy=y+b[i]; if(p[xx][yy])//如果这个位置是细胞数字，从这个位置开始搜 dfs(xx,yy); &#125;&#125;int main()&#123; scanf("%d%d",&amp;n,&amp;m); for(int i=1;i&lt;=n;i++) for(int j=1;j&lt;=m;j++) &#123; cin&gt;&gt;s; if(s&gt;'0') p[i][j]=1;//是细胞数字标记为1 &#125; for(int i=1;i&lt;=n;i++) for(int j=1;j&lt;=m;j++) &#123; if(p[i][j])//如果是细胞数字开始搜 &#123; sum++; dfs(i,j); &#125; &#125; printf("%d",sum); return 0;&#125;]]></content>
       <tags>
         <tag>C++</tag>
-        <tag>题解</tag>
         <tag>洛谷</tag>
+        <tag>题解</tag>
         <tag>深度优先搜索（dfs）</tag>
       </tags>
   </entry>
