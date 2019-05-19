@@ -100,18 +100,18 @@
 
 
 
-  <meta name="description" content="这题的基本思想就是贪心吧 题目就是让你两两分组，使得每组能力值的差值最小 设$a{1},a{2},···,a_{n}$表示每个学生的能力值 且满足：$a{1} \le a{2} \le ··· \le a_{n}$ 则对于任意一个能力值$a{i}$，它的最优匹配为$a{i+1}$（$i$为奇数） 考虑到$a{1}$，我们不取$a{i-1}$（你想想$a_{1-1}$是什么） 假设存在一个能力值$a">
-<meta name="keywords" content="C++,题解,洛谷,CodeForces,贪心">
+  <meta name="description" content="题目大意： 给出两组数，求两组中的两数之和为奇数的组数（不可重复选取） 思路： 我们知道奇数+偶数=奇数 所以先统计两组中奇数出现的个数和偶数出现的个数 将第一组数中奇数出现的个数与第二组中偶数进行配对，即取$min(lenji1,lenou2)$  再将将第一组数中偶数出现的个数与第二组中奇数进行配对，即取$min(lenou1,lenji2)$ 两个结果相加即可 Code 1234567891">
+<meta name="keywords" content="洛谷,CodeForces,数论,数学">
 <meta property="og:type" content="article">
-<meta property="og:title" content="题解 CF1092B 【Teams Forming】">
-<meta property="og:url" content="http://zyx02.github.io/2019/04/10/题解-CF1092B-【Teams-Forming】/index.html">
+<meta property="og:title" content="题解 CF1152A 【Neko Finds Grapes】">
+<meta property="og:url" content="http://zyx02.github.io/2019/05/19/题解-CF1152A-【Neko-Finds-Grapes】/index.html">
 <meta property="og:site_name" content="zyx的博客">
-<meta property="og:description" content="这题的基本思想就是贪心吧 题目就是让你两两分组，使得每组能力值的差值最小 设$a{1},a{2},···,a_{n}$表示每个学生的能力值 且满足：$a{1} \le a{2} \le ··· \le a_{n}$ 则对于任意一个能力值$a{i}$，它的最优匹配为$a{i+1}$（$i$为奇数） 考虑到$a{1}$，我们不取$a{i-1}$（你想想$a_{1-1}$是什么） 假设存在一个能力值$a">
+<meta property="og:description" content="题目大意： 给出两组数，求两组中的两数之和为奇数的组数（不可重复选取） 思路： 我们知道奇数+偶数=奇数 所以先统计两组中奇数出现的个数和偶数出现的个数 将第一组数中奇数出现的个数与第二组中偶数进行配对，即取$min(lenji1,lenou2)$  再将将第一组数中偶数出现的个数与第二组中奇数进行配对，即取$min(lenou1,lenji2)$ 两个结果相加即可 Code 1234567891">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2019-04-10T14:09:12.000Z">
+<meta property="og:updated_time" content="2019-05-19T09:04:59.821Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="题解 CF1092B 【Teams Forming】">
-<meta name="twitter:description" content="这题的基本思想就是贪心吧 题目就是让你两两分组，使得每组能力值的差值最小 设$a{1},a{2},···,a_{n}$表示每个学生的能力值 且满足：$a{1} \le a{2} \le ··· \le a_{n}$ 则对于任意一个能力值$a{i}$，它的最优匹配为$a{i+1}$（$i$为奇数） 考虑到$a{1}$，我们不取$a{i-1}$（你想想$a_{1-1}$是什么） 假设存在一个能力值$a">
+<meta name="twitter:title" content="题解 CF1152A 【Neko Finds Grapes】">
+<meta name="twitter:description" content="题目大意： 给出两组数，求两组中的两数之和为奇数的组数（不可重复选取） 思路： 我们知道奇数+偶数=奇数 所以先统计两组中奇数出现的个数和偶数出现的个数 将第一组数中奇数出现的个数与第二组中偶数进行配对，即取$min(lenji1,lenou2)$  再将将第一组数中偶数出现的个数与第二组中奇数进行配对，即取$min(lenou1,lenji2)$ 两个结果相加即可 Code 1234567891">
 
 
 
@@ -120,7 +120,7 @@
 
 
 
-  <link rel="canonical" href="http://zyx02.github.io/2019/04/10/题解-CF1092B-【Teams-Forming】/">
+  <link rel="canonical" href="http://zyx02.github.io/2019/05/19/题解-CF1152A-【Neko-Finds-Grapes】/">
 
 
 
@@ -130,7 +130,7 @@
   };
 </script>
 
-  <title>题解 CF1092B 【Teams Forming】 | zyx的博客</title>
+  <title>题解 CF1152A 【Neko Finds Grapes】 | zyx的博客</title>
   
 
 
@@ -383,7 +383,7 @@ WIDGET = {FID: 'DmIm0qllkB'}
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://zyx02.github.io/2019/04/10/题解-CF1092B-【Teams-Forming】/">
+    <link itemprop="mainEntityOfPage" href="http://zyx02.github.io/2019/05/19/题解-CF1152A-【Neko-Finds-Grapes】/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="不省一不改名">
@@ -400,7 +400,7 @@ WIDGET = {FID: 'DmIm0qllkB'}
 
         
         
-          <h1 class="post-title" itemprop="name headline">题解 CF1092B 【Teams Forming】
+          <h1 class="post-title" itemprop="name headline">题解 CF1152A 【Neko Finds Grapes】
 
               
             
@@ -426,7 +426,7 @@ WIDGET = {FID: 'DmIm0qllkB'}
                 
               
 
-              <time title="创建时间：2019-04-10 22:08:21 / 修改时间：22:09:12" itemprop="dateCreated datePublished" datetime="2019-04-10T22:08:21+08:00">2019-04-10</time>
+              <time title="创建时间：2019-05-19 17:03:30 / 修改时间：17:04:59" itemprop="dateCreated datePublished" datetime="2019-05-19T17:03:30+08:00">2019-05-19</time>
             
 
             
@@ -445,8 +445,8 @@ WIDGET = {FID: 'DmIm0qllkB'}
                 <span class="post-meta-item-icon">
                   <i class="fa fa-comment-o"></i>
                 </span>
-                <a href="/2019/04/10/题解-CF1092B-【Teams-Forming】/#comments" itemprop="discussionUrl">
-                  <span class="post-meta-item-text">评论数：</span> <span class="post-comments-count valine-comment-count" data-xid="/2019/04/10/题解-CF1092B-【Teams-Forming】/" itemprop="commentCount"></span>
+                <a href="/2019/05/19/题解-CF1152A-【Neko-Finds-Grapes】/#comments" itemprop="discussionUrl">
+                  <span class="post-meta-item-text">评论数：</span> <span class="post-comments-count valine-comment-count" data-xid="/2019/05/19/题解-CF1152A-【Neko-Finds-Grapes】/" itemprop="commentCount"></span>
                 </a>
               </span>
             
@@ -475,7 +475,7 @@ WIDGET = {FID: 'DmIm0qllkB'}
                 
                   <span class="post-meta-item-text">本文字数：</span>
                 
-                <span title="本文字数">643</span>
+                <span title="本文字数">676</span>
               
 
               
@@ -509,17 +509,16 @@ WIDGET = {FID: 'DmIm0qllkB'}
       
 
       
-        <p>这题的基本思想就是贪心吧</p>
-<p>题目就是让你两两分组，使得每组能力值的差值最小</p>
-<p>设$a<em>{1},a</em>{2},···,a_{n}$表示每个学生的能力值</p>
-<p>且满足：$a<em>{1} \le a</em>{2} \le ··· \le a_{n}$</p>
-<p>则对于任意一个能力值$a<em>{i}$，它的最优匹配为$a</em>{i+1}$（$i$为奇数）</p>
-<p>考虑到$a<em>{1}$，我们不取$a</em>{i-1}$（你想想$a_{1-1}$是什么）</p>
-<p>假设存在一个能力值$a<em>{k}$ ($k&gt; i+1$)，使得$a</em>{k}-a<em>{i}&lt; a</em>{i+1}-a_{i}$</p>
-<p>即: $a<em>{k}&lt;a</em>{i+1}$</p>
-<p>∵ $a<em>{i+1}&lt;a</em>{k}$</p>
-<p>∴ 不存在这样的$k$</p>
-<h3 id="Code"><a href="#Code" class="headerlink" title="Code"></a>Code</h3><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;bits/stdc++.h&gt;</span></span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> <span class="built_in">std</span>;</span><br><span class="line"><span class="keyword">int</span> n;</span><br><span class="line"><span class="keyword">int</span> a[<span class="number">110</span>],ans; </span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">	ios::sync_with_stdio(<span class="literal">false</span>);</span><br><span class="line">	<span class="built_in">cin</span>&gt;&gt;n;</span><br><span class="line">	<span class="keyword">for</span>(<span class="keyword">int</span> i=<span class="number">1</span>;i&lt;=n;i++) <span class="built_in">cin</span>&gt;&gt;a[i];</span><br><span class="line">	sort(a+<span class="number">1</span>,a+n+<span class="number">1</span>);<span class="comment">//要先排序</span></span><br><span class="line">	<span class="keyword">for</span>(<span class="keyword">int</span> i=<span class="number">1</span>;i&lt;=n;i+=<span class="number">2</span>) <span class="comment">//i要为奇数</span></span><br><span class="line">	&#123;    </span><br><span class="line">		ans+=a[i+<span class="number">1</span>]-a[i];<span class="comment">//答案加上两个能力值的差</span></span><br><span class="line">	&#125;</span><br><span class="line">	<span class="built_in">cout</span>&lt;&lt;ans;</span><br><span class="line">	<span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+        <p>题目大意：</p>
+<p>给出两组数，求两组中的两数之和为奇数的组数（不可重复选取）</p>
+<p>思路：</p>
+<p>我们知道奇数+偶数=奇数</p>
+<p>所以先统计两组中奇数出现的个数和偶数出现的个数</p>
+<p>将第一组数中奇数出现的个数与第二组中偶数进行配对，即取$min(lenji1,lenou2)$ </p>
+<p>再将将第一组数中偶数出现的个数与第二组中奇数进行配对，即取$min(lenou1,lenji2)$</p>
+<p>两个结果相加即可</p>
+<p>Code</p>
+<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;bits/stdc++.h&gt;</span></span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> <span class="built_in">std</span>;</span><br><span class="line"><span class="keyword">int</span> lenji1,lenji2,lenou1,lenou2;<span class="comment">//分别表示第一组数中奇数个数、第二组数中奇数个数、第一组数中偶数个数、第二组中偶数个数</span></span><br><span class="line"><span class="keyword">int</span> n,m;</span><br><span class="line"><span class="keyword">int</span> a,b;</span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">	ios::sync_with_stdio(<span class="literal">false</span>);</span><br><span class="line">	<span class="built_in">cin</span>&gt;&gt;n&gt;&gt;m;</span><br><span class="line">	<span class="keyword">for</span>(<span class="keyword">int</span> i=<span class="number">1</span>;i&lt;=n;i++)<span class="comment">//统计</span></span><br><span class="line">	&#123;</span><br><span class="line">		<span class="built_in">cin</span>&gt;&gt;a;</span><br><span class="line">		a%<span class="number">2</span>==<span class="number">1</span>?lenji1++:lenou1++;</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="keyword">for</span>(<span class="keyword">int</span> i=<span class="number">1</span>;i&lt;=m;i++)</span><br><span class="line">	&#123;</span><br><span class="line">		<span class="built_in">cin</span>&gt;&gt;b;</span><br><span class="line">		b%<span class="number">2</span>==<span class="number">1</span>?lenji2++:lenou2++;</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="built_in">cout</span>&lt;&lt;min(lenji1,lenou2)+min(lenji2,lenou1);<span class="comment">//取min相加</span></span><br><span class="line">	<span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
       
     </div>
@@ -543,15 +542,11 @@ WIDGET = {FID: 'DmIm0qllkB'}
       
         <div class="post-tags">
           
-            <a href="/tags/C/" rel="tag"># C++</a>
-          
-            <a href="/tags/题解/" rel="tag"># 题解</a>
-          
             <a href="/tags/洛谷/" rel="tag"># 洛谷</a>
           
             <a href="/tags/CodeForces/" rel="tag"># CodeForces</a>
           
-            <a href="/tags/贪心/" rel="tag"># 贪心</a>
+            <a href="/tags/数论-数学/" rel="tag"># 数论,数学</a>
           
         </div>
       
@@ -584,8 +579,8 @@ WIDGET = {FID: 'DmIm0qllkB'}
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2019/04/08/题解-CF1145F-【Neat-Words】/" rel="next" title="题解 CF1145F 【Neat Words】">
-                <i class="fa fa-chevron-left"></i> 题解 CF1145F 【Neat Words】
+              <a href="/2019/04/18/题解-CF17A-【Noldbach-problem】/" rel="next" title="题解 CF17A 【Noldbach problem】">
+                <i class="fa fa-chevron-left"></i> 题解 CF17A 【Noldbach problem】
               </a>
             
           </div>
@@ -593,10 +588,6 @@ WIDGET = {FID: 'DmIm0qllkB'}
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2019/04/11/题解-CF1118A-【Water-Buying】/" rel="prev" title="题解 CF1118A 【Water Buying】">
-                题解 CF1118A 【Water Buying】 <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -645,17 +636,8 @@ WIDGET = {FID: 'DmIm0qllkB'}
       
 
       
-        <ul class="sidebar-nav motion-element">
-          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
-            文章目录
-          </li>
-          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
-            站点概览
-          </li>
-        </ul>
-      
 
-      <div class="site-overview-wrap sidebar-panel">
+      <div class="site-overview-wrap sidebar-panel sidebar-panel-active">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
@@ -850,23 +832,6 @@ WIDGET = {FID: 'DmIm0qllkB'}
         </div>
       </div>
 
-      
-      <!--noindex-->
-        <div class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
-          <div class="post-toc">
-
-            
-            
-            
-            
-
-            
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#Code"><span class="nav-number">1.</span> <span class="nav-text">Code</span></a></li></ol></div>
-            
-
-          </div>
-        </div>
-      <!--/noindex-->
       
 
       
