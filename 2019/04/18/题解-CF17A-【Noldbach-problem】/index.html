@@ -101,7 +101,7 @@
 
 
   <meta name="description" content="题目要求的是一个素数与它相邻的素数之和$+1$为素数（注意这个素数要$\le n$） 思路：  预处理$2$~$n$的素数  暴力枚举   Code1234567891011121314151617181920212223242526272829303132#include&amp;lt;bits/stdc++.h&amp;gt;using namespace std;int p[1010],len,n,sum,">
-<meta name="keywords" content="C++,洛谷,题解,CodeForces,数论,数学,素数">
+<meta name="keywords" content="C++,题解,洛谷,CodeForces,数论,数学,素数">
 <meta property="og:type" content="article">
 <meta property="og:title" content="题解 CF17A 【Noldbach problem】">
 <meta property="og:url" content="http://zyx02.github.io/2019/04/18/题解-CF17A-【Noldbach-problem】/index.html">
@@ -566,9 +566,9 @@ WIDGET = {FID: 'DmIm0qllkB'}
           
             <a href="/tags/C/" rel="tag"># C++</a>
           
-            <a href="/tags/洛谷/" rel="tag"># 洛谷</a>
-          
             <a href="/tags/题解/" rel="tag"># 题解</a>
+          
+            <a href="/tags/洛谷/" rel="tag"># 洛谷</a>
           
             <a href="/tags/CodeForces/" rel="tag"># CodeForces</a>
           
@@ -839,7 +839,33 @@ WIDGET = {FID: 'DmIm0qllkB'}
             
           
           <script type="text/javascript" src="//rf.revolvermaps.com/0/0/8.js?i=5gnm3twsgs5&amp;m=0&amp;c=ff0000&amp;cr1=ffffff&amp;f=arial&amp;l=33" async="async"></script>
-
+<div id="days"></div>
+<script>
+function show_date_time(){
+    window.setTimeout("show_date_time()", 1000);
+    BirthDay=new Date("03/09/2019 00:00:00");
+    today=new Date();
+    timeold=(today.getTime()-BirthDay.getTime());
+    sectimeold=timeold/1000
+    secondsold=Math.floor(sectimeold);
+    msPerDay=24*60*60*1000
+    e_daysold=timeold/msPerDay
+    daysold=Math.floor(e_daysold);
+    e_hrsold=(e_daysold-daysold)*24;
+    hrsold=setzero(Math.floor(e_hrsold));
+    e_minsold=(e_hrsold-hrsold)*60;
+    minsold=setzero(Math.floor((e_hrsold-hrsold)*60));
+    seconds=setzero(Math.floor((e_minsold-minsold)*60));
+    document.getElementById('days').innerHTML="已运行 "+daysold+" 天 "+hrsold+" 小时 "+minsold+" 分 "+seconds+" 秒";
+}
+function setzero(i) {
+    if (i<10) {
+        i="0" + i
+    };
+    return i;
+}
+show_date_time();
+</script>
         </div>
       </div>
 
