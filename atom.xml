@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://zyx02.github.io/"/>
-  <updated>2019-05-19T09:18:45.792Z</updated>
+  <updated>2019-06-24T01:58:52.422Z</updated>
   <id>http://zyx02.github.io/</id>
   
   <author>
@@ -15,6 +15,42 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>题解 CF581B 【Luxurious Houses】</title>
+    <link href="http://zyx02.github.io/2019/06/24/%E9%A2%98%E8%A7%A3-CF581B-%E3%80%90Luxurious-Houses%E3%80%91/"/>
+    <id>http://zyx02.github.io/2019/06/24/题解-CF581B-【Luxurious-Houses】/</id>
+    <published>2019-06-24T01:56:55.000Z</published>
+    <updated>2019-06-24T01:58:52.422Z</updated>
+    
+    <content type="html"><![CDATA[<p>不难看出，题目要求的是每一个房子后面最高的房子与它的高度差$+1$，（如果比它矮输出$0$）</p><p>我们定义</p><ul><li><p>$maxn[i]$表示第$i$到第$n$个房子高度的最大值（$n$为房子数）</p></li><li><p>$h[i]$表示第$i$个房子的高度</p></li></ul><p>因为$maxn[i+1]$存放的已经是第$i+1$到第$n$个房子的最大值了，所以第$i$到第$n$个房子的最大值只要让当前房子的高度与$maxn[i+1]$进行比较即可</p><p>即$maxn[i]=max(h[i],maxn[i+1])$</p><p>代码如下</p><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;bits/stdc++.h&gt;</span></span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> <span class="built_in">std</span>;</span><br><span class="line"><span class="keyword">const</span> <span class="keyword">int</span> MAXN = <span class="number">100010</span>;</span><br><span class="line"><span class="keyword">int</span> n;</span><br><span class="line"><span class="keyword">int</span> h[MAXN] , maxn[MAXN];</span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">ios::sync_with_stdio(<span class="literal">false</span>);</span><br><span class="line"><span class="built_in">cin</span> &gt;&gt; n;</span><br><span class="line"><span class="keyword">for</span>(<span class="keyword">int</span> i = <span class="number">1</span>; i &lt;= n; i ++)</span><br><span class="line">&#123;</span><br><span class="line"><span class="built_in">cin</span> &gt;&gt; h[i];</span><br><span class="line">&#125;</span><br><span class="line"><span class="keyword">for</span>(<span class="keyword">int</span> i = n; i &gt;= <span class="number">2</span>; i --)</span><br><span class="line">   maxn[i] = max(h[i] , maxn[i + <span class="number">1</span>]); <span class="comment">//预处理最大值</span></span><br><span class="line"><span class="keyword">for</span>(<span class="keyword">int</span> i = <span class="number">1</span>; i &lt;= n - <span class="number">1</span>; i ++)</span><br><span class="line">  <span class="built_in">cout</span> &lt;&lt; max(maxn[i + <span class="number">1</span>] - h[i] + <span class="number">1</span> , <span class="number">0</span>) &lt;&lt; <span class="string">" "</span>;<span class="comment">//如果没比它高要输出0！</span></span><br><span class="line"><span class="built_in">cout</span> &lt;&lt; <span class="number">0</span>;<span class="comment">//最后一个后面已经没有房子了当然是0</span></span><br><span class="line"><span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;不难看出，题目要求的是每一个房子后面最高的房子与它的高度差$+1$，（如果比它矮输出$0$）&lt;/p&gt;
+&lt;p&gt;我们定义&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;$maxn[i]$表示第$i$到第$n$个房子高度的最大值（$n$为房子数）&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;$h[i]$
+      
+    
+    </summary>
+    
+    
+      <category term="C++" scheme="http://zyx02.github.io/tags/C/"/>
+    
+      <category term="洛谷" scheme="http://zyx02.github.io/tags/%E6%B4%9B%E8%B0%B7/"/>
+    
+      <category term="题解" scheme="http://zyx02.github.io/tags/%E9%A2%98%E8%A7%A3/"/>
+    
+      <category term="CodeForces" scheme="http://zyx02.github.io/tags/CodeForces/"/>
+    
+      <category term="动态规划（dp）" scheme="http://zyx02.github.io/tags/%E5%8A%A8%E6%80%81%E8%A7%84%E5%88%92%EF%BC%88dp%EF%BC%89/"/>
+    
+  </entry>
   
   <entry>
     <title>题解 CF1152A 【Neko Finds Grapes】</title>
@@ -630,42 +666,6 @@
       <category term="CodeForces" scheme="http://zyx02.github.io/tags/CodeForces/"/>
     
       <category term="深度优先搜索（dfs）" scheme="http://zyx02.github.io/tags/%E6%B7%B1%E5%BA%A6%E4%BC%98%E5%85%88%E6%90%9C%E7%B4%A2%EF%BC%88dfs%EF%BC%89/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>题解 CF25B 【Phone numbers】</title>
-    <link href="http://zyx02.github.io/2019/03/10/%E9%A2%98%E8%A7%A3-CF25B-%E3%80%90Phone-numbers%E3%80%91/"/>
-    <id>http://zyx02.github.io/2019/03/10/题解-CF25B-【Phone-numbers】/</id>
-    <published>2019-03-10T02:38:49.000Z</published>
-    <updated>2019-03-29T04:45:46.000Z</updated>
-    
-    <content type="html"><![CDATA[<h3 id="一道字符串模拟题"><a href="#一道字符串模拟题" class="headerlink" title="一道字符串模拟题"></a>一道字符串模拟题</h3><p>首先我们知道</p><p>偶数+偶数=偶数</p><p>偶数+奇数=奇数</p><p>然后我们就可以对$N$进行分类讨论：</p><ul><li><p>当$N\le3$时，直接输出字符串即可</p></li><li><p>当$N=2k$ $(k\ge2)$时，可以把$N$拆分成若干个长度为2的字符串，在两个字符串之间添上-号</p></li><li><p>当$N=2k+1$  $(k\ge2)$时，可以把$N$拆分成一个长度为3的字符串和若干个长度为2的字符串，在两个字符串之间添上-号</p></li></ul><h2 id="Code"><a href="#Code" class="headerlink" title="Code"></a>Code</h2><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;bits/stdc++.h&gt;</span></span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> <span class="built_in">std</span>;</span><br><span class="line"><span class="built_in">string</span> s;</span><br><span class="line"><span class="keyword">int</span> sum;</span><br><span class="line"><span class="keyword">int</span> n;</span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line"><span class="built_in">scanf</span>(<span class="string">"%d"</span>,&amp;n);</span><br><span class="line"><span class="built_in">cin</span>&gt;&gt;s;</span><br><span class="line"><span class="keyword">if</span>(n&lt;=<span class="number">3</span>) <span class="comment">//如果n&lt;=3，直接输出</span></span><br><span class="line">&#123;</span><br><span class="line"><span class="built_in">cout</span>&lt;&lt;s;</span><br><span class="line"><span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br><span class="line"><span class="keyword">if</span>(n%<span class="number">2</span>==<span class="number">0</span>) <span class="comment">//n为偶数则拆分成若干个长度为2的字符串</span></span><br><span class="line">&#123;</span><br><span class="line"><span class="keyword">for</span>(<span class="keyword">int</span> i=<span class="number">0</span>; i&lt;n; i++)</span><br><span class="line">&#123;</span><br><span class="line">sum++;</span><br><span class="line"><span class="built_in">printf</span>(<span class="string">"%c"</span>,s[i]);</span><br><span class="line"><span class="keyword">if</span>(i==n<span class="number">-1</span>) <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line"><span class="keyword">if</span>(sum==<span class="number">2</span>)</span><br><span class="line">&#123;</span><br><span class="line"><span class="built_in">printf</span>(<span class="string">"-"</span>);</span><br><span class="line">sum=<span class="number">0</span>;</span><br><span class="line">&#125;</span><br><span class="line">&#125;</span><br><span class="line">&#125;</span><br><span class="line"><span class="keyword">else</span> <span class="comment">//n为奇数则拆分成一个长度为3的字符串和若干个长度为2的字符串</span></span><br><span class="line">&#123;</span><br><span class="line"><span class="keyword">for</span>(<span class="keyword">int</span> i=<span class="number">0</span>; i&lt;<span class="number">3</span>; i++)</span><br><span class="line">&#123;</span><br><span class="line"><span class="built_in">printf</span>(<span class="string">"%c"</span>,s[i]);</span><br><span class="line">&#125;</span><br><span class="line"><span class="built_in">printf</span>(<span class="string">"-"</span>);</span><br><span class="line"><span class="keyword">for</span>(<span class="keyword">int</span> i=<span class="number">3</span>; i&lt;n; i++)</span><br><span class="line">&#123;</span><br><span class="line">sum++;</span><br><span class="line"><span class="built_in">printf</span>(<span class="string">"%c"</span>,s[i]);</span><br><span class="line"><span class="keyword">if</span>(i==n<span class="number">-1</span>) <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line"><span class="keyword">if</span>(sum==<span class="number">2</span>)</span><br><span class="line">&#123;</span><br><span class="line"><span class="built_in">printf</span>(<span class="string">"-"</span>);</span><br><span class="line">sum=<span class="number">0</span>;</span><br><span class="line">&#125;</span><br><span class="line">&#125;</span><br><span class="line">&#125;</span><br><span class="line"><span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;h3 id=&quot;一道字符串模拟题&quot;&gt;&lt;a href=&quot;#一道字符串模拟题&quot; class=&quot;headerlink&quot; title=&quot;一道字符串模拟题&quot;&gt;&lt;/a&gt;一道字符串模拟题&lt;/h3&gt;&lt;p&gt;首先我们知道&lt;/p&gt;
-&lt;p&gt;偶数+偶数=偶数&lt;/p&gt;
-&lt;p&gt;偶数+奇数=奇数&lt;/p&gt;
-&lt;p&gt;
-      
-    
-    </summary>
-    
-    
-      <category term="C++" scheme="http://zyx02.github.io/tags/C/"/>
-    
-      <category term="洛谷" scheme="http://zyx02.github.io/tags/%E6%B4%9B%E8%B0%B7/"/>
-    
-      <category term="字符串" scheme="http://zyx02.github.io/tags/%E5%AD%97%E7%AC%A6%E4%B8%B2/"/>
-    
-      <category term="题解" scheme="http://zyx02.github.io/tags/%E9%A2%98%E8%A7%A3/"/>
-    
-      <category term="模拟" scheme="http://zyx02.github.io/tags/%E6%A8%A1%E6%8B%9F/"/>
-    
-      <category term="CodeForces" scheme="http://zyx02.github.io/tags/CodeForces/"/>
     
   </entry>
   
