@@ -116,7 +116,7 @@
   </script>
 
   <meta name="description" content="一道可以用dfs做的题目（大佬勿喷）总体思路如下： 1 用一个bool数组存放每个位置是否为细胞数字  2 输入，如果这个数大于0，把这个位置标记为1  3 枚举每一个位置，如果是细胞数字就开始搜，同时答案加1  4 输出   深搜部分： 1 把这个位置标记为0  2 枚举四个方向，如果是细胞数字就从这个位置继续搜   （就是把所有连通的细胞数字都标记为0，周围再也没有细胞数字了就代表一个细胞）">
-<meta name="keywords" content="C++,题解,洛谷,深度优先搜索（dfs）">
+<meta name="keywords" content="C++,洛谷,题解,深度优先搜索（dfs）">
 <meta property="og:type" content="article">
 <meta property="og:title" content="题解P1451【求细胞数量】">
 <meta property="og:url" content="http://zyx02.github.io/2019/03/10/题解P1451【求细胞数量】/index.html">
@@ -596,9 +596,9 @@ WIDGET = {FID: 'DmIm0qllkB'}
           
             <a href="/tags/C/" rel="tag"># C++</a>
           
-            <a href="/tags/题解/" rel="tag"># 题解</a>
-          
             <a href="/tags/洛谷/" rel="tag"># 洛谷</a>
+          
+            <a href="/tags/题解/" rel="tag"># 题解</a>
           
             <a href="/tags/深度优先搜索（dfs）/" rel="tag"># 深度优先搜索（dfs）</a>
           
@@ -1498,6 +1498,43 @@ show_date_time();
   
   
 
+  
+    
+      <script type="text/x-mathjax-config">
+  
+
+  MathJax.Hub.Config({
+    tex2jax: {
+      inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+      processEscapes: true,
+      skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+    },
+    TeX: {
+      
+      equationNumbers: {
+        autoNumber: "AMS"
+      }
+    }
+  });
+</script>
+
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Queue(function() {
+    var all = MathJax.Hub.getAllJax(), i;
+      for (i = 0; i < all.length; i += 1) {
+        all[i].SourceElement().parentNode.className += ' has-jax';
+      }
+  });
+</script>
+<script src="//cdn.jsdelivr.net/npm/mathjax@2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+<style>
+.MathJax_Display {
+  overflow: auto hidden;
+}
+</style>
+
+    
   
 
 
