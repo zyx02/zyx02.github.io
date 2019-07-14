@@ -3,7 +3,10 @@
   <entry>
     <title><![CDATA[广州中山纪念中学游记]]></title>
     <url>%2F2019%2F07%2F14%2F%E5%B9%BF%E5%B7%9E%E4%B8%AD%E5%B1%B1%E7%BA%AA%E5%BF%B5%E4%B8%AD%E5%AD%A6%E6%B8%B8%E8%AE%B0%2F</url>
-    <content type="text"></content>
+    <content type="text"><![CDATA[$Day 1$坐动车，去学校。顺便去腾讯上了个厕所 （这学校比我们学校大多了啊！！） 本来还想吃完晚饭颓狼人杀的，结果莫名其妙跟着老师去看机房，然后讲注意事项，OJ网址，接着莫名其妙地打了一晚上的题（我还要打狼人杀啊！） $Day 2$早上打模拟赛，被神仙们虐爆了，$100+80+30+60=270rk12$，我好菜啊$QwQ$ 第一题简单暴力模拟，第二题本来想暴力拆字符串结果爆空间了，还好拿了$80$，第三题写了一个自以为正确的贪心结果WAWA大哭了，第四题数位dp只能拿$60$暴力分（出题人良心！）了。 顺便膜一下我校大佬$lmk$，$100+100+100+70=370rk1$太强了！吊打我！ 然后讲题，改题。 顺便讲了一下数位dp，学完之后当晚肝了一题windy数，感觉良好 $Day 3$还是模拟赛，继续被神仙们狂虐，$50+20+0+20=90rk5$，太菜了吧$qwq$ 第一题被讲题人誉为本次比赛中最难的一题(那为什么还要放在第一题啊)，主要原因是题目很难理解(可以当阅读理解了吧（雾）)，但不知道为什么我暴搜骗了50，第二题讲题人言简意赅地点出了核心思想——乱搞，第三题是道dp但完全看不出来，第四题旁边的$gy$一直跟我说不是最小生成树，不是最小生成树，结果正解就是最小生成树+虚点连边。。。。。。 再次膜拜我校大佬$lmk$,$10+90+0+100=200rk1$魔鬼！ 最后发现第三题要用压位高精，不然会爆空间，不得不感叹一下出题人的毒瘤 $Day 4$今天没有模拟赛，甚好，去听了一早上的dp，然后下午一直在肝dp $Day 5$又是模拟赛，继续划水，$100+85+10+10=205rk12$菜死了。 第一题签到题简单模拟，第二题毒瘤数据制造者居然让dfs爆栈了，换成bfs才过，第三题数学题，可惜没看出答案是卡特兰数，而且还要加上高精，最后一题dp打了个暴搜水分。。。 话说某位老师居然参加了这场比赛而且居然没有AK（笑） 膜拜我校大佬$xzx$,$100+100+0+100=300rk2$（$rk1$老师）太可怕了。 $Day 6$一场异常简单的模拟赛，一堆神仙AK，然而我第一题爆零因为没特判换行符….，该死的OJ，该死的Linux。。。 $Day7$没有打比赛而是去听了一下堆，下午找了几题练练，感觉良好。。。 （priority_queue大法好啊） $Day8$又是被神仙们虐的一天，$100+0+37.5+12.5=150rk5$(希望这是我数学期末考的分数) 第一题数论，数据范围$O(\sqrt{n})$明显会TLE但竟然让我水过了！第二题二维离散化，又是什么神仙算法。。。第三题Floyd+匈牙利算法，第四题玄学算法（我也不知道我后面是怎么改对的） $Day 9$最后的一场比赛了，然而我还是考炸了，$20+0+0+92.3=112.3rk7$。 第一题还是恶心数论，不过这次数据只让我的$O(n)$拿了20qwq，第二题听说是状压dp（但我不会呀），第三题dp以为是贪心。。。第四题二分边界设错emmm，还是太粗心了$QwQ$ $Day 10$在纪中机房的最后一天了，老师为我们分享了他的OI心得，分别时还是有点不舍。 晚上放假，和大佬们一起去学校里的公园走了走，回到宿舍开始完成一直未能完成的事业——狼人杀，我们在晚上睡觉时间后跑到别的宿舍玩狼人杀与查房的斗智斗勇超刺激的 $Day 11$回家。 the end.是不可能的 吐槽区 不知道什么时候开始一到机房大家几乎都点开了slay.one或者2048 纪中的食堂的饭菜挺好吃的啊（每天中午第一行第三列孜然鸡腿（只有一天在第二行第四列）） fch老师经典语录：我会很烦躁的 直到倒数第2（3？）天我们才知道食堂有夜宵，而且是烧烤！然后一下课一堆人(包括我)像sb一样冲了出去（众所周知sb=smart boy） 听说纪中好像还是个5A级景区？？？ 舍监经典语录：你们待在纪中一天就是一天纪中人 / 有没有一点纪律观念时间观念 特意去买了一本纪中的草稿纸当纪念，下学期就用它了 fch老师OJ上的头像 一本通的编者之一宋老师竟然来给我们讲课了！而且讲的很好啊（宋老师：让学生听不懂才是一堂好课） 等我想到了再补吧······]]></content>
+      <tags>
+        <tag>游记</tag>
+      </tags>
   </entry>
   <entry>
     <title><![CDATA[题解 CF581B 【Luxurious Houses】]]></title>
@@ -48,9 +51,9 @@
     <content type="text"><![CDATA[一道字符串模拟题，思路如下： 1 输入时将两个时间存储 2 将两个时间化为以分钟做单位 3 得到中间时间与第一个时间的差 4 输出 注意：当时间或分钟数$&lt;=9$时，要用$0$补齐位数 Code 123456789101112131415161718192021222324252627282930#include&lt;bits/stdc++.h&gt;using namespace std;string s1,s2; int h1,h2,m1,m2;int main()&#123; ios::sync_with_stdio(false); cin&gt;&gt;s1&gt;&gt;s2; for(int i=0;i&lt;2;i++)//将时间存储 h1+=(s1[i]-'0')*pow(10,1-i),h2+=(s2[i]-'0')*pow(10,1-i); for(int i=3;i&lt;=4;i++) m1+=(s1[i]-'0')*pow(10,4-i),m2+=(s2[i]-'0')*pow(10,4-i); int ans=((h2*60+m2)-(h1*60+m1))/2;//求得中间时间与第一个时间的差 h1+=ans/60;//加上时间差 m1+=ans%60; if(m1&gt;=60)//如果分钟&gt;=60要进位 &#123; h1++; m1%=60; &#125; if(h1&lt;=9)//输出，&lt;=9的用0补齐 cout&lt;&lt;0&lt;&lt;h1&lt;&lt;":"; else cout&lt;&lt;h1&lt;&lt;":"; if(m1&lt;=9) cout&lt;&lt;0&lt;&lt;m1; else cout&lt;&lt;m1; return 0;&#125;]]></content>
       <tags>
         <tag>C++</tag>
+        <tag>字符串</tag>
         <tag>洛谷</tag>
         <tag>题解</tag>
-        <tag>字符串</tag>
         <tag>模拟</tag>
         <tag>CodeForces</tag>
       </tags>
@@ -93,9 +96,9 @@
     <content type="text"><![CDATA[这题其实是一道很水的字符串模拟，不要被难度骗了 CF恶意评分又不是一两天了（雾） 注意题目中说到的 由直线或都是由曲线构成的 是指该字母的笔画（我理解题目理解了半天$qwq$） 具体思路： 1 应用$map$将由直线（或者曲线）构成的字母的映射值设为1 2 计算该字符串的所有对应的映射值之和，因为题目要求全为直线或全为曲线，所以当总和为$len$($len$为字符串长度)或$0$时，输出$YES$，否则输出$NO$ Code1234567891011121314151617181920212223242526272829#include&lt;bits/stdc++.h&gt;using namespace std;string s;map&lt;char,bool&gt; p;int main()&#123; ios::sync_with_stdio(false); p['A']=1;//打表 p['E']=1; p['F']=1; p['H']=1; p['I']=1; p['K']=1; p['L']=1; p['M']=1; p['N']=1; p['T']=1; p['V']=1; p['W']=1; p['X']=1; p['Y']=1; p['Z']=1; cin&gt;&gt;s; int sum=0; for(int i=0;i&lt;s.size();i++) sum+=p[s[i]];//统计映射值之和 if(sum==s.size() or sum==0) cout&lt;&lt;"YES";//判断 else cout&lt;&lt;"NO"; return 0;&#125;]]></content>
       <tags>
         <tag>C++</tag>
+        <tag>字符串</tag>
         <tag>洛谷</tag>
         <tag>题解</tag>
-        <tag>字符串</tag>
         <tag>模拟</tag>
         <tag>CodeForces</tag>
       </tags>
@@ -130,8 +133,8 @@
     <content type="text"><![CDATA[1.什么是set 和 set的好处$set$的翻译为集合，是一个内部自动有序且不含重复元素(即满足集合的互异性)的$STL$容器，其内部采用“红黑树”实现。 什么是集合？点这 $set$的好处在于自动完成去重和按升序排序 2.举个栗子比如这题 1.普通作法看到数据范围这么水肯定想到用桶排 Code12345678910111213141516171819#include&lt;bits/stdc++.h&gt;using namespace std;int main()&#123; int b[1001],n,i,j,m=0,x; memset(b,0,sizeof(b)); cin&gt;&gt;n; for(i=1;i&lt;=n;i++) &#123; cin&gt;&gt;x; if(b[x]==0) m++; b[x]++; &#125; cout&lt;&lt;m&lt;&lt;endl; for(i=0;i&lt;=1000;i++) if(b[i]&gt;0) cout&lt;&lt;i&lt;&lt;" "; cout&lt;&lt;endl; return 0;&#125; 2.set如果你会了$set$，这道题就可以这么打 Code1234567891011121314151617181920#include&lt;bits/stdc++.h&gt;using namespace std;int n;set&lt;int&gt; st;int main()&#123; scanf("%d",&amp;n); for(int i=1;i&lt;=n;i++) &#123; int x; scanf("%d",&amp;x); st.insert(x); &#125; printf("%d\n",st.size()); for(set&lt;int&gt;::iterator it= st.begin(); it!=st.end(); it++) &#123; printf("%d ",*it); &#125; return 0;&#125; 如果数据范围大了话，明显不能用桶排解决，这时候$set$的好处就可以体现出来。 领会了$set$的好处之后，接下来让我们了解 3.set的定义使用$set$之前，必须添加$set$头文件，即1#include&lt;set&gt; 也可以打好我们的$bits/stdc++.h$ 同时必须要有 1using namespace std; 定义一个$set$的方法： 1set&lt;typename&gt; name; 其中$typename$为任何基本类型或者容器，$name$为这个集合的名字 同时$set$也支持定义数组，如: 1set&lt;typename&gt; name[MAXN] 即定义了$MAXN$个$set$容器 4.set的访问一大坑点是$set$只能通过迭代器访问 1.定义一个迭代器1set&lt;typename&gt;::iterator it; 即定义一个名为$it$的迭代器 2.通过迭代器访问注意事项： 1 $set$不支持类似*$(it+i)$的访问 2 $set$也不支持$it&lt;name.end()$这种访问 我们需要使用*$it$来访问$set$中的元素 5.set的常用函数1.insert()1.作用$insert()$用来插入一个数到$set$中，并自动排序+去重 2.时间复杂度$O(log_{2}n)$ 3.用法例如，以下一段代码输出$1$ $2$ $3 $ 123456for(int i=3;i&gt;=1;i--) a.insert(i);a.insert(1);for(set&lt;int&gt;::iterator it=a.begin();it!=a.end();it++)&#123; cout&lt;&lt;*it&lt;&lt;" ";&#125; 2.begin()和end()1.作用分别用来获取$set$容器的首地址和尾地址 用法跟其他$STL$容器一样这里不再赘述 3.size()1.作用用于获取$set$容器中元素的个数 2.时间复杂度$O(1)$ 3.用法例如，以下一段代码输出$3$ 123for(int i=3;i&gt;=1;i--) a.insert(i);a.insert(1);cout&lt;&lt;a.size(); 4.clear()1.作用用于清空$set$容器中的所有元素 2.时间复杂度$O(n)$ ($n$为$set$中的元素个数) 3.用法例如，以下一段代码输出$1$ 1234for(int i=3;i&gt;=1;i--) a.insert(i);a.clear();a.insert(1);cout&lt;&lt;a.size(); 5.erase()1.作用可以用来删除单个元素也可以用来删除一段区间的元素 1.删除单个元素 1.时间复杂度$O(1)$ (使用迭代器) $O(log_{2}n)$ (使用欲删除元素的值) 2.用法1.$erase(it)$ $it$为欲删除的元素的迭代器 例如，以下一段代码输出$2$ $3$ 123456for(int i=3;i&gt;=1;i--) a.insert(i);a.erase(a.begin());for(set&lt;int&gt;::iterator it=a.begin();it!=a.end();it++)&#123; cout&lt;&lt;*it&lt;&lt;" ";&#125; 2.$erase(value)$ $value$为欲删除元素的值 例如以下一段代码输出$1$ $3$ 123456for(int i=3;i&gt;=1;i--) a.insert(i);a.erase(2);for(set&lt;int&gt;::iterator it=a.begin();it!=a.end();it++)&#123; cout&lt;&lt;*it&lt;&lt;" ";&#125; 2.删除一个区间的元素 1.时间复杂度$O(right-left)$ $(左闭右开区间[left,right))$ 2.用法$erase(left,right)$用来删除左闭右开区间[$left$,$right$)之间的元素 例如，以下一段代码输出$1$ 1234567for(int i=5;i&gt;=1;i--) a.insert(i);set&lt;int&gt;::iterator it=a.find(2);a.erase(it,a.end());for(set&lt;int&gt;::iterator it=a.begin();it!=a.end();it++)&#123; cout&lt;&lt;*it&lt;&lt;" ";&#125; 6.find()1.作用返回元素在$set$中的迭代器 2.时间复杂度$O(log_{2}n)$ ($n$为$set$中的元素个数) 3.用法例如，以下一段代码输出$2$ 12for(int i=5;i&gt;=1;i--) a.insert(i);cout&lt;&lt;*a.find(2); 6.推荐例题 1 洛谷P1059 明明的随机数 之后还会继续放上]]></content>
       <tags>
         <tag>C++</tag>
-        <tag>学习笔记</tag>
         <tag>set</tag>
+        <tag>学习笔记</tag>
       </tags>
   </entry>
   <entry>
@@ -171,8 +174,8 @@
     <content type="text"><![CDATA[1.What’s string$string$ 是一种$STL$的容器，支持多种字符串操作。 2.string的定义使用$string$需要添加头文件 1#include&lt;string&gt; 或者打好万能库，胜过zhw 同时必须要有 1using namespace std; 定义$string$的方法非常简单，如下： 1string name;//name为字符串名称 同时也可以定义$string$数组，如下： 1string name[MAXN];//name为数组名，MAXN为数组大小 即这个数组中的每一个元素都是$string$类型 3.string初始化可以直接在定义的时候初始化，如： 1string name="I love C++!"; 等价于： 12string name;name="I love C++!"; 也可以写成： 1string name("I love C++!"); 4.string的访问1.通过下标访问12string s="I love C++!";printf("%c",s[0]);//输出I 2.通过迭代器访问1.迭代器的定义1string::iterator node;//定义一个名为node的迭代器 2.访问123string s="I love C++";string::iterator node=s.begin()//获取s的首地址printf("%c",*node);//输出I(因为是迭代器所以前面要加上*) 5.string的基本运算1.加法运算加法运算可以将两个字符串拼接在一起，但加号两边必须至少有一个为$string$类型 如，下列程序是合法的： 1234string s1="I love ";string s2="C++";s1+=s2;//等价于s1=s1+s2cout&lt;&lt;s1;//输出I love C++ 但下列程序是不合法的： 12string s1="I love "+"C++";cout&lt;&lt;s1&lt;&lt;endl; 下列程序依然合法： 123string s2="C";string s1="I love "+s2+"++";cout&lt;&lt;s1&lt;&lt;endl;//输出I love C++ 2.关系运算关系运算可以按字典序比较两个字符串的大小，如： 1234string s1="abcde";string s2="bcdef";if(s1&lt;s2) cout&lt;&lt;"Winner!";//输出Winner!else cout&lt;&lt;"Lose!"; 6.string的输入与输出1.利用cin和cout输入输出$cin$在读到空格时将会停止读入，例如以下一段程序输入$123$ $456$后，仅会输出$123$ 123string s;cin&gt;&gt;s;cout&lt;&lt;s; 2.利用getline输入$getline$可以用来读整行的字符串(包括空格)，例如以下一段程序输入$123$ $456$后，输出$123$ $456$ 123string s;getline(cin,s);cout&lt;&lt;s; 3.将string转换为字符数组输入输出$c$_$str()$可以将$string$转换为字符数组，如： 123string s;scanf("%s",s.c_str());printf("%s",s.c_str()); 输入$123$ $456$ 输出$123$ 7.string的常用函数1.length()和size()1.作用用来获取字符串的长度，即字符个数 2.时间复杂度$O(1)$ 3.用法123string s="abcd";int len=s.size();cout&lt;&lt;len;//输出4 2.begin()和end()1.作用分别用来获取字符串的首地址和尾地址，一般与迭代器配合使用 2.时间复杂度$O(1)$? 3.用法12345string s="I love C++!";for(string::iterator it=s.begin()+2;it!=s.end();it++)&#123; printf("%c",*it);//输出love C++! &#125; 3.clear()1.作用用来清空字符串中的所有元素 2.时间复杂度$O(1)$ 3.用法123string s="I love C++!";s.clear();cout&lt;&lt;s;//输出为空 4.substr()1.作用返回字符串的字串 2.时间复杂度$O(n)$ ($n$为字符串长度) 3.用法$s.substr(node,len)$返回从$node$位置开始，长度为$len$的字串 如： 12string s="I love C++!";cout&lt;&lt;s.substr(2,4);//输出love 5.insert()1.作用插入字符串 2.时间复杂度$O(n)$ ($n$为字符串长度) 3.用法$insert$有多种写法 1.$insert(node,s)$ 在$node$号位置插入字符串$s$ 123string s="I C++!";s.insert(2,"love");cout&lt;&lt;s;//输出I love C++! 2.$insert(node,s,sum)$ 在$node$号位置插入字符串$s$的前$sum$个字符 123string s="I C++!";s.insert(2,"love python",4);cout&lt;&lt;s;//输出I love C++! 3.$insert(it,it2,it3)$ $it$为原字符串的欲插入位置，$it1$,$it2$为待插入字符串的首尾迭代器(左闭右开) 1234string s="I C++!";string ss="love python";s.insert(s.begin()+2,ss.begin(),ss.begin()+4);cout&lt;&lt;s;//输出I love C++! 4.$insert(node,sum,c)$ 在$node$号位置插入$sum$个字符$c$ 123string s="I love C!";s.insert(8,2,'+');cout&lt;&lt;s;//输出I love C++! 6.erase()1.作用$erase()$可以删除单个字符或一个区间内的字符 2.时间复杂度$O(n)$ ($n$为字符串长度) 3.用法1.$erase(it)$ $it$为欲删除元素的迭代器 123string s="I love C+++!";s.erase(s.begin()+10);cout&lt;&lt;s;//输出I love C++! 2.$erase(left,right)$ $left$为区间的起始迭代器，$right$为区间末尾迭代器的下一个地址。左闭右开区间 123string s="I love C++++!";s.erase(s.begin()+10,s.begin()+12);cout&lt;&lt;s;//输出I love C++! 3.$erase(node,len)$ 删除从$node$号位置开始$len$个字符 123string s="I love C++++!";s.erase(10,2);cout&lt;&lt;s;//输出I love C++! 7.find()1.作用返回子串第一次出现的位置，如果找不到返回string::npos 2，时间复杂度$O(nm)$ $n,m$分别为第一个，第二个字符串的长度 3，用法1.$find(s)$，返回$s$在原字符串第一次出现的位置 123456789string s="I love C++!";if(s.find("C++")!=string::npos) cout&lt;&lt;s.find("C++")&lt;&lt;" ";else cout&lt;&lt;"-1"&lt;&lt;" ";if(s.find("python")!=string::npos) cout&lt;&lt;s.find("python")&lt;&lt;" ";else cout&lt;&lt;"-1"&lt;&lt;" ";//输出7 -1 2.$find(s,node)$ 返回原字符串从$node$号位置开始$s$第一次出现的位置 123456789string s="I love C++!";if(s.find("C++")!=string::npos) cout&lt;&lt;s.find("C++")&lt;&lt;endl;else cout&lt;&lt;"-1"&lt;&lt;endl;if(s.find("C++",8)!=string::npos) cout&lt;&lt;s.find("python")&lt;&lt;endl;else cout&lt;&lt;"-1"&lt;&lt;endl;//输出7 -1 8.replace()1.作用替换字符串 2.时间复杂度$O(n)$ ($n$为要替换的字符串长度) 3.用法1.$replace(node,len,s)$ 把原字符串从$node$号位置长度为$len$的子串替换为$s$ 12string s="I love python!";cout&lt;&lt;s.replace(7,6,"C++");//输出I love C++! 2.$replace(it1,it2,s)$ 表示把原字符串的迭代器$it1$~$it2$范围内(左闭右开区间)的子串替换为$s$ 12string s="I love python!";cout&lt;&lt;s.replace(s.begin()+7,s.begin()+13,"C++");//输出I love C++! 8.字符串数字互化可以用$sscanf$和$sprintf$实现 1234string s="19260817";int a;sscanf(s.c_str(),"%d",&amp;a);//把s以整数的形式输入到a(s要为字符数组)cout&lt;&lt;a;//输出19260817 1234int a=19260817;char s[30];sprintf(s,"%d",a);cout&lt;&lt;s;//输出19260817 同时我们也可以用一个神奇的东西——$stringstream$ 友情提示：这个东西十分耗时! 123456stringstream ss;string s="19260817";int n;ss&lt;&lt;s;//将s传入ssss&gt;&gt;n;//将ss传入ncout&lt;&lt;n;//输出19260817 如果要多次调用$stringstream$,记住在每一次使用前都要$clear()$ 9.推荐例题 1 猪国杀 2 洛谷P1308 统计单词数 思路点拨：运用$find$函数实现 3 洛谷P1079 Vigenère 密码 思路点拨：按照题意模拟即可]]></content>
       <tags>
         <tag>C++</tag>
-        <tag>字符串</tag>
         <tag>学习笔记</tag>
+        <tag>字符串</tag>
       </tags>
   </entry>
   <entry>
@@ -192,9 +195,9 @@
     <content type="text"><![CDATA[一道字符串模拟，直接暴力枚举即可Code123456789101112131415161718192021222324252627282930#include&lt;bits/stdc++.h&gt;using namespace std;string s;int main()&#123; cin &gt;&gt; s; for(int i = 0 ; i &lt; s.size(); i++) &#123; int ans = 1; char c = s[i]; for(int j = i + 1 ; j &lt; s.size(); j++) &#123; if(s[j] != c)//不一样直接退出 &#123; break; &#125; else &#123; ans++; &#125; if(ans == 7)//有七个一样的输出YES &#123; puts("YES"); return 0; &#125; &#125; &#125; puts("NO");//不危险输出NO return 0;&#125;]]></content>
       <tags>
         <tag>C++</tag>
+        <tag>字符串</tag>
         <tag>洛谷</tag>
         <tag>题解</tag>
-        <tag>字符串</tag>
         <tag>模拟</tag>
         <tag>CodeForces</tag>
       </tags>
@@ -235,9 +238,9 @@
     <content type="text"><![CDATA[一道字符串模拟题首先我们知道 偶数+偶数=偶数 偶数+奇数=奇数 然后我们就可以对$N$进行分类讨论： 当$N\le3$时，直接输出字符串即可 当$N=2k$ $(k\ge2)$时，可以把$N$拆分成若干个长度为2的字符串，在两个字符串之间添上-号 当$N=2k+1$ $(k\ge2)$时，可以把$N$拆分成一个长度为3的字符串和若干个长度为2的字符串，在两个字符串之间添上-号 Code12345678910111213141516171819202122232425262728293031323334353637383940414243444546474849#include&lt;bits/stdc++.h&gt;using namespace std;string s;int sum;int n;int main()&#123; scanf("%d",&amp;n); cin&gt;&gt;s; if(n&lt;=3) //如果n&lt;=3，直接输出 &#123; cout&lt;&lt;s; return 0; &#125; if(n%2==0) //n为偶数则拆分成若干个长度为2的字符串 &#123; for(int i=0; i&lt;n; i++) &#123; sum++; printf("%c",s[i]); if(i==n-1) return 0; if(sum==2) &#123; printf("-"); sum=0; &#125; &#125; &#125; else //n为奇数则拆分成一个长度为3的字符串和若干个长度为2的字符串 &#123; for(int i=0; i&lt;3; i++) &#123; printf("%c",s[i]); &#125; printf("-"); for(int i=3; i&lt;n; i++) &#123; sum++; printf("%c",s[i]); if(i==n-1) return 0; if(sum==2) &#123; printf("-"); sum=0; &#125; &#125; &#125; return 0;&#125;]]></content>
       <tags>
         <tag>C++</tag>
+        <tag>字符串</tag>
         <tag>洛谷</tag>
         <tag>题解</tag>
-        <tag>字符串</tag>
         <tag>模拟</tag>
         <tag>CodeForces</tag>
       </tags>
@@ -248,10 +251,10 @@
     <content type="text"><![CDATA[如题，输出奇数位上的字母即可AC 注意字符串下标是从0开始的！ Code12345678910111213#include&lt;bits/stdc++.h&gt;using namespace std;char s[100010];int main()&#123; gets(s); for(int i=0;i&lt;strlen(s);i+=2)//输出奇数位 &#123; printf("%c",s[i]); &#125; printf("\n");//记得换行 return 0;&#125;]]></content>
       <tags>
         <tag>C++</tag>
+        <tag>字符串</tag>
         <tag>洛谷</tag>
         <tag>题解</tag>
         <tag>AtCoder</tag>
-        <tag>字符串</tag>
         <tag>模拟</tag>
       </tags>
   </entry>
@@ -261,10 +264,10 @@
     <content type="text"><![CDATA[一道简单的字符串模拟，刷难度真给力 本蒟蒻的思路比较麻烦，但个人认为比较好理解 1 先将字符串倒序存放 2 按照规则改变字母 3 比较 Code：1234567891011121314151617181920212223242526272829303132333435363738394041#include&lt;bits/stdc++.h&gt;using namespace std;char s1[100010],s2[100010];int len;int main()&#123; cin&gt;&gt;s1; for(int i=strlen(s1)-1; i&gt;=0; i--) &#123; s2[len++]=s1[i];//倒序存放 &#125; for(int i=0; i&lt;strlen(s2); i++) &#123; switch(s2[i])//按照规则改变字母 &#123; case 'b': &#123; s2[i]='d'; break; &#125; case 'd': &#123; s2[i]='b'; break; &#125; case 'p': &#123; s2[i]='q'; break; &#125; case 'q': &#123; s2[i]='p'; break; &#125; &#125; &#125; if(strcmp(s1,s2)==0) cout&lt;&lt;"Yes"&lt;&lt;endl;//比较，注意如果两个字符串一样，strcmp返回0 else cout&lt;&lt;"No"&lt;&lt;endl;//记得换行 return 0;&#125;]]></content>
       <tags>
         <tag>C++</tag>
+        <tag>字符串</tag>
         <tag>洛谷</tag>
         <tag>题解</tag>
         <tag>AtCoder</tag>
-        <tag>字符串</tag>
         <tag>模拟</tag>
       </tags>
   </entry>
