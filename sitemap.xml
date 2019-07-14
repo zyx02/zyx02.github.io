@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://zyx02.github.io/2019/07/14/%E5%B9%BF%E5%B7%9E%E4%B8%AD%E5%B1%B1%E7%BA%AA%E5%BF%B5%E4%B8%AD%E5%AD%A6%E6%B8%B8%E8%AE%B0/</loc>
+    
+    <lastmod>2019-07-14T15:51:44.967Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://zyx02.github.io/about/index.html</loc>
     
     <lastmod>2019-06-26T04:51:10.665Z</lastmod>
@@ -226,14 +233,14 @@
   </url>
   
   <url>
-    <loc>http://zyx02.github.io/lib/bookmark/package.json</loc>
+    <loc>http://zyx02.github.io/lib/bookmark/README.html</loc>
     
     <lastmod>2019-03-09T05:25:58.000Z</lastmod>
     
   </url>
   
   <url>
-    <loc>http://zyx02.github.io/lib/bookmark/README.html</loc>
+    <loc>http://zyx02.github.io/lib/bookmark/package.json</loc>
     
     <lastmod>2019-03-09T05:25:58.000Z</lastmod>
     

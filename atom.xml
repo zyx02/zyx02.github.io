@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://zyx02.github.io/"/>
-  <updated>2019-06-25T14:25:15.070Z</updated>
+  <updated>2019-07-14T15:51:44.967Z</updated>
   <id>http://zyx02.github.io/</id>
   
   <author>
@@ -15,6 +15,20 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>广州中山纪念中学游记</title>
+    <link href="http://zyx02.github.io/2019/07/14/%E5%B9%BF%E5%B7%9E%E4%B8%AD%E5%B1%B1%E7%BA%AA%E5%BF%B5%E4%B8%AD%E5%AD%A6%E6%B8%B8%E8%AE%B0/"/>
+    <id>http://zyx02.github.io/2019/07/14/广州中山纪念中学游记/</id>
+    <published>2019-07-14T15:51:44.000Z</published>
+    <updated>2019-07-14T15:51:44.967Z</updated>
+    
+    <summary type="html">
+    
+    </summary>
+    
+    
+  </entry>
   
   <entry>
     <title>题解 CF581B 【Luxurious Houses】</title>
@@ -159,15 +173,15 @@
     
       <category term="C++" scheme="http://zyx02.github.io/tags/C/"/>
     
-      <category term="字符串" scheme="http://zyx02.github.io/tags/%E5%AD%97%E7%AC%A6%E4%B8%B2/"/>
-    
       <category term="洛谷" scheme="http://zyx02.github.io/tags/%E6%B4%9B%E8%B0%B7/"/>
     
       <category term="题解" scheme="http://zyx02.github.io/tags/%E9%A2%98%E8%A7%A3/"/>
     
-      <category term="CodeForces" scheme="http://zyx02.github.io/tags/CodeForces/"/>
+      <category term="字符串" scheme="http://zyx02.github.io/tags/%E5%AD%97%E7%AC%A6%E4%B8%B2/"/>
     
       <category term="模拟" scheme="http://zyx02.github.io/tags/%E6%A8%A1%E6%8B%9F/"/>
+    
+      <category term="CodeForces" scheme="http://zyx02.github.io/tags/CodeForces/"/>
     
   </entry>
   
@@ -292,15 +306,15 @@
     
       <category term="C++" scheme="http://zyx02.github.io/tags/C/"/>
     
-      <category term="字符串" scheme="http://zyx02.github.io/tags/%E5%AD%97%E7%AC%A6%E4%B8%B2/"/>
-    
       <category term="洛谷" scheme="http://zyx02.github.io/tags/%E6%B4%9B%E8%B0%B7/"/>
     
       <category term="题解" scheme="http://zyx02.github.io/tags/%E9%A2%98%E8%A7%A3/"/>
     
-      <category term="CodeForces" scheme="http://zyx02.github.io/tags/CodeForces/"/>
+      <category term="字符串" scheme="http://zyx02.github.io/tags/%E5%AD%97%E7%AC%A6%E4%B8%B2/"/>
     
       <category term="模拟" scheme="http://zyx02.github.io/tags/%E6%A8%A1%E6%8B%9F/"/>
+    
+      <category term="CodeForces" scheme="http://zyx02.github.io/tags/CodeForces/"/>
     
   </entry>
   
@@ -511,9 +525,9 @@
     
       <category term="C++" scheme="http://zyx02.github.io/tags/C/"/>
     
-      <category term="学习笔记" scheme="http://zyx02.github.io/tags/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"/>
-    
       <category term="字符串" scheme="http://zyx02.github.io/tags/%E5%AD%97%E7%AC%A6%E4%B8%B2/"/>
+    
+      <category term="学习笔记" scheme="http://zyx02.github.io/tags/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"/>
     
   </entry>
   
@@ -569,15 +583,15 @@
     
       <category term="C++" scheme="http://zyx02.github.io/tags/C/"/>
     
-      <category term="字符串" scheme="http://zyx02.github.io/tags/%E5%AD%97%E7%AC%A6%E4%B8%B2/"/>
-    
       <category term="洛谷" scheme="http://zyx02.github.io/tags/%E6%B4%9B%E8%B0%B7/"/>
     
       <category term="题解" scheme="http://zyx02.github.io/tags/%E9%A2%98%E8%A7%A3/"/>
     
-      <category term="CodeForces" scheme="http://zyx02.github.io/tags/CodeForces/"/>
+      <category term="字符串" scheme="http://zyx02.github.io/tags/%E5%AD%97%E7%AC%A6%E4%B8%B2/"/>
     
       <category term="模拟" scheme="http://zyx02.github.io/tags/%E6%A8%A1%E6%8B%9F/"/>
+    
+      <category term="CodeForces" scheme="http://zyx02.github.io/tags/CodeForces/"/>
     
   </entry>
   
@@ -630,42 +644,6 @@
       <category term="学习笔记" scheme="http://zyx02.github.io/tags/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"/>
     
       <category term="线段树" scheme="http://zyx02.github.io/tags/%E7%BA%BF%E6%AE%B5%E6%A0%91/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>题解 CF32A 【Reconnaissance】</title>
-    <link href="http://zyx02.github.io/2019/03/10/%E9%A2%98%E8%A7%A3-CF32A-%E3%80%90Reconnaissance%E3%80%91/"/>
-    <id>http://zyx02.github.io/2019/03/10/题解-CF32A-【Reconnaissance】/</id>
-    <published>2019-03-10T02:40:23.000Z</published>
-    <updated>2019-06-25T14:24:49.539Z</updated>
-    
-    <content type="html"><![CDATA[<p>一看到了求方案数，马上想到了<del>枚举</del> $dfs$</p><p>深搜思路：$dfs(t)$  ($t$为选了几个人) </p><ul><li><p>1 如果已经选取了两个数，$ans$++并$return$</p></li><li><p>2 枚举$1\sim n$ 如果第$a_{i}$个人没被选过且与前一个人身高差的绝对值不超过$d$，则标记为已选并$dfs(t+1)$</p></li></ul><h2 id="Code"><a href="#Code" class="headerlink" title="Code"></a>Code</h2><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;bits/stdc++.h&gt;</span></span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> <span class="built_in">std</span>;</span><br><span class="line"><span class="keyword">int</span> n,d,a[<span class="number">1010</span>],ans,s[<span class="number">1010</span>];<span class="comment">//s用来存前一个人的身高</span></span><br><span class="line"><span class="keyword">bool</span> p[<span class="number">1010</span>];<span class="comment">//p用来标记已选过的人</span></span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">dfs</span><span class="params">(<span class="keyword">int</span> t)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    <span class="keyword">if</span>(t&gt;<span class="number">2</span>)</span><br><span class="line">    &#123;</span><br><span class="line">        ans++;</span><br><span class="line">        <span class="keyword">return</span>;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">for</span>(<span class="keyword">int</span> i=<span class="number">1</span>; i&lt;=n; i++)</span><br><span class="line">    &#123;</span><br><span class="line">        s[<span class="number">0</span>]=a[i];<span class="comment">//s[0]需要设成a[i]，这样第一个人才能选</span></span><br><span class="line">        <span class="keyword">if</span>(<span class="built_in">abs</span>(a[i]-s[t<span class="number">-1</span>])&lt;=d&amp;&amp;!p[i])</span><br><span class="line">        &#123;</span><br><span class="line">            p[i]=<span class="number">1</span>;</span><br><span class="line">            s[t]=a[i];<span class="comment">//记录前一个人的身高</span></span><br><span class="line">            dfs(t+<span class="number">1</span>);</span><br><span class="line">            p[i]=<span class="number">0</span>;<span class="comment">//回溯</span></span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    <span class="built_in">scanf</span>(<span class="string">"%d%d"</span>,&amp;n,&amp;d);</span><br><span class="line">    <span class="keyword">for</span>(<span class="keyword">int</span> i=<span class="number">1</span>; i&lt;=n; i++)</span><br><span class="line">    &#123;</span><br><span class="line">        <span class="built_in">scanf</span>(<span class="string">"%d"</span>,&amp;a[i]);</span><br><span class="line">    &#125;</span><br><span class="line">    dfs(<span class="number">1</span>);</span><br><span class="line">    <span class="built_in">printf</span>(<span class="string">"%d"</span>,ans);</span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;p&gt;一看到了求方案数，马上想到了&lt;del&gt;枚举&lt;/del&gt; $dfs$&lt;/p&gt;
-&lt;p&gt;深搜思路：$dfs(t)$  ($t$为选了几个人) &lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;p&gt;1 如果已经选取了两个数，$ans$++并$return$&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;2 枚举$
-      
-    
-    </summary>
-    
-    
-      <category term="C++" scheme="http://zyx02.github.io/tags/C/"/>
-    
-      <category term="洛谷" scheme="http://zyx02.github.io/tags/%E6%B4%9B%E8%B0%B7/"/>
-    
-      <category term="题解" scheme="http://zyx02.github.io/tags/%E9%A2%98%E8%A7%A3/"/>
-    
-      <category term="CodeForces" scheme="http://zyx02.github.io/tags/CodeForces/"/>
-    
-      <category term="深度优先搜索（dfs）" scheme="http://zyx02.github.io/tags/%E6%B7%B1%E5%BA%A6%E4%BC%98%E5%85%88%E6%90%9C%E7%B4%A2%EF%BC%88dfs%EF%BC%89/"/>
     
   </entry>
   
