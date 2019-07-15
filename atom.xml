@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://zyx02.github.io/"/>
-  <updated>2019-07-14T15:58:08.632Z</updated>
+  <updated>2019-07-15T10:29:39.779Z</updated>
   <id>http://zyx02.github.io/</id>
   
   <author>
@@ -21,9 +21,9 @@
     <link href="http://zyx02.github.io/2019/07/14/%E5%B9%BF%E5%B7%9E%E4%B8%AD%E5%B1%B1%E7%BA%AA%E5%BF%B5%E4%B8%AD%E5%AD%A6%E6%B8%B8%E8%AE%B0/"/>
     <id>http://zyx02.github.io/2019/07/14/广州中山纪念中学游记/</id>
     <published>2019-07-14T15:51:44.000Z</published>
-    <updated>2019-07-14T15:58:08.632Z</updated>
+    <updated>2019-07-15T10:29:39.779Z</updated>
     
-    <content type="html"><![CDATA[<h2 id="Day-1"><a href="#Day-1" class="headerlink" title="$Day 1$"></a>$Day 1$</h2><p>坐动车，去学校。<del>顺便去腾讯公司上了个厕所</del></p><p>（<del>这学校比我们学校大多了啊！！</del>）</p><p>本来还想吃完晚饭<del>颓狼人杀</del>的，结果莫名其妙跟着老师去看机房，然后讲注意事项，OJ网址，接着莫名其妙地打了一晚上的题（<del>我还要打狼人杀啊！</del>）</p><h2 id="Day-2"><a href="#Day-2" class="headerlink" title="$Day 2$"></a>$Day 2$</h2><p>早上打模拟赛，被神仙们虐爆了，$100+80+30+60=270rk12$，我好菜啊$QwQ$</p><p>第一题简单暴力模拟，第二题本来想暴力拆字符串结果爆空间了，还好拿了$80$，第三题写了一个自以为正确的贪心<del>结果WAWA大哭了</del>，第四题数位dp只能拿$60$暴力分（出题人良心！）了。</p><p>顺便膜一下我校大佬$lmk$，$100+100+100+70=370rk1$太强了！吊打我！</p><p>然后讲题，改题。</p><p>顺便讲了一下数位dp，学完之后当晚肝了一题<a href="https://www.luogu.org/problemnew/show/P2657" target="_blank" rel="noopener">windy数</a>，感觉良好</p><h2 id="Day-3"><a href="#Day-3" class="headerlink" title="$Day 3$"></a>$Day 3$</h2><p>还是模拟赛，继续被神仙们狂虐，$50+20+0+20=90rk5$，太菜了吧$qwq$</p><p>第一题被讲题人誉为本次比赛中最难的一题(<del>那为什么还要放在第一题啊</del>)，主要原因是题目很难理解(<del>可以当阅读理解了吧（雾）</del>)，但不知道为什么我暴搜骗了50，第二题讲题人言简意赅地点出了核心思想——<del>乱搞</del>，第三题是道dp但完全看不出来，第四题旁边的$gy$一直跟我说不是最小生成树，不是最小生成树，结果正解就是最小生成树+虚点连边。。。。。。</p><p>再次膜拜我校大佬$lmk$,$10+90+0+100=200rk1$魔鬼！</p><p>最后发现第三题要用压位高精，不然会爆空间，不得不感叹一下出题人的<del>毒瘤</del></p><h2 id="Day-4"><a href="#Day-4" class="headerlink" title="$Day 4$"></a>$Day 4$</h2><p>今天没有模拟赛，<del>甚好</del>，去听了一早上的dp，然后下午一直在肝dp</p><h2 id="Day-5"><a href="#Day-5" class="headerlink" title="$Day 5$"></a>$Day 5$</h2><p>又是模拟赛，继续划水，$100+85+10+10=205rk12$菜死了。</p><p>第一题签到题简单模拟，第二题毒瘤数据制造者居然让dfs爆栈了，换成bfs才过，第三题数学题，可惜没看出答案是卡特兰数，而且还要加上高精，最后一题dp打了个暴搜水分。。。</p><p>话说某位老师居然参加了这场比赛而且居然没有AK（笑）</p><p>膜拜我校大佬$xzx$,$100+100+0+100=300rk2$（$rk1$老师）太可怕了。</p><h2 id="Day-6"><a href="#Day-6" class="headerlink" title="$Day 6$"></a>$Day 6$</h2><p>一场异常简单的模拟赛，一堆神仙AK，然而我第一题爆零因为没特判换行符….，该死的OJ，该死的Linux。。。</p><h2 id="Day7"><a href="#Day7" class="headerlink" title="$Day7$"></a>$Day7$</h2><p>没有打比赛而是去听了一下堆，下午找了几题练练，感觉良好。。。</p><p>（priority_queue大法好啊）</p><h2 id="Day8"><a href="#Day8" class="headerlink" title="$Day8$"></a>$Day8$</h2><p>又是被神仙们虐的一天，$100+0+37.5+12.5=150rk5$(<del>希望这是我数学期末考的分数</del>)</p><p>第一题数论，数据范围$O(\sqrt{n})$明显会TLE但竟然让我水过了！第二题二维离散化，又是什么神仙算法。。。第三题Floyd+匈牙利算法，第四题玄学算法（我也不知道我后面是怎么改对的）</p><h2 id="Day-9"><a href="#Day-9" class="headerlink" title="$Day 9$"></a>$Day 9$</h2><p>最后的一场比赛了，然而我还是考炸了，$20+0+0+92.3=112.3rk7$。</p><p>第一题还是恶心数论，不过这次数据只让我的$O(n)$拿了20qwq，第二题听说是状压dp（但我不会呀），第三题dp以为是贪心。。。第四题二分边界设错emmm，还是太粗心了$QwQ$</p><h2 id="Day-10"><a href="#Day-10" class="headerlink" title="$Day 10$"></a>$Day 10$</h2><p>在纪中机房的最后一天了，老师为我们分享了他的OI心得，分别时还是有点不舍。</p><p>晚上放假，和大佬们一起去学校里的公园走了走，回到宿舍开始完成一直未能完成的事业——<del>狼人杀</del>，<del>我们在晚上睡觉时间后跑到别的宿舍玩狼人杀与查房的斗智斗勇超刺激的</del></p><h2 id="Day-11"><a href="#Day-11" class="headerlink" title="$Day 11$"></a>$Day 11$</h2><p>回家。</p><h2 id="the-end"><a href="#the-end" class="headerlink" title="the end."></a>the end.</h2><p>是不可能的</p><h2 id="吐槽区"><a href="#吐槽区" class="headerlink" title="吐槽区"></a>吐槽区</h2><ul><li><p><del>不知道什么时候开始一到机房大家几乎都点开了<a href="https://slay.one/" target="_blank" rel="noopener">slay.one</a>或者<a href="http://2048game.com/" target="_blank" rel="noopener">2048</a></del></p></li><li><p>纪中的食堂的饭菜挺好吃的啊（每天中午第一行第三列孜然鸡腿（只有一天在第二行第四列））</p></li><li><p>fch老师经典语录：我会很烦躁的</p></li><li><p>直到倒数第2（3？）天我们才知道食堂有夜宵，而且是烧烤！然后一下课一堆人(包括我)像sb一样冲了出去（<del>众所周知sb=smart boy</del>）</p></li><li><p>听说纪中好像还是个5A级景区？？？</p></li><li><p>舍监经典语录：你们待在纪中一天就是一天纪中人 / 有没有一点纪律观念时间观念</p></li><li><p>特意去买了一本纪中的草稿纸当纪念，<del>下学期就用它了</del></p></li><li><p>fch老师OJ上的头像</p></li></ul><p><img src="https://i.loli.net/2019/07/14/5d2b4db5e3d7f99738.jpg" alt></p><ul><li><p>一本通的编者之一宋老师竟然来给我们讲课了！而且讲的很好啊（宋老师：让学生听不懂才是一堂好课）</p></li><li><p>等我想到了再补吧······</p></li></ul>]]></content>
+    <content type="html"><![CDATA[<h2 id="Day-1"><a href="#Day-1" class="headerlink" title="$Day 1$"></a>$Day 1$</h2><p>坐动车，去学校。<del>顺便去腾讯公司上了个厕所</del></p><p>（<del>这学校比我们学校大多了啊！！</del>）</p><p>本来还想吃完晚饭<del>颓狼人杀</del>的，结果莫名其妙跟着老师去看机房，然后讲注意事项，OJ网址，接着莫名其妙地打了一晚上的题（<del>我还要打狼人杀啊！</del>）</p><h2 id="Day-2"><a href="#Day-2" class="headerlink" title="$Day 2$"></a>$Day 2$</h2><p>早上打模拟赛，被神仙们虐爆了，$100+80+30+60=270rk12$，我好菜啊$QwQ$</p><p>第一题简单暴力模拟，第二题本来想暴力拆字符串结果爆空间了，还好拿了$80$，第三题写了一个自以为正确的贪心<del>结果WAWA大哭了</del>，第四题数位dp只能拿$60$暴力分（出题人良心！）了。</p><p>顺便膜一下我校大佬$lmk$，$100+100+100+70=370rk1$太强了！吊打我！</p><p>然后讲题，改题。</p><p>顺便讲了一下数位dp，学完之后当晚肝了一题<a href="https://www.luogu.org/problemnew/show/P2657" target="_blank" rel="noopener">windy数</a>，感觉良好</p><h2 id="Day-3"><a href="#Day-3" class="headerlink" title="$Day 3$"></a>$Day 3$</h2><p>还是模拟赛，继续被神仙们狂虐，$50+20+0+20=90rk5$，太菜了吧$qwq$</p><p>第一题被讲题人誉为本次比赛中最难的一题(<del>那为什么还要放在第一题啊</del>)，主要原因是题目很难理解(<del>可以当阅读理解了吧（雾）</del>)，但不知道为什么我暴搜骗了50，第二题讲题人言简意赅地点出了核心思想——<del>乱搞</del>，第三题是道dp但完全看不出来，第四题旁边的$gy$一直跟我说不是最小生成树，不是最小生成树，结果正解就是最小生成树+虚点连边。。。。。。</p><p>再次膜拜我校大佬$lmk$,$10+90+0+100=200rk1$魔鬼！</p><p>最后发现第三题要用压位高精，不然会爆空间，不得不感叹一下出题人的<del>毒瘤</del></p><h2 id="Day-4"><a href="#Day-4" class="headerlink" title="$Day 4$"></a>$Day 4$</h2><p>今天没有模拟赛，<del>甚好</del>，去听了一早上的dp，然后下午一直在肝dp</p><h2 id="Day-5"><a href="#Day-5" class="headerlink" title="$Day 5$"></a>$Day 5$</h2><p>又是模拟赛，继续划水，$100+85+10+10=205rk12$菜死了。</p><p>第一题签到题简单模拟，第二题毒瘤数据制造者居然让dfs爆栈了，换成bfs才过，第三题数学题，可惜没看出答案是卡特兰数，而且还要加上高精，最后一题dp打了个暴搜水分。。。</p><p>话说某位老师居然参加了这场比赛而且居然没有AK（笑）</p><p>膜拜我校大佬$xzx$,$100+100+0+100=300rk2$（$rk1$老师）太可怕了。</p><h2 id="Day-6"><a href="#Day-6" class="headerlink" title="$Day 6$"></a>$Day 6$</h2><p>一场异常简单的模拟赛，一堆神仙AK，然而我第一题爆零因为没特判换行符….，该死的OJ，该死的Linux。。。</p><h2 id="Day7"><a href="#Day7" class="headerlink" title="$Day7$"></a>$Day7$</h2><p>没有打比赛而是去听了一下堆，下午找了几题练练，感觉良好。。。</p><p>（priority_queue大法好啊）</p><h2 id="Day8"><a href="#Day8" class="headerlink" title="$Day8$"></a>$Day8$</h2><p>又是被神仙们虐的一天，$100+0+37.5+12.5=150rk5$(<del>希望这是我数学期末考的分数</del>)</p><p>第一题数论，数据范围$O(\sqrt{n})$明显会TLE但竟然让我水过了！第二题二维离散化，又是什么神仙算法。。。第三题Floyd+匈牙利算法，第四题玄学算法（我也不知道我后面是怎么改对的）</p><h2 id="Day-9"><a href="#Day-9" class="headerlink" title="$Day 9$"></a>$Day 9$</h2><p>最后的一场比赛了，然而我还是考炸了，$20+0+0+92.3=112.3rk7$。</p><p>第一题还是恶心数论，不过这次数据只让我的$O(n)$拿了20qwq，第二题听说是状压dp（但我不会呀），第三题dp以为是贪心。。。第四题二分边界设错emmm，还是太粗心了$QwQ$</p><h2 id="Day-10"><a href="#Day-10" class="headerlink" title="$Day 10$"></a>$Day 10$</h2><p>在纪中机房的最后一天了，老师为我们分享了他的OI心得，分别时还是有点不舍。</p><p>晚上放假，和大佬们一起去学校里的公园走了走，回到宿舍开始完成一直未能完成的事业——<del>狼人杀</del>，<del>我们在晚上睡觉时间后跑到别的宿舍玩狼人杀与查房的斗智斗勇超刺激的</del></p><h2 id="Day-11"><a href="#Day-11" class="headerlink" title="$Day 11$"></a>$Day 11$</h2><p>回家。</p><h2 id="the-end"><a href="#the-end" class="headerlink" title="the end."></a>the end.</h2><p>是不可能的</p><h2 id="吐槽区"><a href="#吐槽区" class="headerlink" title="吐槽区"></a>吐槽区</h2><ul><li><p><del>不知道什么时候开始一到机房大家几乎都点开了<a href="https://slay.one/" target="_blank" rel="noopener">slay.one</a>或者<a href="http://2048game.com/" target="_blank" rel="noopener">2048</a></del></p></li><li><p>纪中的食堂的饭菜挺好吃的啊（每天中午第一行第三列孜然鸡腿（只有一天在第二行第四列））</p></li><li><p>fch老师经典语录：我会很烦躁的</p></li><li><p>直到倒数第2（3？）天我们才知道食堂有夜宵，而且是烧烤！然后一下课一堆人(包括我)像sb一样冲了出去（<del>众所周知sb=smart boy</del>）</p></li><li><p>听说纪中好像还是个5A级景区？？？</p></li><li><p>舍监经典语录：你们待在纪中一天就是一天纪中人 / 有没有一点纪律观念时间观念</p></li><li><p>特意去买了一本纪中的草稿纸当纪念，<del>下学期就用它了</del></p></li><li><p>fch老师OJ上的头像</p></li></ul><p><img src="https://i.loli.net/2019/07/14/5d2b4db5e3d7f99738.jpg" alt></p><ul><li><p>一本通的编者之一宋老师竟然来给我们讲课了！而且讲的很好啊（宋老师：让学生听不懂才是一堂好课）</p></li><li><p>等我想到了再补吧······</p></li></ul><h2 id="小小的总结"><a href="#小小的总结" class="headerlink" title="小小的总结"></a>小小的总结</h2><p>第一次去外省培训，一次次被小学生和神仙们虐到自闭。菜死了的我深深地感受到了人外有人。被虐的同时我也学到了许多，数位dp,匈牙利算法,rmq问题,倍增求LCA······也收获了许多友谊。</p><p>在一天纪中，就做一天纪中人。有缘再见，纪中！</p><p>最后引用fch老师的一句话</p><blockquote><p>程序员之所以犯错误，不是因为他们不懂，而是因为他们自以为什么都懂。</p></blockquote>]]></content>
     
     <summary type="html">
     
@@ -66,9 +66,9 @@
     
       <category term="C++" scheme="http://zyx02.github.io/tags/C/"/>
     
-      <category term="题解" scheme="http://zyx02.github.io/tags/%E9%A2%98%E8%A7%A3/"/>
-    
       <category term="洛谷" scheme="http://zyx02.github.io/tags/%E6%B4%9B%E8%B0%B7/"/>
+    
+      <category term="题解" scheme="http://zyx02.github.io/tags/%E9%A2%98%E8%A7%A3/"/>
     
       <category term="CodeForces" scheme="http://zyx02.github.io/tags/CodeForces/"/>
     
@@ -102,9 +102,9 @@
     
       <category term="C++" scheme="http://zyx02.github.io/tags/C/"/>
     
-      <category term="题解" scheme="http://zyx02.github.io/tags/%E9%A2%98%E8%A7%A3/"/>
-    
       <category term="洛谷" scheme="http://zyx02.github.io/tags/%E6%B4%9B%E8%B0%B7/"/>
+    
+      <category term="题解" scheme="http://zyx02.github.io/tags/%E9%A2%98%E8%A7%A3/"/>
     
       <category term="CodeForces" scheme="http://zyx02.github.io/tags/CodeForces/"/>
     
@@ -141,9 +141,9 @@
     
       <category term="C++" scheme="http://zyx02.github.io/tags/C/"/>
     
-      <category term="题解" scheme="http://zyx02.github.io/tags/%E9%A2%98%E8%A7%A3/"/>
-    
       <category term="洛谷" scheme="http://zyx02.github.io/tags/%E6%B4%9B%E8%B0%B7/"/>
+    
+      <category term="题解" scheme="http://zyx02.github.io/tags/%E9%A2%98%E8%A7%A3/"/>
     
       <category term="CodeForces" scheme="http://zyx02.github.io/tags/CodeForces/"/>
     
@@ -183,15 +183,15 @@
     
       <category term="C++" scheme="http://zyx02.github.io/tags/C/"/>
     
-      <category term="字符串" scheme="http://zyx02.github.io/tags/%E5%AD%97%E7%AC%A6%E4%B8%B2/"/>
+      <category term="洛谷" scheme="http://zyx02.github.io/tags/%E6%B4%9B%E8%B0%B7/"/>
     
       <category term="题解" scheme="http://zyx02.github.io/tags/%E9%A2%98%E8%A7%A3/"/>
     
-      <category term="洛谷" scheme="http://zyx02.github.io/tags/%E6%B4%9B%E8%B0%B7/"/>
+      <category term="CodeForces" scheme="http://zyx02.github.io/tags/CodeForces/"/>
+    
+      <category term="字符串" scheme="http://zyx02.github.io/tags/%E5%AD%97%E7%AC%A6%E4%B8%B2/"/>
     
       <category term="模拟" scheme="http://zyx02.github.io/tags/%E6%A8%A1%E6%8B%9F/"/>
-    
-      <category term="CodeForces" scheme="http://zyx02.github.io/tags/CodeForces/"/>
     
   </entry>
   
@@ -245,9 +245,9 @@
     
       <category term="C++" scheme="http://zyx02.github.io/tags/C/"/>
     
-      <category term="题解" scheme="http://zyx02.github.io/tags/%E9%A2%98%E8%A7%A3/"/>
-    
       <category term="洛谷" scheme="http://zyx02.github.io/tags/%E6%B4%9B%E8%B0%B7/"/>
+    
+      <category term="题解" scheme="http://zyx02.github.io/tags/%E9%A2%98%E8%A7%A3/"/>
     
       <category term="CodeForces" scheme="http://zyx02.github.io/tags/CodeForces/"/>
     
@@ -279,9 +279,9 @@
     
       <category term="C++" scheme="http://zyx02.github.io/tags/C/"/>
     
-      <category term="题解" scheme="http://zyx02.github.io/tags/%E9%A2%98%E8%A7%A3/"/>
-    
       <category term="洛谷" scheme="http://zyx02.github.io/tags/%E6%B4%9B%E8%B0%B7/"/>
+    
+      <category term="题解" scheme="http://zyx02.github.io/tags/%E9%A2%98%E8%A7%A3/"/>
     
       <category term="CodeForces" scheme="http://zyx02.github.io/tags/CodeForces/"/>
     
@@ -316,15 +316,15 @@
     
       <category term="C++" scheme="http://zyx02.github.io/tags/C/"/>
     
-      <category term="字符串" scheme="http://zyx02.github.io/tags/%E5%AD%97%E7%AC%A6%E4%B8%B2/"/>
+      <category term="洛谷" scheme="http://zyx02.github.io/tags/%E6%B4%9B%E8%B0%B7/"/>
     
       <category term="题解" scheme="http://zyx02.github.io/tags/%E9%A2%98%E8%A7%A3/"/>
     
-      <category term="洛谷" scheme="http://zyx02.github.io/tags/%E6%B4%9B%E8%B0%B7/"/>
+      <category term="CodeForces" scheme="http://zyx02.github.io/tags/CodeForces/"/>
+    
+      <category term="字符串" scheme="http://zyx02.github.io/tags/%E5%AD%97%E7%AC%A6%E4%B8%B2/"/>
     
       <category term="模拟" scheme="http://zyx02.github.io/tags/%E6%A8%A1%E6%8B%9F/"/>
-    
-      <category term="CodeForces" scheme="http://zyx02.github.io/tags/CodeForces/"/>
     
   </entry>
   
@@ -353,9 +353,9 @@
     
       <category term="C++" scheme="http://zyx02.github.io/tags/C/"/>
     
-      <category term="题解" scheme="http://zyx02.github.io/tags/%E9%A2%98%E8%A7%A3/"/>
-    
       <category term="洛谷" scheme="http://zyx02.github.io/tags/%E6%B4%9B%E8%B0%B7/"/>
+    
+      <category term="题解" scheme="http://zyx02.github.io/tags/%E9%A2%98%E8%A7%A3/"/>
     
       <category term="动态规划（dp）" scheme="http://zyx02.github.io/tags/%E5%8A%A8%E6%80%81%E8%A7%84%E5%88%92%EF%BC%88dp%EF%BC%89/"/>
     
@@ -386,9 +386,9 @@
     
       <category term="C++" scheme="http://zyx02.github.io/tags/C/"/>
     
-      <category term="题解" scheme="http://zyx02.github.io/tags/%E9%A2%98%E8%A7%A3/"/>
-    
       <category term="洛谷" scheme="http://zyx02.github.io/tags/%E6%B4%9B%E8%B0%B7/"/>
+    
+      <category term="题解" scheme="http://zyx02.github.io/tags/%E9%A2%98%E8%A7%A3/"/>
     
       <category term="CodeForces" scheme="http://zyx02.github.io/tags/CodeForces/"/>
     
@@ -415,9 +415,9 @@
     </summary>
     
     
-      <category term="set" scheme="http://zyx02.github.io/tags/set/"/>
-    
       <category term="C++" scheme="http://zyx02.github.io/tags/C/"/>
+    
+      <category term="set" scheme="http://zyx02.github.io/tags/set/"/>
     
       <category term="学习笔记" scheme="http://zyx02.github.io/tags/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"/>
     
@@ -504,9 +504,9 @@
     
       <category term="C++" scheme="http://zyx02.github.io/tags/C/"/>
     
-      <category term="题解" scheme="http://zyx02.github.io/tags/%E9%A2%98%E8%A7%A3/"/>
-    
       <category term="洛谷" scheme="http://zyx02.github.io/tags/%E6%B4%9B%E8%B0%B7/"/>
+    
+      <category term="题解" scheme="http://zyx02.github.io/tags/%E9%A2%98%E8%A7%A3/"/>
     
       <category term="CodeForces" scheme="http://zyx02.github.io/tags/CodeForces/"/>
     
@@ -564,9 +564,9 @@
     
       <category term="C++" scheme="http://zyx02.github.io/tags/C/"/>
     
-      <category term="题解" scheme="http://zyx02.github.io/tags/%E9%A2%98%E8%A7%A3/"/>
-    
       <category term="洛谷" scheme="http://zyx02.github.io/tags/%E6%B4%9B%E8%B0%B7/"/>
+    
+      <category term="题解" scheme="http://zyx02.github.io/tags/%E9%A2%98%E8%A7%A3/"/>
     
       <category term="模拟" scheme="http://zyx02.github.io/tags/%E6%A8%A1%E6%8B%9F/"/>
     
@@ -593,15 +593,15 @@
     
       <category term="C++" scheme="http://zyx02.github.io/tags/C/"/>
     
-      <category term="字符串" scheme="http://zyx02.github.io/tags/%E5%AD%97%E7%AC%A6%E4%B8%B2/"/>
+      <category term="洛谷" scheme="http://zyx02.github.io/tags/%E6%B4%9B%E8%B0%B7/"/>
     
       <category term="题解" scheme="http://zyx02.github.io/tags/%E9%A2%98%E8%A7%A3/"/>
     
-      <category term="洛谷" scheme="http://zyx02.github.io/tags/%E6%B4%9B%E8%B0%B7/"/>
+      <category term="CodeForces" scheme="http://zyx02.github.io/tags/CodeForces/"/>
+    
+      <category term="字符串" scheme="http://zyx02.github.io/tags/%E5%AD%97%E7%AC%A6%E4%B8%B2/"/>
     
       <category term="模拟" scheme="http://zyx02.github.io/tags/%E6%A8%A1%E6%8B%9F/"/>
-    
-      <category term="CodeForces" scheme="http://zyx02.github.io/tags/CodeForces/"/>
     
   </entry>
   
