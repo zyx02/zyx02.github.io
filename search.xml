@@ -51,11 +51,11 @@
     <content type="text"><![CDATA[一道字符串模拟题，思路如下： 1 输入时将两个时间存储 2 将两个时间化为以分钟做单位 3 得到中间时间与第一个时间的差 4 输出 注意：当时间或分钟数$&lt;=9$时，要用$0$补齐位数 Code 123456789101112131415161718192021222324252627282930#include&lt;bits/stdc++.h&gt;using namespace std;string s1,s2; int h1,h2,m1,m2;int main()&#123; ios::sync_with_stdio(false); cin&gt;&gt;s1&gt;&gt;s2; for(int i=0;i&lt;2;i++)//将时间存储 h1+=(s1[i]-'0')*pow(10,1-i),h2+=(s2[i]-'0')*pow(10,1-i); for(int i=3;i&lt;=4;i++) m1+=(s1[i]-'0')*pow(10,4-i),m2+=(s2[i]-'0')*pow(10,4-i); int ans=((h2*60+m2)-(h1*60+m1))/2;//求得中间时间与第一个时间的差 h1+=ans/60;//加上时间差 m1+=ans%60; if(m1&gt;=60)//如果分钟&gt;=60要进位 &#123; h1++; m1%=60; &#125; if(h1&lt;=9)//输出，&lt;=9的用0补齐 cout&lt;&lt;0&lt;&lt;h1&lt;&lt;":"; else cout&lt;&lt;h1&lt;&lt;":"; if(m1&lt;=9) cout&lt;&lt;0&lt;&lt;m1; else cout&lt;&lt;m1; return 0;&#125;]]></content>
       <tags>
         <tag>C++</tag>
+        <tag>字符串</tag>
         <tag>洛谷</tag>
         <tag>题解</tag>
-        <tag>CodeForces</tag>
-        <tag>字符串</tag>
         <tag>模拟</tag>
+        <tag>CodeForces</tag>
       </tags>
   </entry>
   <entry>
@@ -96,11 +96,11 @@
     <content type="text"><![CDATA[这题其实是一道很水的字符串模拟，不要被难度骗了 CF恶意评分又不是一两天了（雾） 注意题目中说到的 由直线或都是由曲线构成的 是指该字母的笔画（我理解题目理解了半天$qwq$） 具体思路： 1 应用$map$将由直线（或者曲线）构成的字母的映射值设为1 2 计算该字符串的所有对应的映射值之和，因为题目要求全为直线或全为曲线，所以当总和为$len$($len$为字符串长度)或$0$时，输出$YES$，否则输出$NO$ Code1234567891011121314151617181920212223242526272829#include&lt;bits/stdc++.h&gt;using namespace std;string s;map&lt;char,bool&gt; p;int main()&#123; ios::sync_with_stdio(false); p['A']=1;//打表 p['E']=1; p['F']=1; p['H']=1; p['I']=1; p['K']=1; p['L']=1; p['M']=1; p['N']=1; p['T']=1; p['V']=1; p['W']=1; p['X']=1; p['Y']=1; p['Z']=1; cin&gt;&gt;s; int sum=0; for(int i=0;i&lt;s.size();i++) sum+=p[s[i]];//统计映射值之和 if(sum==s.size() or sum==0) cout&lt;&lt;"YES";//判断 else cout&lt;&lt;"NO"; return 0;&#125;]]></content>
       <tags>
         <tag>C++</tag>
+        <tag>字符串</tag>
         <tag>洛谷</tag>
         <tag>题解</tag>
-        <tag>CodeForces</tag>
-        <tag>字符串</tag>
         <tag>模拟</tag>
+        <tag>CodeForces</tag>
       </tags>
   </entry>
   <entry>
@@ -195,11 +195,11 @@
     <content type="text"><![CDATA[一道字符串模拟，直接暴力枚举即可Code123456789101112131415161718192021222324252627282930#include&lt;bits/stdc++.h&gt;using namespace std;string s;int main()&#123; cin &gt;&gt; s; for(int i = 0 ; i &lt; s.size(); i++) &#123; int ans = 1; char c = s[i]; for(int j = i + 1 ; j &lt; s.size(); j++) &#123; if(s[j] != c)//不一样直接退出 &#123; break; &#125; else &#123; ans++; &#125; if(ans == 7)//有七个一样的输出YES &#123; puts("YES"); return 0; &#125; &#125; &#125; puts("NO");//不危险输出NO return 0;&#125;]]></content>
       <tags>
         <tag>C++</tag>
+        <tag>字符串</tag>
         <tag>洛谷</tag>
         <tag>题解</tag>
-        <tag>CodeForces</tag>
-        <tag>字符串</tag>
         <tag>模拟</tag>
+        <tag>CodeForces</tag>
       </tags>
   </entry>
   <entry>
@@ -238,11 +238,11 @@
     <content type="text"><![CDATA[一道字符串模拟题首先我们知道 偶数+偶数=偶数 偶数+奇数=奇数 然后我们就可以对$N$进行分类讨论： 当$N\le3$时，直接输出字符串即可 当$N=2k$ $(k\ge2)$时，可以把$N$拆分成若干个长度为2的字符串，在两个字符串之间添上-号 当$N=2k+1$ $(k\ge2)$时，可以把$N$拆分成一个长度为3的字符串和若干个长度为2的字符串，在两个字符串之间添上-号 Code12345678910111213141516171819202122232425262728293031323334353637383940414243444546474849#include&lt;bits/stdc++.h&gt;using namespace std;string s;int sum;int n;int main()&#123; scanf("%d",&amp;n); cin&gt;&gt;s; if(n&lt;=3) //如果n&lt;=3，直接输出 &#123; cout&lt;&lt;s; return 0; &#125; if(n%2==0) //n为偶数则拆分成若干个长度为2的字符串 &#123; for(int i=0; i&lt;n; i++) &#123; sum++; printf("%c",s[i]); if(i==n-1) return 0; if(sum==2) &#123; printf("-"); sum=0; &#125; &#125; &#125; else //n为奇数则拆分成一个长度为3的字符串和若干个长度为2的字符串 &#123; for(int i=0; i&lt;3; i++) &#123; printf("%c",s[i]); &#125; printf("-"); for(int i=3; i&lt;n; i++) &#123; sum++; printf("%c",s[i]); if(i==n-1) return 0; if(sum==2) &#123; printf("-"); sum=0; &#125; &#125; &#125; return 0;&#125;]]></content>
       <tags>
         <tag>C++</tag>
+        <tag>字符串</tag>
         <tag>洛谷</tag>
         <tag>题解</tag>
-        <tag>CodeForces</tag>
-        <tag>字符串</tag>
         <tag>模拟</tag>
+        <tag>CodeForces</tag>
       </tags>
   </entry>
   <entry>
@@ -251,9 +251,9 @@
     <content type="text"><![CDATA[如题，输出奇数位上的字母即可AC 注意字符串下标是从0开始的！ Code12345678910111213#include&lt;bits/stdc++.h&gt;using namespace std;char s[100010];int main()&#123; gets(s); for(int i=0;i&lt;strlen(s);i+=2)//输出奇数位 &#123; printf("%c",s[i]); &#125; printf("\n");//记得换行 return 0;&#125;]]></content>
       <tags>
         <tag>C++</tag>
+        <tag>字符串</tag>
         <tag>洛谷</tag>
         <tag>题解</tag>
-        <tag>字符串</tag>
         <tag>AtCoder</tag>
         <tag>模拟</tag>
       </tags>
@@ -264,9 +264,9 @@
     <content type="text"><![CDATA[一道简单的字符串模拟，刷难度真给力 本蒟蒻的思路比较麻烦，但个人认为比较好理解 1 先将字符串倒序存放 2 按照规则改变字母 3 比较 Code：1234567891011121314151617181920212223242526272829303132333435363738394041#include&lt;bits/stdc++.h&gt;using namespace std;char s1[100010],s2[100010];int len;int main()&#123; cin&gt;&gt;s1; for(int i=strlen(s1)-1; i&gt;=0; i--) &#123; s2[len++]=s1[i];//倒序存放 &#125; for(int i=0; i&lt;strlen(s2); i++) &#123; switch(s2[i])//按照规则改变字母 &#123; case 'b': &#123; s2[i]='d'; break; &#125; case 'd': &#123; s2[i]='b'; break; &#125; case 'p': &#123; s2[i]='q'; break; &#125; case 'q': &#123; s2[i]='p'; break; &#125; &#125; &#125; if(strcmp(s1,s2)==0) cout&lt;&lt;"Yes"&lt;&lt;endl;//比较，注意如果两个字符串一样，strcmp返回0 else cout&lt;&lt;"No"&lt;&lt;endl;//记得换行 return 0;&#125;]]></content>
       <tags>
         <tag>C++</tag>
+        <tag>字符串</tag>
         <tag>洛谷</tag>
         <tag>题解</tag>
-        <tag>字符串</tag>
         <tag>AtCoder</tag>
         <tag>模拟</tag>
       </tags>
@@ -279,8 +279,8 @@
         <tag>C++</tag>
         <tag>洛谷</tag>
         <tag>题解</tag>
-        <tag>CodeForces</tag>
         <tag>模拟</tag>
+        <tag>CodeForces</tag>
       </tags>
   </entry>
   <entry>
@@ -324,8 +324,8 @@
     <url>%2F2019%2F03%2F10%2FNOIP2018%E6%B8%B8%E8%AE%B0%2F</url>
     <content type="text"><![CDATA[我才不会告诉你这篇文章是用来测验$LaTeX$的 $Day $ $0$告别期中考，来到福州，与机房的各位大佬去试了一下机，回来的时候互奶着哪位大佬要 $AK$了， 哪位大佬要省一了，晚上不务正业地玩着狼人杀，似乎忘记了此行的目的。 $Day$ $1$早上很早地就起来看一本通了，在宾馆颓了一早上，到了要比赛时才匆匆忙忙地背了一下$DP$ 方程 进入考场，先用了5$min$看了一遍所有题目，发现不简单 先看了一下$T1$，一道十分简单的字符串模拟，花了5$min$就敲完了，怕有坑不知道看了几遍题面。。。 看了一下$T2$，题目叙述比较长，于是先去看了看$T3$，想了一会儿觉得是贪心，于是打了个贪心调了挺久的，把两个小样例过了再去看大样例，发现答案比正确答案少了很多，于是想了很多方法，最终还是没想出来。 又回过头去看$T2$,理解完题面意思后发现是一道模拟，下意识写了个$O(N^{2})$的暴力，发现大数据会卡，脑抽没发现$O(n)$的算法，又去调了一会$T3$ 最后30$min$去看了一眼$T4$，发现是二叉树，但是没学过，直接输出0想骗些分 比赛结束，预计得分:$100+80+30+10=220$ 赛后去你谷测了一下民间数据，发现得分比预期的高，$100+80+30+20=230$ 用老师的数据也测了一下，$210$也还好 最后CCF的官方成绩出来了，发现才$100+80+10+4=194$分，原来$T3$的正解是$DP$，发现如果在原来的贪心上再改动一点应该可以过更多的数据的 最后$FJ$的分数线出来了——$195$，$194$的我当场崩溃$QwQ$ 第一次参加$NOIP$就带着差一分省一的遗憾结束了，不过反正我才初一还有很多机会对吧]]></content>
       <tags>
-        <tag>游记</tag>
         <tag>NOIP</tag>
+        <tag>游记</tag>
       </tags>
   </entry>
   <entry>
