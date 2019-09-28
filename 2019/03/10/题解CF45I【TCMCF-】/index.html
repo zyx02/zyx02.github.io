@@ -116,7 +116,7 @@
   </script>
 
   <meta name="description" content="题目大意：给你$N$个整数，让你从中选$r$个数($0&amp;lt;r \leq N$)，使得它们的乘积最大。输出任意一组解 思路：（大佬勿喷）  1 我们知道几个正整数的乘积总是正数，所以遇到正整数直接输出就好啦  2 遇到负数就不同了，我们知道“奇负偶正”，于是就有两种情况：  1 如果有偶数个负数，因为“偶正”，所以全部输出  2 如果有奇数个负数，我们只能输出个数-1个负数，并且这些负数的绝对值">
-<meta name="keywords" content="C++,洛谷,题解,模拟,CodeForces">
+<meta name="keywords" content="C++,洛谷,题解,CodeForces,模拟">
 <meta property="og:type" content="article">
 <meta property="og:title" content="题解CF45I【TCMCF+++】">
 <meta property="og:url" content="http://zyx02.github.io/2019/03/10/题解CF45I【TCMCF-】/index.html">
@@ -608,9 +608,9 @@ WIDGET = {FID: 'DmIm0qllkB'}
           
             <a href="/tags/题解/" rel="tag"># 题解</a>
           
-            <a href="/tags/模拟/" rel="tag"># 模拟</a>
-          
             <a href="/tags/CodeForces/" rel="tag"># CodeForces</a>
+          
+            <a href="/tags/模拟/" rel="tag"># 模拟</a>
           
         </div>
       
@@ -1682,50 +1682,11 @@ show_date_time();
 
   
 
- <!--代码放置于</body>上方-->
 
 
-<script type="text/javascript" color="0,238,238" opacity="1" zindex="-2" count="130" src="//cdn.bootcss.com/canvas-nest.js/1.0.0/canvas-nest.min.js"></script>
+<!-- <script type="text/javascript" -->
+<!-- color="0,238,238" opacity='1' zIndex="-2" count="130" src="//cdn.bootcss.com/canvas-nest.js/1.0.0/canvas-nest.min.js"></script> -->
 
-<!-- <script type="text/javascript">
-    /* 鼠标特效 */
-    var a_idx = 0;
-    jQuery(document).ready(function ($) {
-        $("body").click(function (e) {
-            var a = [
-                 "❤富强❤", "❤民主❤", "❤文明❤", "❤和谐❤", "❤自由❤", "❤平等❤", "❤公正❤" ,"❤法治❤", "❤爱国❤", "❤敬业❤", "❤诚信❤", "❤友善❤"
-            ];
-            var b = [
-                "#FFF68F", "#FFBBFF", "#FF0000", "#FF00FF", "#F08080",
-                "#008000", "#7FFFAA", "#0000CD", "#0000FF", "#080808"
-            ];
-            var a_index = Math.floor((Math.random() * a.length));
-            var b_index = Math.floor((Math.random() * b.length));
- 
-            var color = b[b_index];
-            var $i = $("<span/>").text(a[a_index]);
-            /* a_idx = (a_idx + 1) % a.length; */
-            var x = e.pageX,
-                y = e.pageY;
- 
-            $i.css({
-              "z-index": 99999999999999999999999999999999999999999999999999999999999999999999999999 ,
-                "top": y - 20,
-                "left": x,
-                "position": "absolute",
-                "font-weight": "bold",
-                "color": color,
-            });
-            $("body").append($i);
-            $i.animate({
-                "top": y - 180,
-                "opacity": 0
-            }, 1500, function () {
-                $i.remove();
-            });
-        });
-    });
-</script> -->
 <script src="/live2d-widget-master/autoload.js"></script>
 </body>
 </html>

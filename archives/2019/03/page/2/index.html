@@ -1707,50 +1707,11 @@ show_date_time();
 
   
 
- <!--代码放置于</body>上方-->
 
 
-<script type="text/javascript" color="0,238,238" opacity="1" zindex="-2" count="130" src="//cdn.bootcss.com/canvas-nest.js/1.0.0/canvas-nest.min.js"></script>
+<!-- <script type="text/javascript" -->
+<!-- color="0,238,238" opacity='1' zIndex="-2" count="130" src="//cdn.bootcss.com/canvas-nest.js/1.0.0/canvas-nest.min.js"></script> -->
 
-<!-- <script type="text/javascript">
-    /* 鼠标特效 */
-    var a_idx = 0;
-    jQuery(document).ready(function ($) {
-        $("body").click(function (e) {
-            var a = [
-                 "❤富强❤", "❤民主❤", "❤文明❤", "❤和谐❤", "❤自由❤", "❤平等❤", "❤公正❤" ,"❤法治❤", "❤爱国❤", "❤敬业❤", "❤诚信❤", "❤友善❤"
-            ];
-            var b = [
-                "#FFF68F", "#FFBBFF", "#FF0000", "#FF00FF", "#F08080",
-                "#008000", "#7FFFAA", "#0000CD", "#0000FF", "#080808"
-            ];
-            var a_index = Math.floor((Math.random() * a.length));
-            var b_index = Math.floor((Math.random() * b.length));
- 
-            var color = b[b_index];
-            var $i = $("<span/>").text(a[a_index]);
-            /* a_idx = (a_idx + 1) % a.length; */
-            var x = e.pageX,
-                y = e.pageY;
- 
-            $i.css({
-              "z-index": 99999999999999999999999999999999999999999999999999999999999999999999999999 ,
-                "top": y - 20,
-                "left": x,
-                "position": "absolute",
-                "font-weight": "bold",
-                "color": color,
-            });
-            $("body").append($i);
-            $i.animate({
-                "top": y - 180,
-                "opacity": 0
-            }, 1500, function () {
-                $i.remove();
-            });
-        });
-    });
-</script> -->
 <script src="/live2d-widget-master/autoload.js"></script>
 </body>
 </html>
