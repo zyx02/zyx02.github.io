@@ -115,18 +115,18 @@
   daovoice('update');
   </script>
 
-  <meta name="description" content="这道题基本思路就是贪心（标签里的队列是什么鬼不会是因为标题叫队列吧）主要还是证明贪心的正确性(大佬勿喷)  设总等待时间为 $time$ , $n$个人等待时间分别为$t{1}$,$t{2}$,$t{3}$···$t{n}$,要使总等待人数最少,则$time$  要取最小值:  $time$ = $t{1}$+($t{1}$+$t{2}$)+($t{1}$+$t{2}$+$t{3}$)+···+(">
+  <meta name="description" content="这道题基本思路就是贪心（标签里的队列是什么鬼不会是因为标题叫队列吧）主要还是证明贪心的正确性(大佬勿喷)  设总等待时间为 $time$ , $n$个人等待时间分别为$t_{1}$,$t_{2}$,$t_{3}$···$t_{n}$,要使总等待人数最少,则$time$  要取最小值:  $time$ = $t_{1}$+($t_{1}$+$t_{2}$)+($t_{1}$+$t_{2}$+$t_{">
 <meta name="keywords" content="C++,洛谷,题解,CodeForces,贪心">
 <meta property="og:type" content="article">
 <meta property="og:title" content="题解CF545D【Queue】">
 <meta property="og:url" content="http://zyx02.github.io/2019/03/10/题解CF545D【Queue】/index.html">
 <meta property="og:site_name" content="zyx的博客">
-<meta property="og:description" content="这道题基本思路就是贪心（标签里的队列是什么鬼不会是因为标题叫队列吧）主要还是证明贪心的正确性(大佬勿喷)  设总等待时间为 $time$ , $n$个人等待时间分别为$t{1}$,$t{2}$,$t{3}$···$t{n}$,要使总等待人数最少,则$time$  要取最小值:  $time$ = $t{1}$+($t{1}$+$t{2}$)+($t{1}$+$t{2}$+$t{3}$)+···+(">
+<meta property="og:description" content="这道题基本思路就是贪心（标签里的队列是什么鬼不会是因为标题叫队列吧）主要还是证明贪心的正确性(大佬勿喷)  设总等待时间为 $time$ , $n$个人等待时间分别为$t_{1}$,$t_{2}$,$t_{3}$···$t_{n}$,要使总等待人数最少,则$time$  要取最小值:  $time$ = $t_{1}$+($t_{1}$+$t_{2}$)+($t_{1}$+$t_{2}$+$t_{">
 <meta property="og:locale" content="zh-CN">
 <meta property="og:updated_time" content="2019-06-25T14:25:09.760Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="题解CF545D【Queue】">
-<meta name="twitter:description" content="这道题基本思路就是贪心（标签里的队列是什么鬼不会是因为标题叫队列吧）主要还是证明贪心的正确性(大佬勿喷)  设总等待时间为 $time$ , $n$个人等待时间分别为$t{1}$,$t{2}$,$t{3}$···$t{n}$,要使总等待人数最少,则$time$  要取最小值:  $time$ = $t{1}$+($t{1}$+$t{2}$)+($t{1}$+$t{2}$+$t{3}$)+···+(">
+<meta name="twitter:description" content="这道题基本思路就是贪心（标签里的队列是什么鬼不会是因为标题叫队列吧）主要还是证明贪心的正确性(大佬勿喷)  设总等待时间为 $time$ , $n$个人等待时间分别为$t_{1}$,$t_{2}$,$t_{3}$···$t_{n}$,要使总等待人数最少,则$time$  要取最小值:  $time$ = $t_{1}$+($t_{1}$+$t_{2}$)+($t_{1}$+$t_{2}$+$t_{">
 
 
 
@@ -519,7 +519,7 @@ WIDGET = {FID: 'DmIm0qllkB'}
                 
                   <span class="post-meta-item-text">本文字数：</span>
                 
-                <span title="本文字数">865</span>
+                <span title="本文字数">883</span>
               
 
               
@@ -553,10 +553,10 @@ WIDGET = {FID: 'DmIm0qllkB'}
       
 
       
-        <h4 id="这道题基本思路就是贪心（标签里的队列是什么鬼不会是因为标题叫队列吧）"><a href="#这道题基本思路就是贪心（标签里的队列是什么鬼不会是因为标题叫队列吧）" class="headerlink" title="这道题基本思路就是贪心（标签里的队列是什么鬼不会是因为标题叫队列吧）"></a>这道题基本思路就是贪心（<del>标签里的队列是什么鬼不会是因为标题叫队列吧</del>）</h4><h3 id="主要还是证明贪心的正确性-大佬勿喷"><a href="#主要还是证明贪心的正确性-大佬勿喷" class="headerlink" title="主要还是证明贪心的正确性(大佬勿喷)"></a>主要还是证明贪心的正确性(<del>大佬勿喷</del>)</h3><p>  设总等待时间为 $time$ , $n$个人等待时间分别为$t<em>{1}$,$t</em>{2}$,$t<em>{3}$···$t</em>{n}$,要使总等待人数最少,则$time$<br>  要取最小值:</p>
-<p> $time$ = $t<em>{1}$+($t</em>{1}$+$t<em>{2}$)+($t</em>{1}$+$t<em>{2}$+$t</em>{3}$)+···+($t<em>{1}$+$t</em>{2}$+$t<em>{3}$+···$t</em>{n}$)</p>
-<p> $time$ = $n \cdot t<em>{1}$+ $(n-1)\cdot t</em>{2}$+ ··· + $t_{n}$</p>
-<p> 当$t<em>{1} \le $ $t</em>{2} \le$ ······ $t_{n}$ 时，$time$为最小值(<del>简单的证明过程</del>)</p>
+        <h4 id="这道题基本思路就是贪心（标签里的队列是什么鬼不会是因为标题叫队列吧）"><a href="#这道题基本思路就是贪心（标签里的队列是什么鬼不会是因为标题叫队列吧）" class="headerlink" title="这道题基本思路就是贪心（标签里的队列是什么鬼不会是因为标题叫队列吧）"></a>这道题基本思路就是贪心（<del>标签里的队列是什么鬼不会是因为标题叫队列吧</del>）</h4><h3 id="主要还是证明贪心的正确性-大佬勿喷"><a href="#主要还是证明贪心的正确性-大佬勿喷" class="headerlink" title="主要还是证明贪心的正确性(大佬勿喷)"></a>主要还是证明贪心的正确性(<del>大佬勿喷</del>)</h3><p>  设总等待时间为 $time$ , $n$个人等待时间分别为$t_{1}$,$t_{2}$,$t_{3}$···$t_{n}$,要使总等待人数最少,则$time$<br>  要取最小值:</p>
+<p> $time$ = $t_{1}$+($t_{1}$+$t_{2}$)+($t_{1}$+$t_{2}$+$t_{3}$)+···+($t_{1}$+$t_{2}$+$t_{3}$+···$t_{n}$)</p>
+<p> $time$ = $n \cdot t_{1}$+ $(n-1)\cdot t_{2}$+ ··· + $t_{n}$</p>
+<p> 当$t_{1} \le $ $t_{2} \le$ ······ $t_{n}$ 时，$time$为最小值(<del>简单的证明过程</del>)</p>
 <p> ——————————————————————————————————————————</p>
 <p> 所以只要先每个人的等待时间排序一遍，设定一个总时间变量$time$,只要$time$小</p>
 <p> 于这个人的等待时间答案就+1，同时$time$也要加上这个人的等待时间</p>
