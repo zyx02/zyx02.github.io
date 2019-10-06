@@ -28,6 +28,13 @@
 
 
 
+  
+  
+    
+    
+  <script src="/lib/pace/pace.min.js?v=1.0.2"></script>
+  <link rel="stylesheet" href="/lib/pace/pace-theme-center-atom.min.css?v=1.0.2">
+
 
 
 
@@ -100,8 +107,16 @@
 
 
 
+  <script>
+  (function(i,s,o,g,r,a,m){i["DaoVoiceObject"]=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;a.charset="utf-8";m.parentNode.insertBefore(a,m)})(window,document,"script",('https:' == document.location.protocol ? 'https:' : 'http:') + "//widget.daovoice.io/widget/0f81ff2f.js","daovoice")
+  daovoice('init', {
+      app_id: "9dff0218"
+    });
+  daovoice('update');
+  </script>
+
   <meta name="description" content="不难看出，题目要求的是每一个房子后面最高的房子与它的高度差$+1$，（如果比它矮输出$0$） 我们定义  $maxn[i]$表示第$i$到第$n$个房子高度的最大值（$n$为房子数）  $h[i]$表示第$i$个房子的高度   因为$maxn[i+1]$存放的已经是第$i+1$到第$n$个房子的最大值了，所以第$i$到第$n$个房子的最大值只要让当前房子的高度与$maxn[i+1]$进行比较即可">
-<meta name="keywords" content="C++,洛谷,题解,CodeForces,动态规划（dp）">
+<meta name="keywords" content="C++,题解,洛谷,CodeForces,动态规划（dp）">
 <meta property="og:type" content="article">
 <meta property="og:title" content="题解 CF581B 【Luxurious Houses】">
 <meta property="og:url" content="http://zyx02.github.io/2019/06/24/题解-CF581B-【Luxurious-Houses】/index.html">
@@ -558,9 +573,9 @@ WIDGET = {FID: 'DmIm0qllkB'}
           
             <a href="/tags/C/" rel="tag"><i class="fa fa-tag"></i> C++</a>
           
-            <a href="/tags/洛谷/" rel="tag"><i class="fa fa-tag"></i> 洛谷</a>
-          
             <a href="/tags/题解/" rel="tag"><i class="fa fa-tag"></i> 题解</a>
+          
+            <a href="/tags/洛谷/" rel="tag"><i class="fa fa-tag"></i> 洛谷</a>
           
             <a href="/tags/CodeForces/" rel="tag"><i class="fa fa-tag"></i> CodeForces</a>
           

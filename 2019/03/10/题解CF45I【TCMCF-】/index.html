@@ -28,6 +28,13 @@
 
 
 
+  
+  
+    
+    
+  <script src="/lib/pace/pace.min.js?v=1.0.2"></script>
+  <link rel="stylesheet" href="/lib/pace/pace-theme-center-atom.min.css?v=1.0.2">
+
 
 
 
@@ -100,8 +107,16 @@
 
 
 
+  <script>
+  (function(i,s,o,g,r,a,m){i["DaoVoiceObject"]=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;a.charset="utf-8";m.parentNode.insertBefore(a,m)})(window,document,"script",('https:' == document.location.protocol ? 'https:' : 'http:') + "//widget.daovoice.io/widget/0f81ff2f.js","daovoice")
+  daovoice('init', {
+      app_id: "9dff0218"
+    });
+  daovoice('update');
+  </script>
+
   <meta name="description" content="题目大意：给你$N$个整数，让你从中选$r$个数($0&amp;lt;r \leq N$)，使得它们的乘积最大。输出任意一组解 思路：（大佬勿喷）  1 我们知道几个正整数的乘积总是正数，所以遇到正整数直接输出就好啦  2 遇到负数就不同了，我们知道“奇负偶正”，于是就有两种情况：  1 如果有偶数个负数，因为“偶正”，所以全部输出  2 如果有奇数个负数，我们只能输出个数-1个负数，并且这些负数的绝对值">
-<meta name="keywords" content="C++,洛谷,题解,模拟,CodeForces">
+<meta name="keywords" content="C++,题解,洛谷,模拟,CodeForces">
 <meta property="og:type" content="article">
 <meta property="og:title" content="题解CF45I【TCMCF+++】">
 <meta property="og:url" content="http://zyx02.github.io/2019/03/10/题解CF45I【TCMCF-】/index.html">
@@ -572,9 +587,9 @@ WIDGET = {FID: 'DmIm0qllkB'}
           
             <a href="/tags/C/" rel="tag"><i class="fa fa-tag"></i> C++</a>
           
-            <a href="/tags/洛谷/" rel="tag"><i class="fa fa-tag"></i> 洛谷</a>
-          
             <a href="/tags/题解/" rel="tag"><i class="fa fa-tag"></i> 题解</a>
+          
+            <a href="/tags/洛谷/" rel="tag"><i class="fa fa-tag"></i> 洛谷</a>
           
             <a href="/tags/模拟/" rel="tag"><i class="fa fa-tag"></i> 模拟</a>
           
