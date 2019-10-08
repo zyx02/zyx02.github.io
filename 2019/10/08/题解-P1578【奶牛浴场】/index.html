@@ -115,18 +115,25 @@
   daovoice('update');
   </script>
 
-  <meta name="description" content="一道简单的字符串模拟，刷难度真给力 本蒟蒻的思路比较麻烦，但个人认为比较好理解 1 先将字符串倒序存放  2 按照规则改变字母  3 比较   Code：1234567891011121314151617181920212223242526272829303132333435363738394041#include&amp;lt;bits/stdc++.h&amp;gt;using namespace std;c">
-<meta name="keywords" content="C++,字符串,洛谷,题解,AtCoder,模拟">
+  <meta name="description" content="0.问题类型这是一道经典的最大子矩形问题，本人的思路参考了国家队wzk大佬的论文《浅谈用极大化思想解决最大子矩形问题》 这篇论文介绍了两种求最大子矩形的思路，分别是通过障碍点找子矩形和通过悬线找子矩形，本题的数据范围适合使用第一种方法 1.算法思路定义极大子矩形为$4$条边都不能向外拓展的有效子矩形（这里的有效即子矩形内不包括障碍点)。 可以得到最大子矩形是所有极大子矩形中最大的，所以只要枚举最大">
+<meta name="keywords" content="C++,洛谷,题解,最大子矩形,动态规划（dp）">
 <meta property="og:type" content="article">
-<meta property="og:title" content="题解 AT2201 【鏡文 &#x2F; Mirror String】">
-<meta property="og:url" content="http://zyx02.github.io/2019/03/10/题解-AT2201-【鏡文-Mirror-String】/index.html">
+<meta property="og:title" content="题解 P1578【奶牛浴场】">
+<meta property="og:url" content="http://zyx02.github.io/2019/10/08/题解-P1578【奶牛浴场】/index.html">
 <meta property="og:site_name" content="zyx的博客">
-<meta property="og:description" content="一道简单的字符串模拟，刷难度真给力 本蒟蒻的思路比较麻烦，但个人认为比较好理解 1 先将字符串倒序存放  2 按照规则改变字母  3 比较   Code：1234567891011121314151617181920212223242526272829303132333435363738394041#include&amp;lt;bits/stdc++.h&amp;gt;using namespace std;c">
+<meta property="og:description" content="0.问题类型这是一道经典的最大子矩形问题，本人的思路参考了国家队wzk大佬的论文《浅谈用极大化思想解决最大子矩形问题》 这篇论文介绍了两种求最大子矩形的思路，分别是通过障碍点找子矩形和通过悬线找子矩形，本题的数据范围适合使用第一种方法 1.算法思路定义极大子矩形为$4$条边都不能向外拓展的有效子矩形（这里的有效即子矩形内不包括障碍点)。 可以得到最大子矩形是所有极大子矩形中最大的，所以只要枚举最大">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2019-06-25T14:24:28.512Z">
+<meta property="og:image" content="https://i.loli.net/2019/10/08/MTs4woRkLn2DqP3.png">
+<meta property="og:image" content="https://i.loli.net/2019/10/08/3KxzmUQvLoM8keN.png">
+<meta property="og:image" content="https://i.loli.net/2019/10/08/yLZbSluAH1JU3aw.png">
+<meta property="og:image" content="https://i.loli.net/2019/10/08/CIW8PVt9zjrKyOX.png">
+<meta property="og:image" content="https://i.loli.net/2019/10/08/OxDvByJqsWYUiTw.png">
+<meta property="og:image" content="https://i.loli.net/2019/10/08/i8UIqVrj5BEhCFT.png">
+<meta property="og:updated_time" content="2019-10-08T15:13:55.100Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="题解 AT2201 【鏡文 &#x2F; Mirror String】">
-<meta name="twitter:description" content="一道简单的字符串模拟，刷难度真给力 本蒟蒻的思路比较麻烦，但个人认为比较好理解 1 先将字符串倒序存放  2 按照规则改变字母  3 比较   Code：1234567891011121314151617181920212223242526272829303132333435363738394041#include&amp;lt;bits/stdc++.h&amp;gt;using namespace std;c">
+<meta name="twitter:title" content="题解 P1578【奶牛浴场】">
+<meta name="twitter:description" content="0.问题类型这是一道经典的最大子矩形问题，本人的思路参考了国家队wzk大佬的论文《浅谈用极大化思想解决最大子矩形问题》 这篇论文介绍了两种求最大子矩形的思路，分别是通过障碍点找子矩形和通过悬线找子矩形，本题的数据范围适合使用第一种方法 1.算法思路定义极大子矩形为$4$条边都不能向外拓展的有效子矩形（这里的有效即子矩形内不包括障碍点)。 可以得到最大子矩形是所有极大子矩形中最大的，所以只要枚举最大">
+<meta name="twitter:image" content="https://i.loli.net/2019/10/08/MTs4woRkLn2DqP3.png">
 
 
 
@@ -135,7 +142,7 @@
 
 
 
-  <link rel="canonical" href="http://zyx02.github.io/2019/03/10/题解-AT2201-【鏡文-Mirror-String】/">
+  <link rel="canonical" href="http://zyx02.github.io/2019/10/08/题解-P1578【奶牛浴场】/">
 
 
 
@@ -145,7 +152,7 @@
   };
 </script>
 
-  <title>题解 AT2201 【鏡文 / Mirror String】 | zyx的博客</title>
+  <title>题解 P1578【奶牛浴场】 | zyx的博客</title>
   
 
 
@@ -398,7 +405,7 @@ WIDGET = {FID: 'DmIm0qllkB'}
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://zyx02.github.io/2019/03/10/题解-AT2201-【鏡文-Mirror-String】/">
+    <link itemprop="mainEntityOfPage" href="http://zyx02.github.io/2019/10/08/题解-P1578【奶牛浴场】/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="不省一不改名">
@@ -415,7 +422,7 @@ WIDGET = {FID: 'DmIm0qllkB'}
 
         
         
-          <h1 class="post-title" itemprop="name headline">题解 AT2201 【鏡文 / Mirror String】
+          <h1 class="post-title" itemprop="name headline">题解 P1578【奶牛浴场】
 
               
             
@@ -441,24 +448,12 @@ WIDGET = {FID: 'DmIm0qllkB'}
                 
               
 
-              <time title="创建时间：2019-03-10 10:36:09" itemprop="dateCreated datePublished" datetime="2019-03-10T10:36:09+08:00">2019-03-10</time>
+              <time title="创建时间：2019-10-08 23:12:20 / 修改时间：23:13:55" itemprop="dateCreated datePublished" datetime="2019-10-08T23:12:20+08:00">2019-10-08</time>
             
 
             
               
 
-              
-                
-                <span class="post-meta-divider">|</span>
-                
-
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-calendar-check-o"></i>
-                </span>
-                
-                  <span class="post-meta-item-text">更新于</span>
-                
-                <time title="修改时间：2019-06-25 22:24:28" itemprop="dateModified" datetime="2019-06-25T22:24:28+08:00">2019-06-25</time>
               
             
           </span>
@@ -472,8 +467,8 @@ WIDGET = {FID: 'DmIm0qllkB'}
                 <span class="post-meta-item-icon">
                   <i class="fa fa-comment-o"></i>
                 </span>
-                <a href="/2019/03/10/题解-AT2201-【鏡文-Mirror-String】/#comments" itemprop="discussionUrl">
-                  <span class="post-meta-item-text">评论数：</span> <span class="post-comments-count valine-comment-count" data-xid="/2019/03/10/题解-AT2201-【鏡文-Mirror-String】/" itemprop="commentCount"></span>
+                <a href="/2019/10/08/题解-P1578【奶牛浴场】/#comments" itemprop="discussionUrl">
+                  <span class="post-meta-item-text">评论数：</span> <span class="post-comments-count valine-comment-count" data-xid="/2019/10/08/题解-P1578【奶牛浴场】/" itemprop="commentCount"></span>
                 </a>
               </span>
             
@@ -502,7 +497,7 @@ WIDGET = {FID: 'DmIm0qllkB'}
                 
                   <span class="post-meta-item-text">本文字数：</span>
                 
-                <span title="本文字数">782</span>
+                <span title="本文字数">2.9k</span>
               
 
               
@@ -516,7 +511,7 @@ WIDGET = {FID: 'DmIm0qllkB'}
                 
                   <span class="post-meta-item-text">阅读时长 &asymp;</span>
                 
-                <span title="阅读时长">1 分钟</span>
+                <span title="阅读时长">3 分钟</span>
               
             </div>
           
@@ -536,16 +531,44 @@ WIDGET = {FID: 'DmIm0qllkB'}
       
 
       
-        <p>一道简单的字符串模拟，<del>刷难度真给力</del></p>
-<h4 id="本蒟蒻的思路比较麻烦，但个人认为比较好理解"><a href="#本蒟蒻的思路比较麻烦，但个人认为比较好理解" class="headerlink" title="本蒟蒻的思路比较麻烦，但个人认为比较好理解"></a>本蒟蒻的思路比较麻烦，但个人认为比较好理解</h4><ul>
-<li><p>1 先将字符串倒序存放</p>
-</li>
-<li><p>2 按照规则改变字母</p>
-</li>
-<li><p>3 比较</p>
-</li>
-</ul>
-<h2 id="Code："><a href="#Code：" class="headerlink" title="Code："></a>Code：</h2><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;bits/stdc++.h&gt;</span></span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> <span class="built_in">std</span>;</span><br><span class="line"><span class="keyword">char</span> s1[<span class="number">100010</span>],s2[<span class="number">100010</span>];</span><br><span class="line"><span class="keyword">int</span> len;</span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">	<span class="built_in">cin</span>&gt;&gt;s1;</span><br><span class="line">	<span class="keyword">for</span>(<span class="keyword">int</span> i=<span class="built_in">strlen</span>(s1)<span class="number">-1</span>; i&gt;=<span class="number">0</span>; i--)</span><br><span class="line">	&#123;</span><br><span class="line">		s2[len++]=s1[i];<span class="comment">//倒序存放</span></span><br><span class="line">	&#125;</span><br><span class="line">	<span class="keyword">for</span>(<span class="keyword">int</span> i=<span class="number">0</span>; i&lt;<span class="built_in">strlen</span>(s2); i++)</span><br><span class="line">	&#123;</span><br><span class="line">		<span class="keyword">switch</span>(s2[i])<span class="comment">//按照规则改变字母</span></span><br><span class="line">		&#123;</span><br><span class="line">			<span class="keyword">case</span> <span class="string">'b'</span>:</span><br><span class="line">			&#123;</span><br><span class="line">				s2[i]=<span class="string">'d'</span>;</span><br><span class="line">				<span class="keyword">break</span>;</span><br><span class="line">			&#125;</span><br><span class="line">			<span class="keyword">case</span> <span class="string">'d'</span>:</span><br><span class="line">			&#123;</span><br><span class="line">				s2[i]=<span class="string">'b'</span>;</span><br><span class="line">				<span class="keyword">break</span>;</span><br><span class="line">			&#125;</span><br><span class="line">			<span class="keyword">case</span> <span class="string">'p'</span>:</span><br><span class="line">			&#123;</span><br><span class="line">				s2[i]=<span class="string">'q'</span>;</span><br><span class="line">				<span class="keyword">break</span>;</span><br><span class="line">			&#125;</span><br><span class="line">			<span class="keyword">case</span> <span class="string">'q'</span>:</span><br><span class="line">			&#123;</span><br><span class="line">				s2[i]=<span class="string">'p'</span>;</span><br><span class="line">				<span class="keyword">break</span>;</span><br><span class="line">			&#125;</span><br><span class="line">		&#125;</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="keyword">if</span>(<span class="built_in">strcmp</span>(s1,s2)==<span class="number">0</span>) <span class="built_in">cout</span>&lt;&lt;<span class="string">"Yes"</span>&lt;&lt;<span class="built_in">endl</span>;<span class="comment">//比较，注意如果两个字符串一样，strcmp返回0</span></span><br><span class="line">	<span class="keyword">else</span> <span class="built_in">cout</span>&lt;&lt;<span class="string">"No"</span>&lt;&lt;<span class="built_in">endl</span>;<span class="comment">//记得换行</span></span><br><span class="line">	<span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+        <h3 id="0-问题类型"><a href="#0-问题类型" class="headerlink" title="0.问题类型"></a>0.问题类型</h3><p>这是一道经典的最大子矩形问题，本人的思路参考了国家队wzk大佬的论文《浅谈用极大化思想解决最大子矩形问题》</p>
+<p>这篇论文介绍了两种求最大子矩形的思路，分别是通过障碍点找子矩形和通过悬线找子矩形，本题的数据范围适合使用第一种方法</p>
+<h3 id="1-算法思路"><a href="#1-算法思路" class="headerlink" title="1.算法思路"></a>1.算法思路</h3><p>定义极大子矩形为$4$条边都不能向外拓展的有效子矩形（这里的有效即子矩形内不包括障碍点)。</p>
+<p>可以得到最大子矩形是所有极大子矩形中最大的，所以只要枚举最大的子矩形，求出其中最大的即可</p>
+<h3 id="2-算法实现"><a href="#2-算法实现" class="headerlink" title="2.算法实现"></a>2.算法实现</h3><p>怎么找极大子矩形？根据极大子矩形的定义，我们可以得出极大子矩形的$4$条边一定覆盖障碍点（或边界）</p>
+<p>为了方便讨论，我们先将整个牛场的4个顶点设为障碍点。</p>
+<p>例如</p>
+<p>10 10</p>
+<p>4</p>
+<p>1 1</p>
+<p>3 4 </p>
+<p>6 3</p>
+<p>9 8</p>
+<h3 id="1-从左往右搜"><a href="#1-从左往右搜" class="headerlink" title="1.从左往右搜"></a>1.从左往右搜</h3><p>将障碍点按横坐标排序（左右顺序）后得到如下编号。</p>
+<p>(作者画画不是那么好qwq)</p>
+<p><img src="https://i.loli.net/2019/10/08/MTs4woRkLn2DqP3.png" alt="TIM截图20191008223603.png"></p>
+<p>一开始从$1$号障碍点开始，从左往右找极大子矩形。</p>
+<p>一开始的极大子矩形上下边界$up,low$为整个牛场的上下边界</p>
+<p>$1$号障碍点往右找，到$2$号障碍点，如图</p>
+<p><img src="https://i.loli.net/2019/10/08/3KxzmUQvLoM8keN.png" alt="1.png"></p>
+<p>可以得到一个极大子矩形，它的面积就是障碍点$2$的横坐标减去障碍点$1$的横坐标乘以上边界减去下边界。</p>
+<p>接下来需要对上下边界做一些修改，否则之后的极大子矩形可能会包括障碍点。因为$2$的纵坐标大于$1$的纵坐标，所以修改上边界，修改为$2$的纵坐标。</p>
+<p>接下来到$3$，同理可以得到如下极大子矩形</p>
+<p><img src="https://i.loli.net/2019/10/08/yLZbSluAH1JU3aw.png" alt="2.png"></p>
+<p>它的面积就是$3$的横坐标减去$1$的横坐标乘以上边界（$2$的纵坐标）减去下边界</p>
+<p>之后的$4$也同理。</p>
+<p>然后从$2$开始往右找，从$3$开始往右找,从$4$开始往右找，跟从$1$开始找都是一样的。</p>
+<h3 id="2-从右往左搜"><a href="#2-从右往左搜" class="headerlink" title="2.从右往左搜"></a>2.从右往左搜</h3><p>从左往右搜后我们会发现有一些遗漏的情况，就是极大子矩形的左边界是牛场的左边界，右边界覆盖一个障碍点的情况，如图</p>
+<p><img src="https://i.loli.net/2019/10/08/CIW8PVt9zjrKyOX.png" alt="3.png"></p>
+<p>解决方法很简单，把从左往右搜倒过来从右往左搜一遍即可</p>
+<h3 id="3-特殊情况"><a href="#3-特殊情况" class="headerlink" title="3.特殊情况"></a>3.特殊情况</h3><p>在从左往右搜和从右往左搜后我们发现还有一种情况没有考虑到，就是极大子矩形的左右边界分别是牛场的左右边界，如图</p>
+<p><img src="https://i.loli.net/2019/10/08/OxDvByJqsWYUiTw.png" alt="4.png"></p>
+<p>解决方法是，再将障碍点按纵坐标排序，如图</p>
+<p><img src="https://i.loli.net/2019/10/08/i8UIqVrj5BEhCFT.png" alt="5.png"></p>
+<p>可以得到这类极大子矩形的面积就是相邻两个障碍点（按纵坐标排序后）纵坐标之差乘以牛场的长</p>
+<p>时间复杂度$O(N^2)$，$N$为障碍点数</p>
+<h3 id="3-代码实现"><a href="#3-代码实现" class="headerlink" title="3.代码实现"></a>3.代码实现</h3><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;bits/stdc++.h&gt;</span></span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> <span class="built_in">std</span>;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">read</span><span class="params">()</span><span class="comment">//快读</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">	<span class="keyword">int</span> sum = <span class="number">0</span> , f = <span class="number">1</span>;</span><br><span class="line">	<span class="keyword">char</span> c = getchar();</span><br><span class="line">	<span class="keyword">while</span>(c &lt; <span class="string">'0'</span> <span class="keyword">or</span> c &gt; <span class="string">'9'</span>)</span><br><span class="line">	&#123;</span><br><span class="line">		<span class="keyword">if</span>(c == <span class="string">'-'</span>) f = <span class="number">-1</span>;</span><br><span class="line">		c = getchar();</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="keyword">while</span>(c &gt;= <span class="string">'0'</span> <span class="keyword">and</span> c &lt;= <span class="string">'9'</span>)</span><br><span class="line">	&#123;</span><br><span class="line">		sum = (sum &lt;&lt; <span class="number">1</span>) + (sum &lt;&lt; <span class="number">3</span>) + c - <span class="string">'0'</span>;</span><br><span class="line">		c = getchar();</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="keyword">return</span> sum * f;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="class"><span class="keyword">struct</span> <span class="title">S</span>&#123;</span><span class="comment">//存放障碍点信息</span></span><br><span class="line">	<span class="keyword">int</span> x , y;</span><br><span class="line">&#125;s[<span class="number">5010</span>];</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">bool</span> <span class="title">cmp1</span><span class="params">(S a , S b)</span><span class="comment">//按横坐标排序</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">	<span class="keyword">if</span>(a.x != b.x) <span class="keyword">return</span> a.x &lt; b.x;</span><br><span class="line">	<span class="keyword">else</span> <span class="keyword">return</span> a.y &lt; b.y; </span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">bool</span> <span class="title">cmp2</span><span class="params">(S a , S b)</span><span class="comment">//按纵坐标排序</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">	<span class="keyword">if</span>(a.y != b.y) <span class="keyword">return</span> a.y &lt; b.y;</span><br><span class="line">	<span class="keyword">else</span> <span class="keyword">return</span> a.x &lt; b.x ; </span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">int</span> l , w , n , ans; </span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    l = read() , w = read() , n = read();   </span><br><span class="line">    <span class="keyword">for</span>(<span class="keyword">int</span> i = <span class="number">1</span>; i &lt;= n; i ++) s[i].x = read() , s[i].y = read();</span><br><span class="line">    s[++ n].x = <span class="number">0</span> , s[n].y = <span class="number">0</span>;<span class="comment">//将四个顶点设为障碍点</span></span><br><span class="line">	s[++ n].x = <span class="number">0</span> , s[n].y = w;</span><br><span class="line">	s[++ n].x = l , s[n].y = <span class="number">0</span>;</span><br><span class="line">	s[++ n].x = l , s[n].y = w;</span><br><span class="line">    <span class="keyword">int</span> x1 , x2 , y1 , y2;<span class="comment">//x1为左边界，x2为右边界,y1为下边界，y2为上边界</span></span><br><span class="line">    <span class="comment">//从左往右搜</span></span><br><span class="line">    sort(s + <span class="number">1</span> , s + n + <span class="number">1</span> , cmp1);</span><br><span class="line">    <span class="keyword">for</span>(<span class="keyword">int</span> i = <span class="number">1</span>; i &lt;= n; i ++)</span><br><span class="line">    &#123;</span><br><span class="line">    	x1 = s[i].x , y1 = <span class="number">0</span> , y2 = w;</span><br><span class="line">    	<span class="keyword">for</span>(<span class="keyword">int</span> j = i + <span class="number">1</span>; j &lt;= n; j ++)</span><br><span class="line">    	&#123;</span><br><span class="line">				x2 = s[j].x;</span><br><span class="line">				ans = max(ans , (x2 - x1) * (y2 - y1));</span><br><span class="line">	    		<span class="keyword">if</span>(s[j].y &lt; s[i].y) y1 = max(y1 , s[j].y);<span class="comment">//更新上下边界</span></span><br><span class="line">	    	    <span class="keyword">else</span> y2 = min(y2 , s[j].y); </span><br><span class="line">		&#125;</span><br><span class="line">	&#125;</span><br><span class="line">    <span class="comment">//从右往左搜  </span></span><br><span class="line">    <span class="keyword">for</span>(<span class="keyword">int</span> i = n; i &gt;= <span class="number">1</span>; i --)</span><br><span class="line">    &#123;</span><br><span class="line">    	x1 = s[i].x , y1 = <span class="number">0</span> , y2 = w;</span><br><span class="line">    	<span class="keyword">for</span>(<span class="keyword">int</span> j = i - <span class="number">1</span>; j &gt;= <span class="number">1</span>; j --)</span><br><span class="line">    	&#123;</span><br><span class="line">	    		x2 = s[j].x;</span><br><span class="line">				ans = max(ans , (x1 - x2) * (y2 - y1));</span><br><span class="line">				<span class="keyword">if</span>(s[j].y &lt; s[i].y) y1 = max(y1 , s[j].y);</span><br><span class="line">	    	    <span class="keyword">else</span> y2 = min(y2 , s[j].y); </span><br><span class="line">		&#125;</span><br><span class="line">	&#125;</span><br><span class="line"></span><br><span class="line">	<span class="comment">//处理特殊情况</span></span><br><span class="line">	sort(s + <span class="number">1</span> , s + n + <span class="number">1</span> , cmp2); </span><br><span class="line">	<span class="keyword">for</span>(<span class="keyword">int</span> i = <span class="number">1</span>; i &lt;= n - <span class="number">1</span>; i ++)</span><br><span class="line">	&#123;</span><br><span class="line">		ans = max(ans , l * (s[i + <span class="number">1</span>].y - s[i].y));</span><br><span class="line">	&#125;</span><br><span class="line">	</span><br><span class="line">	<span class="built_in">printf</span>(<span class="string">"%d"</span> , ans);</span><br><span class="line">	<span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
       
     </div>
 
@@ -570,15 +593,13 @@ WIDGET = {FID: 'DmIm0qllkB'}
           
             <a href="/tags/C/" rel="tag"><i class="fa fa-tag"></i> C++</a>
           
-            <a href="/tags/字符串/" rel="tag"><i class="fa fa-tag"></i> 字符串</a>
-          
             <a href="/tags/洛谷/" rel="tag"><i class="fa fa-tag"></i> 洛谷</a>
           
             <a href="/tags/题解/" rel="tag"><i class="fa fa-tag"></i> 题解</a>
           
-            <a href="/tags/AtCoder/" rel="tag"><i class="fa fa-tag"></i> AtCoder</a>
+            <a href="/tags/最大子矩形/" rel="tag"><i class="fa fa-tag"></i> 最大子矩形</a>
           
-            <a href="/tags/模拟/" rel="tag"><i class="fa fa-tag"></i> 模拟</a>
+            <a href="/tags/动态规划（dp）/" rel="tag"><i class="fa fa-tag"></i> 动态规划（dp）</a>
           
         </div>
       
@@ -591,12 +612,12 @@ WIDGET = {FID: 'DmIm0qllkB'}
   <!-- JS库 sweetalert 可修改路径 -->
   <script src="https://cdn.bootcss.com/jquery/2.0.0/jquery.min.js"></script>
   <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
-  <p><span>本文标题:</span><a href="/2019/03/10/题解-AT2201-【鏡文-Mirror-String】/">题解 AT2201 【鏡文 / Mirror String】</a></p>
+  <p><span>本文标题:</span><a href="/2019/10/08/题解-P1578【奶牛浴场】/">题解 P1578【奶牛浴场】</a></p>
   <p><span>文章作者:</span><a href="/" title="访问 不省一不改名 的个人博客">不省一不改名</a></p>
-  <p><span>发布时间:</span>2019年03月10日 - 10:36</p>
-  <p><span>最后更新:</span>2019年06月25日 - 22:24</p>
-  <p><span>原始链接:</span><a href="/2019/03/10/题解-AT2201-【鏡文-Mirror-String】/" title="题解 AT2201 【鏡文 / Mirror String】">http://zyx02.github.io/2019/03/10/题解-AT2201-【鏡文-Mirror-String】/</a>
-    <span class="copy-path" title="点击复制文章链接"><i class="fa fa-clipboard" data-clipboard-text="http://zyx02.github.io/2019/03/10/题解-AT2201-【鏡文-Mirror-String】/" aria-label="复制成功！"></i></span>
+  <p><span>发布时间:</span>2019年10月08日 - 23:12</p>
+  <p><span>最后更新:</span>2019年10月08日 - 23:13</p>
+  <p><span>原始链接:</span><a href="/2019/10/08/题解-P1578【奶牛浴场】/" title="题解 P1578【奶牛浴场】">http://zyx02.github.io/2019/10/08/题解-P1578【奶牛浴场】/</a>
+    <span class="copy-path" title="点击复制文章链接"><i class="fa fa-clipboard" data-clipboard-text="http://zyx02.github.io/2019/10/08/题解-P1578【奶牛浴场】/" aria-label="复制成功！"></i></span>
   </p>
   <p><span>许可协议:</span><i class="fa fa-creative-commons"></i> <a rel="license" href="https://creativecommons.org/licenses/by-nc-nd/4.0/" target="_blank" title="Attribution-NonCommercial-NoDerivatives 4.0 International (CC BY-NC-ND 4.0)">署名-非商业性使用-禁止演绎 4.0 国际</a> 转载请保留原文链接及作者。</p>  
 </div>
@@ -644,8 +665,8 @@ WIDGET = {FID: 'DmIm0qllkB'}
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2019/03/10/题解CF45I【TCMCF-】/" rel="next" title="题解CF45I【TCMCF+++】">
-                <i class="fa fa-chevron-left"></i> 题解CF45I【TCMCF+++】
+              <a href="/2019/10/06/倍增LCA学习笔记/" rel="next" title="倍增LCA学习笔记">
+                <i class="fa fa-chevron-left"></i> 倍增LCA学习笔记
               </a>
             
           </div>
@@ -653,10 +674,6 @@ WIDGET = {FID: 'DmIm0qllkB'}
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2019/03/10/题解-AT3523-【OddString】/" rel="prev" title="题解 AT3523 【OddString】">
-                题解 AT3523 【OddString】 <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -927,7 +944,7 @@ show_date_time();
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-4"><a class="nav-link" href="#本蒟蒻的思路比较麻烦，但个人认为比较好理解"><span class="nav-number">1.</span> <span class="nav-text">本蒟蒻的思路比较麻烦，但个人认为比较好理解</span></a></li></ol><li class="nav-item nav-level-2"><a class="nav-link" href="#Code："><span class="nav-number"></span> <span class="nav-text">Code：</span></a></li></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#0-问题类型"><span class="nav-number">1.</span> <span class="nav-text">0.问题类型</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#1-算法思路"><span class="nav-number">2.</span> <span class="nav-text">1.算法思路</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-算法实现"><span class="nav-number">3.</span> <span class="nav-text">2.算法实现</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#1-从左往右搜"><span class="nav-number">4.</span> <span class="nav-text">1.从左往右搜</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-从右往左搜"><span class="nav-number">5.</span> <span class="nav-text">2.从右往左搜</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#3-特殊情况"><span class="nav-number">6.</span> <span class="nav-text">3.特殊情况</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#3-代码实现"><span class="nav-number">7.</span> <span class="nav-text">3.代码实现</span></a></li></ol></div>
             
 
           </div>
