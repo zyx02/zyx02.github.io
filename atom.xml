@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://zyx02.github.io/"/>
-  <updated>2019-10-08T15:13:55.100Z</updated>
+  <updated>2019-10-10T14:56:56.735Z</updated>
   <id>http://zyx02.github.io/</id>
   
   <author>
@@ -15,6 +15,30 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>电脑如何进入pixiv</title>
+    <link href="http://zyx02.github.io/2019/10/10/%E7%94%B5%E8%84%91%E5%A6%82%E4%BD%95%E8%BF%9B%E5%85%A5pixiv/"/>
+    <id>http://zyx02.github.io/2019/10/10/电脑如何进入pixiv/</id>
+    <published>2019-10-10T14:56:14.000Z</published>
+    <updated>2019-10-10T14:56:56.735Z</updated>
+    
+    <content type="html"><![CDATA[<blockquote><p>Pixiv，是一个主要由日本艺术家所组成的虚拟社群，主体为由pixiv股份制有限公司所运营的为插画艺术特化的社交网络服务网站。新兴的日本同人画、插画作品分享站点。采用了web2.0的方式，每个参与者都有自己的主页并可以对作品评价打分。——百度百科</p></blockquote><p>当你想进入$pixiv$时，你可能遇到这种情况</p><p><img src="https://i.loli.net/2019/10/10/AL5MwHr6vVpbI7q.png" alt></p><p>一开始是进不去$pixiv$的（除非你挂了$VPN$）</p><h2 id="Step0-准备工作"><a href="#Step0-准备工作" class="headerlink" title="Step0.准备工作"></a>Step0.准备工作</h2><ul><li>pixiv-nginx</li></ul><p><a href="https://pan.baidu.com/s/1xIjFWHykeKDzKZzoDzVPBA?errno=0&amp;errmsg=Auth%20Login%20Sucess&amp;&amp;bduss=&amp;ssnerror=0&amp;traceid=" target="_blank" rel="noopener">链接</a> 提取码：apz7</p><h2 id="Step1-解压文件"><a href="#Step1-解压文件" class="headerlink" title="Step1.解压文件"></a>Step1.解压文件</h2><p>将压缩包解压，把文件夹放在C盘</p><p><img src="https://i.loli.net/2019/10/10/PlJG5FxpS8BEsfg.png" alt="TIM截图20191010222508.png"></p><h2 id="Step2-安装证书"><a href="#Step2-安装证书" class="headerlink" title="Step2.安装证书"></a>Step2.安装证书</h2><p>打开pixiv-nginx-1.15.3，双击ca.cer<br><img src="https://i.loli.net/2019/10/10/MfNo1QAjd5rmneE.png" alt="TIM截图20191010222657.png"></p><p>点击安装证书</p><p><img src="https://i.loli.net/2019/10/10/hqV34tZ8oyz6Rg2.png" alt="TIM截图20191010222739.png"></p><p>存储位置选择当前用户</p><p><img src="https://i.loli.net/2019/10/10/TYOxFQUetXucWCV.png" alt="TIM截图20191010223300.png"></p><p>选择将所有的证书都放入下列储存</p><p><img src="https://i.loli.net/2019/10/10/VUBqtgz5GRkKSfT.png" alt="TIM截图20191010222900.png"></p><p>选择受信任的根证书颁发机构</p><p><img src="https://i.loli.net/2019/10/10/pcBEF49kQxDagot.png" alt="TIM截图20191010222957.png"></p><p>然后点击完成即可</p><h2 id="Step3-修改hosts"><a href="#Step3-修改hosts" class="headerlink" title="Step3.修改hosts"></a>Step3.修改hosts</h2><p>复制pixiv-nginx-1.15.3内的hosts到C:\Windows\System32\drivers\etc内替换原hosts</p><p><img src="https://i.loli.net/2019/10/10/8qrwT79cpmdtVHB.png" alt="TIM截图20191010223515.png"></p><h3 id="Step4-开启Nginx"><a href="#Step4-开启Nginx" class="headerlink" title="Step4.开启Nginx"></a>Step4.开启Nginx</h3><p>到pixiv-nginx-1.15.3,打开4.可视化工具（这个操作简单）</p><p><img src="https://i.loli.net/2019/10/10/FBwm6IP9zS4r8nu.png" alt="TIM截图20191010223649.png"></p><p>打开后是如下界面</p><p><img src="https://i.loli.net/2019/10/10/W8UqdkNDHLZJhvi.png" alt="TIM截图20191010223721.png"></p><p>点Nginx后面的Start，看到打钩出现即为成功</p><p><img src="https://i.loli.net/2019/10/10/yE1fgPzx3U5LXYQ.png" alt="TIM截图20191010223803.png"></p><p>接下来就可以打开pixiv了！</p><p><img src="https://i.loli.net/2019/10/10/SYxDM157C4pGNou.png" alt="TIM截图20191010224316.png"></p><p>每次上pixiv都要打开nginx，如果觉得麻烦可以运行pixiv-nginx-1.15.3下的nginx添加开机启动.bat</p><h3 id="答疑：无法打开Nginx怎么办"><a href="#答疑：无法打开Nginx怎么办" class="headerlink" title="答疑：无法打开Nginx怎么办"></a>答疑：无法打开Nginx怎么办</h3><ul><li><p>1 确保你上面的步骤都正确</p></li><li><p>2 打开pixiv-nginx-1.15.3下的logs文件夹，打开error.log，复制里面的错误信息到度娘。</p></li></ul><p>如果你的错误日志里的信息是类似</p><blockquote><p>2019/10/02 09:06:17 [emerg] 6244#12448: bind() to 127.0.0.1:443 failed (10013: An attempt was made to access a socket in a way forbidden by its access permissions)</p></blockquote><p>这样的，那么这个错误信息是指你的端口被占用了。占用的端口是443（看第一行127.0.0.1:443）</p><p><a href="https://blog.csdn.net/bad_yixiong/article/details/70267140" target="_blank" rel="noopener">端口占用解决方案</a></p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;blockquote&gt;
+&lt;p&gt;Pixiv，是一个主要由日本艺术家所组成的虚拟社群，主体为由pixiv股份制有限公司所运营的为插画艺术特化的社交网络服务网站。新兴的日本同人画、插画作品分享站点。采用了web2.0的方式，每个参与者都有自己的主页并可以对作品评价打分。——百度百科&lt;
+      
+    
+    </summary>
+    
+    
+      <category term="工具" scheme="http://zyx02.github.io/tags/%E5%B7%A5%E5%85%B7/"/>
+    
+  </entry>
   
   <entry>
     <title>题解 P1578【奶牛浴场】</title>
@@ -41,9 +65,9 @@
     
       <category term="题解" scheme="http://zyx02.github.io/tags/%E9%A2%98%E8%A7%A3/"/>
     
-      <category term="最大子矩形" scheme="http://zyx02.github.io/tags/%E6%9C%80%E5%A4%A7%E5%AD%90%E7%9F%A9%E5%BD%A2/"/>
-    
       <category term="动态规划（dp）" scheme="http://zyx02.github.io/tags/%E5%8A%A8%E6%80%81%E8%A7%84%E5%88%92%EF%BC%88dp%EF%BC%89/"/>
+    
+      <category term="最大子矩形" scheme="http://zyx02.github.io/tags/%E6%9C%80%E5%A4%A7%E5%AD%90%E7%9F%A9%E5%BD%A2/"/>
     
   </entry>
   
@@ -630,37 +654,6 @@
       <category term="学习笔记" scheme="http://zyx02.github.io/tags/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"/>
     
       <category term="字符串" scheme="http://zyx02.github.io/tags/%E5%AD%97%E7%AC%A6%E4%B8%B2/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>题解 P5269 【欧稳欧再次学车】</title>
-    <link href="http://zyx02.github.io/2019/03/23/%E9%A2%98%E8%A7%A3-P5269-%E3%80%90%E6%AC%A7%E7%A8%B3%E6%AC%A7%E5%86%8D%E6%AC%A1%E5%AD%A6%E8%BD%A6%E3%80%91/"/>
-    <id>http://zyx02.github.io/2019/03/23/题解-P5269-【欧稳欧再次学车】/</id>
-    <published>2019-03-23T11:29:21.000Z</published>
-    <updated>2019-06-25T14:25:59.254Z</updated>
-    
-    <content type="html"><![CDATA[<p><del>三年OI一场空，不开long long 见祖宗</del></p><p>一道模拟题，具体解释在代码里：</p><h3 id="Code"><a href="#Code" class="headerlink" title="Code"></a>Code</h3><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;bits/stdc++.h&gt;</span></span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> <span class="built_in">std</span>;</span><br><span class="line"><span class="keyword">int</span> t,n,l,r,x,k;</span><br><span class="line"><span class="keyword">long</span> <span class="keyword">long</span> dang,zhuan;<span class="comment">//一定要开long long !!!</span></span><br><span class="line"><span class="keyword">long</span> <span class="keyword">long</span> ans;</span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line"><span class="comment">//freopen("1.out","w",stdout);</span></span><br><span class="line">    <span class="built_in">scanf</span>(<span class="string">"%d%d%d%d%d%d"</span>,&amp;t,&amp;n,&amp;l,&amp;r,&amp;x,&amp;k);</span><br><span class="line">    zhuan=l;<span class="comment">//zhuan存放转速</span></span><br><span class="line">    dang=<span class="number">1</span>;<span class="comment">//dang存放档位</span></span><br><span class="line">    <span class="keyword">int</span> flag=<span class="number">0</span>;</span><br><span class="line">    <span class="keyword">for</span>(<span class="keyword">int</span> i=<span class="number">1</span>;i&lt;=t;i++)</span><br><span class="line">    &#123;</span><br><span class="line">    <span class="keyword">int</span> xx,yy;</span><br><span class="line">    <span class="built_in">scanf</span>(<span class="string">"%d%d"</span>,&amp;xx,&amp;yy);</span><br><span class="line">    <span class="keyword">if</span>(xx==<span class="number">0</span>)<span class="comment">//升档</span></span><br><span class="line">    &#123;</span><br><span class="line">    <span class="keyword">if</span>(dang==n) <span class="comment">//如果dang已经到达了n，那么是非法序列</span></span><br><span class="line">    &#123;</span><br><span class="line">    <span class="built_in">cout</span>&lt;&lt;<span class="string">"-1"</span>;</span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br><span class="line">    dang++;</span><br><span class="line">    zhuan=l;<span class="comment">//转速调整为l</span></span><br><span class="line">&#125;</span><br><span class="line"><span class="keyword">if</span>(xx==<span class="number">1</span>)<span class="comment">//降档</span></span><br><span class="line">&#123;</span><br><span class="line"><span class="keyword">if</span>(dang==<span class="number">1</span>) <span class="comment">//如果dang是1，那么是非法序列</span></span><br><span class="line">&#123;</span><br><span class="line"><span class="built_in">cout</span>&lt;&lt;<span class="string">"-1"</span>;</span><br><span class="line"><span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br><span class="line">dang--;</span><br><span class="line">zhuan=r;<span class="comment">//转速调整为r</span></span><br><span class="line">&#125;</span><br><span class="line"><span class="keyword">if</span>(yy==<span class="number">1</span>)<span class="comment">//踩油门</span></span><br><span class="line">&#123;</span><br><span class="line">zhuan+=x;<span class="comment">//转速加上x</span></span><br><span class="line"><span class="keyword">if</span>(zhuan&gt;r) zhuan=r;<span class="comment">//对r取min</span></span><br><span class="line">&#125;</span><br><span class="line">ans+=zhuan*dang <span class="comment">//一定要在发动机有没有爆炸前加</span></span><br><span class="line"><span class="keyword">if</span>(zhuan==r)</span><br><span class="line">&#123;</span><br><span class="line">flag++;</span><br><span class="line"><span class="keyword">if</span>(flag==k)<span class="comment">//爆炸</span></span><br><span class="line">&#123;</span><br><span class="line"><span class="built_in">cout</span>&lt;&lt;ans;</span><br><span class="line"><span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br><span class="line">&#125;</span><br><span class="line"><span class="keyword">else</span> flag=<span class="number">0</span>;</span><br><span class="line">&#125;</span><br><span class="line"><span class="built_in">printf</span>(<span class="string">"%lld"</span>,ans);</span><br><span class="line"><span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;p&gt;&lt;del&gt;三年OI一场空，不开long long 见祖宗&lt;/del&gt;&lt;/p&gt;
-&lt;p&gt;一道模拟题，具体解释在代码里：&lt;/p&gt;
-&lt;h3 id=&quot;Code&quot;&gt;&lt;a href=&quot;#Code&quot; class=&quot;headerlink&quot; title=&quot;Code&quot;&gt;&lt;/a&gt;Code&lt;/h3&gt;
-      
-    
-    </summary>
-    
-    
-      <category term="C++" scheme="http://zyx02.github.io/tags/C/"/>
-    
-      <category term="洛谷" scheme="http://zyx02.github.io/tags/%E6%B4%9B%E8%B0%B7/"/>
-    
-      <category term="题解" scheme="http://zyx02.github.io/tags/%E9%A2%98%E8%A7%A3/"/>
-    
-      <category term="模拟" scheme="http://zyx02.github.io/tags/%E6%A8%A1%E6%8B%9F/"/>
     
   </entry>
   
