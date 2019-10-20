@@ -18,15 +18,13 @@ h0 {
 }
 
 body {
-	background-color: #ffc0cb;
-	color: #7a776e;
-	font-size: 14px;
-	font-weight: 600;
-	-webkit-font-smoothing: antialiased;
-	font-smoothing: antialiased;
-	text-rendering: optimizelegibility;
-	-webkit-text-size-adjust: none;
-	margin: 0;
+    background-image:url(https://i.loli.net/2019/10/19/oj13Thl97LcZmvD.jpg);
+    background-repeat: no-repeat;
+    background-attachment:fixed;
+    background-size: cover;
+}
+.main-inner {
+    opacity: 0.9;
 }
 
 .resume {
