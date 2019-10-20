@@ -1,0 +1,118 @@
+/*
+	Soha Jin resume
+
+	https://sohaj.in
+*/
+
+* {
+	font-family: "Roboto", "Lato", "Segoe UI", "Myriad Set Pro", "Lucida Grande", "Helvetica Neue", "Luxi Sans", "DejaVu Sans", Tahoma, "Hiragino Sans GB", STHeiti ,"Noto Serif CJK SC Light" ,"Source Han Serif CN Light" , "Noto Sans CJK SC Light", "Source Han Sans CN Light", "Microsoft YaHei UI", "Microsoft YaHei", Segoe, Arial, sans-serif !important;
+}
+
+.fa {
+	font-family: "FontAwesome" !important;
+}
+
+/* ↓ Don't let her know. */
+h0 {
+	display: none;
+}
+
+body {
+	background-color: #ffc0cb;
+	color: #7a776e;
+	font-size: 14px;
+	font-weight: 600;
+	-webkit-font-smoothing: antialiased;
+	font-smoothing: antialiased;
+	text-rendering: optimizelegibility;
+	-webkit-text-size-adjust: none;
+	margin: 0;
+}
+
+.resume {
+	background-color: rgba(255,255,255,0.6);
+	padding: 1em;
+	box-shadow:#888 1px 1px 5.4px;
+	margin: 23.33px 12vw;	
+}
+
+.resume .text-block p {
+	margin-left: 2em;
+}
+
+.resume details {
+	margin-left: 2em;
+}
+
+.large-block .text-block {
+	margin-left: 1.6em;
+}
+
+@media only screen and (max-width: 768px) {
+    .resume {
+		background-color: rgba(255,255,255,0.6);
+		padding: 1em;
+		box-shadow:#888 1px 1px 5.4px;
+		margin: 23.33px 2.33vw;	
+	}
+
+	.resume .text-block p {
+		margin-left: 1.2em;
+	}
+	
+	.resume details {
+		margin-left: 1.2em;
+	}
+	
+	.large-block .text-block {
+		margin-left: 0.8em;
+	}
+}
+
+.landing {
+	min-height: 100vh;
+	padding: 0 auto;
+	position: relative;
+	background-color: rgba(255,255,255,0.2);
+	user-select: none;
+}
+
+.landing a {
+	text-decoration: none;
+	color: inherit;
+}
+
+.landing .content {
+	width: 100%;
+	height: 10vh;
+	color: #fff;
+	position: absolute;
+	top: 42%;
+	left: 0;
+	margin-top: -110px;
+	text-align: center;
+}
+
+.landing .down-arrow {
+	width: 100%;
+	font-size: 2.33rem;
+	color: #fff;
+	position: absolute;
+	bottom: 16px;
+	left: 0;
+	margin-top: -110px;
+	text-align: center;
+}
+
+.landing h1 {
+	font-size: 3rem;
+}
+
+.link-icons {
+	color: #fff;
+}
+
+.link-icons i.fa {
+	font-size: 2.33rem;
+	margin: 0 0.66rem;
+}
